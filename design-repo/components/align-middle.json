@@ -1,0 +1,10 @@
+{
+  "id": "align-middle",
+  "name": "align-middle",
+  "occurrences": 32,
+  "composedOf": [],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/"
+  }
+}

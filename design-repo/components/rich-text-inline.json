@@ -1,0 +1,10 @@
+{
+  "id": "rich-text-inline",
+  "name": "rich-text-inline",
+  "occurrences": 4,
+  "composedOf": [],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "$description": "Semantic color roles. Each role points at a foundation token; `basis` states the measurement that chose it. Role NAMES are a heuristic vocabulary, the values are measured.",
+  "inferred": true,
+  "tokens": {
+    "surface.default": {
+      "$type": "color",
+      "$value": "{color.teal.07}",
+      "basis": "most-used opaque background (32 uses)"
+    },
+    "surface.alt": {
+      "$type": "color",
+      "$value": "{color.neutral.05}",
+      "basis": "second most-used neutral background (24 uses)"
+    },
+    "surface.inverse": {
+      "$type": "color",
+      "$value": "{color.neutral.05}",
+      "basis": "most-used background neutral, with opposite lightness to surface.default (24 uses)"
+    },
+    "surface.accent": {
+      "$type": "color",
+      "$value": "{color.teal.08}",
+      "basis": "most-used saturated background (4 uses)"
+    },
+    "text.primary": {
+      "$type": "color",
+      "$value": "{color.neutral.01}",
+      "basis": "most-used text colour (2067 uses)"
+    },
+    "text.secondary": {
+      "$type": "color",
+      "$value": "{color.teal.03}",
+      "basis": "most-used neutral text colour with lower contrast than text.primary on surface.default (410 uses)"
+    },
+    "text.inverse": {
+      "$type": "color",
+      "$value": "{color.teal.05}",
+      "basis": "most-used text colour neutral, with opposite lightness to text.primary (104 uses)"
+    },
+    "text.accent": {
+      "$type": "color",
+      "$value": "{color.teal.08}",
+      "basis": "most-used saturated text/fill colour (24 uses)"
+    },
+    "border.default": {
+      "$type": "color",
+      "$value": "{color.neutral.03}",
+      "basis": "most-used border colour (24 uses)"
+    },
+    "accent.primary": {
+      "$type": "color",
+      "$value": "{color.teal.08}",
+      "basis": "most-used saturated colour overall (28 uses)"
+    }
+  }
+}

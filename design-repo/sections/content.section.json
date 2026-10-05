@@ -1,0 +1,67 @@
+{
+  "id": "content.section",
+  "category": "CONTENT",
+  "label": "Section",
+  "tag": "section",
+  "purpose": "Carries the substantive content of the page. Example headline: \"AGENTS\".",
+  "purposeIsInferred": true,
+  "nameSource": "tag",
+  "evidence": {
+    "level": "measured",
+    "instances": 5,
+    "routes": 1,
+    "measuredFrom": [
+      "src/memo/index.html:232-265",
+      "src/memo/index.html:266-296",
+      "src/memo/index.html:297-337",
+      "src/memo/index.html:338-410",
+      "src/memo/index.html:440-491"
+    ]
+  },
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "heading": {
+        "type": "string",
+        "required": false,
+        "maxWords": 3
+      },
+      "body": {
+        "type": "string[]",
+        "required": true,
+        "maxItems": 12,
+        "maxWords": 70
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 5
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-animation",
+      "css-transition",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 770,
+      "columns": 1
+    },
+    "mobile": {
+      "heightPx": 718,
+      "columns": 1,
+      "hiddenShare": 0
+    },
+    "changes": []
+  },
+  "assetRoles": [],
+  "implementedBy": "src/sections/Section.jsx"
+}

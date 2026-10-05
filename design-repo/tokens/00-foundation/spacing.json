@@ -1,0 +1,125 @@
+{
+  "$description": "Foundation spacing tokens: the values observed on the site, ordered by usage. Not referenced directly by generators; semantic tokens reference these.",
+  "tokens": {
+    "space.1": {
+      "$type": "dimension",
+      "$value": "1px",
+      "usage": 73
+    },
+    "space.2": {
+      "$type": "dimension",
+      "$value": "2px",
+      "usage": 48
+    },
+    "space.2_5": {
+      "$type": "dimension",
+      "$value": "2.5px",
+      "usage": 64
+    },
+    "space.4": {
+      "$type": "dimension",
+      "$value": "4px",
+      "usage": 48
+    },
+    "space.5": {
+      "$type": "dimension",
+      "$value": "5px",
+      "usage": 40
+    },
+    "space.5_5": {
+      "$type": "dimension",
+      "$value": "5.5px",
+      "usage": 64
+    },
+    "space.6": {
+      "$type": "dimension",
+      "$value": "6px",
+      "usage": 48
+    },
+    "space.8": {
+      "$type": "dimension",
+      "$value": "8px",
+      "usage": 406
+    },
+    "space.11": {
+      "$type": "dimension",
+      "$value": "11px",
+      "usage": 64
+    },
+    "space.12": {
+      "$type": "dimension",
+      "$value": "12px",
+      "usage": 289
+    },
+    "space.14": {
+      "$type": "dimension",
+      "$value": "14px",
+      "usage": 2
+    },
+    "space.16": {
+      "$type": "dimension",
+      "$value": "16px",
+      "usage": 322
+    },
+    "space.20": {
+      "$type": "dimension",
+      "$value": "20px",
+      "usage": 74
+    },
+    "space.24": {
+      "$type": "dimension",
+      "$value": "24px",
+      "usage": 62
+    },
+    "space.28": {
+      "$type": "dimension",
+      "$value": "28px",
+      "usage": 46
+    },
+    "space.32": {
+      "$type": "dimension",
+      "$value": "32px",
+      "usage": 50
+    },
+    "space.40": {
+      "$type": "dimension",
+      "$value": "40px",
+      "usage": 144
+    },
+    "space.50": {
+      "$type": "dimension",
+      "$value": "50px",
+      "usage": 12
+    },
+    "space.80": {
+      "$type": "dimension",
+      "$value": "80px",
+      "usage": 17
+    },
+    "space.96": {
+      "$type": "dimension",
+      "$value": "96px",
+      "usage": 3
+    },
+    "space.108": {
+      "$type": "dimension",
+      "$value": "108px",
+      "usage": 12
+    },
+    "space.140": {
+      "$type": "dimension",
+      "$value": "140px",
+      "usage": 14
+    },
+    "space.144": {
+      "$type": "dimension",
+      "$value": "144px",
+      "usage": 6
+    },
+    "space.190": {
+      "$type": "dimension",
+      "$value": "190px",
+      "usage": 12
+    }
+  }
+}

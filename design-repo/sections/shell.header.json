@@ -1,0 +1,71 @@
+{
+  "id": "shell.header",
+  "category": "SHELL",
+  "label": "Header",
+  "tag": "header",
+  "purpose": "Orients the visitor and provides navigation or site-wide links; carried across pages.",
+  "purposeIsInferred": true,
+  "nameSource": "landmark",
+  "evidence": {
+    "level": "measured",
+    "instances": 16,
+    "routes": 16,
+    "measuredFrom": [
+      "src/index.html:48-116",
+      "src/careers/index.html:61-131",
+      "src/careers/1db991e4-9480-4847-b300-c430cc057d56/index.html:61-131",
+      "src/careers/30f72628-dd96-4fb2-b998-ab310e90ad82/index.html:61-131",
+      "src/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490/index.html:61-131"
+    ]
+  },
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "body": {
+        "type": "string[]",
+        "required": true,
+        "maxItems": 2,
+        "maxWords": 3
+      },
+      "ctas": {
+        "type": "cta[]",
+        "required": true,
+        "maxItems": 5,
+        "maxWords": 2
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-animation",
+      "css-transition",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 80,
+      "columns": 3
+    },
+    "mobile": {
+      "heightPx": 74,
+      "columns": 1,
+      "hiddenShare": 0
+    },
+    "changes": [
+      "3 columns collapse to a single column"
+    ]
+  },
+  "assetRoles": [],
+  "implementedBy": "src/pages/HomePage.jsx"
+}

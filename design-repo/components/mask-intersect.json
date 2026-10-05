@@ -1,0 +1,15 @@
+{
+  "id": "mask-intersect",
+  "name": "mask-intersect",
+  "occurrences": 16,
+  "composedOf": [
+    "canvas",
+    "heading",
+    "image",
+    "paragraph"
+  ],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "frosted-frame",
+  "name": "frosted-frame",
+  "occurrences": 19,
+  "composedOf": [
+    "button",
+    "paragraph",
+    "svg"
+  ],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "group",
+  "name": "group",
+  "occurrences": 12,
+  "composedOf": [
+    "svg"
+  ],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/careers"
+  }
+}

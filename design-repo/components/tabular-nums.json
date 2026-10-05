@@ -1,0 +1,10 @@
+{
+  "id": "tabular-nums",
+  "name": "tabular-nums",
+  "occurrences": 32,
+  "composedOf": [],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/"
+  }
+}

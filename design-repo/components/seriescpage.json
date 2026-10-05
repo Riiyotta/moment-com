@@ -1,0 +1,10 @@
+{
+  "id": "seriescpage",
+  "name": "SeriesCPage",
+  "occurrences": 10,
+  "composedOf": [],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": null
+  }
+}

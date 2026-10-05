@@ -1,0 +1,174 @@
+{
+  "$description": "Foundation color tokens: the values observed on the site, ordered by usage. Not referenced directly by generators; semantic tokens reference these.",
+  "tokens": {
+    "color.neutral.01": {
+      "$type": "color",
+      "$value": "rgb(250,251,251)",
+      "usage": 2069,
+      "roles": {
+        "text": 2067,
+        "border": 2
+      }
+    },
+    "color.neutral.02": {
+      "$type": "color",
+      "$value": "rgb(255,255,255)",
+      "usage": 1398,
+      "roles": {
+        "text": 1386,
+        "fill": 12
+      }
+    },
+    "color.teal.01": {
+      "$type": "color",
+      "$value": "rgb(90,123,125)",
+      "usage": 562,
+      "roles": {
+        "fill": 562
+      }
+    },
+    "color.teal.02": {
+      "$type": "color",
+      "$value": "rgb(47,64,65)",
+      "usage": 496,
+      "roles": {
+        "fill": 496
+      }
+    },
+    "color.neutral.03": {
+      "$type": "color",
+      "$value": "rgb(247,248,248)",
+      "usage": 432,
+      "roles": {
+        "text": 376,
+        "fill": 32,
+        "border": 24
+      }
+    },
+    "color.teal.03": {
+      "$type": "color",
+      "$value": "rgb(169,188,188)",
+      "usage": 410,
+      "roles": {
+        "text": 410
+      }
+    },
+    "color.teal.04": {
+      "$type": "color",
+      "$value": "rgb(221,231,231)",
+      "usage": 180,
+      "roles": {
+        "text": 180
+      }
+    },
+    "color.neutral.04": {
+      "$type": "color",
+      "$value": "rgb(0,0,0)",
+      "usage": 125,
+      "roles": {
+        "fill": 125
+      }
+    },
+    "color.teal.05": {
+      "$type": "color",
+      "$value": "rgb(70,99,99)",
+      "usage": 118,
+      "roles": {
+        "text": 104,
+        "fill": 8,
+        "bg": 6
+      }
+    },
+    "color.teal.06": {
+      "$type": "color",
+      "$value": "rgb(181,213,215)",
+      "usage": 66,
+      "roles": {
+        "fill": 66
+      }
+    },
+    "color.neutral.05": {
+      "$type": "color",
+      "$value": "rgb(238,243,243)",
+      "usage": 52,
+      "roles": {
+        "text": 28,
+        "bg": 24
+      }
+    },
+    "color.teal.07": {
+      "$type": "color",
+      "$value": "rgb(33,61,62)",
+      "usage": 36,
+      "roles": {
+        "bg": 32,
+        "border": 4
+      }
+    },
+    "color.teal.08": {
+      "$type": "color",
+      "$value": "rgb(24,51,53)",
+      "usage": 28,
+      "roles": {
+        "bg": 4,
+        "text": 24
+      }
+    },
+    "color.neutral.06": {
+      "$type": "color",
+      "$value": "rgba(17,29,27,0.9)",
+      "usage": 19,
+      "roles": {
+        "bg": 19
+      }
+    },
+    "color.neutral.07": {
+      "$type": "color",
+      "$value": "rgba(17,29,27,0.85)",
+      "usage": 16,
+      "roles": {
+        "bg": 16
+      }
+    },
+    "color.neutral.08": {
+      "$type": "color",
+      "$value": "rgb(51,51,51)",
+      "usage": 12,
+      "roles": {
+        "border": 12
+      }
+    },
+    "color.teal.09": {
+      "$type": "color",
+      "$value": "rgba(169,188,188,0.07)",
+      "usage": 4,
+      "roles": {
+        "bg": 4
+      }
+    },
+    "color.neutral.09": {
+      "$type": "color",
+      "$value": "rgba(17,29,27,0.55)",
+      "usage": 4,
+      "roles": {
+        "bg": 4
+      }
+    },
+    "color.neutral.10": {
+      "$type": "color",
+      "$value": "rgba(168,175,172,0.8)",
+      "usage": 2,
+      "roles": {
+        "text": 2
+      }
+    },
+    "color.teal.10": {
+      "$type": "color",
+      "$value": "rgba(24,51,53,0.6)",
+      "usage": 2,
+      "roles": {
+        "bg": 2
+      }
+    }
+  }
+}

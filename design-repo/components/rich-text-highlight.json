@@ -1,0 +1,10 @@
+{
+  "id": "rich-text-highlight",
+  "name": "rich-text-highlight",
+  "occurrences": 6,
+  "composedOf": [],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/series-c"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "richtext",
+  "name": "RichText",
+  "occurrences": 4,
+  "composedOf": [],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": null
+  }
+}

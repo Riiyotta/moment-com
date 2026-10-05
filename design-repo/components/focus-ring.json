@@ -1,0 +1,12 @@
+{
+  "id": "focus-ring",
+  "name": "focus-ring",
+  "occurrences": 192,
+  "composedOf": [
+    "svg"
+  ],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/"
+  }
+}

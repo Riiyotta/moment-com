@@ -1,0 +1,7 @@
+section,category,templates,routes,Group,Memo,Careers pages
+shell.header,SHELL,3,16,x,x,x
+hero.mask-intersect,HERO,2,15,x,,x
+content.block,CONTENT,2,4,x,x,
+content.section,CONTENT,1,1,,x,
+features.section,FEATURES,1,1,,x,
+ROUTE COUNT,,,16,3,1,12

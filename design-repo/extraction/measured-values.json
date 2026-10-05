@@ -1,0 +1,1176 @@
+{
+  "version": "0.1.0",
+  "sourceProject": {
+    "url": "https://moment.com/",
+    "framework": "React+Next.js",
+    "scrapedAt": "2026-10-05T10:47:03Z",
+    "snapshotFolder": "recon/mirror/src/"
+  },
+  "note": "Citation ledger. `lines` are line ranges in the rendered-HTML snapshots under recon/mirror/src/; verify_all.py resolves them and degrades to a warning when src/ is absent.",
+  "viewport": {
+    "desktop": "1440x900",
+    "mobile": "390x844"
+  },
+  "histograms": {
+    "colors": [
+      [
+        "rgba(0,0,0,0)",
+        4482
+      ],
+      [
+        "rgb(250,251,251)",
+        2069
+      ],
+      [
+        "rgb(255,255,255)",
+        1398
+      ],
+      [
+        "rgb(90,123,125)",
+        562
+      ],
+      [
+        "rgb(47,64,65)",
+        496
+      ],
+      [
+        "rgb(247,248,248)",
+        432
+      ],
+      [
+        "rgb(169,188,188)",
+        410
+      ],
+      [
+        "rgb(221,231,231)",
+        180
+      ],
+      [
+        "rgb(0,0,0)",
+        125
+      ],
+      [
+        "rgb(70,99,99)",
+        118
+      ],
+      [
+        "rgb(181,213,215)",
+        66
+      ],
+      [
+        "rgb(238,243,243)",
+        52
+      ],
+      [
+        "rgb(33,61,62)",
+        36
+      ],
+      [
+        "rgb(24,51,53)",
+        28
+      ],
+      [
+        "rgba(17,29,27,0.9)",
+        19
+      ],
+      [
+        "rgba(17,29,27,0.85)",
+        16
+      ],
+      [
+        "rgb(51,51,51)",
+        12
+      ],
+      [
+        "rgba(169,188,188,0.07)",
+        4
+      ],
+      [
+        "rgba(17,29,27,0.55)",
+        4
+      ],
+      [
+        "rgba(168,175,172,0.8)",
+        2
+      ],
+      [
+        "rgba(24,51,53,0.6)",
+        2
+      ]
+    ],
+    "radii": [
+      [
+        "4px",
+        104
+      ],
+      [
+        "1px",
+        64
+      ],
+      [
+        "3px",
+        15
+      ],
+      [
+        "2px",
+        8
+      ]
+    ],
+    "spacing": [
+      [
+        "8px",
+        406
+      ],
+      [
+        "16px",
+        322
+      ],
+      [
+        "12px",
+        289
+      ],
+      [
+        "40px",
+        144
+      ],
+      [
+        "20px",
+        74
+      ],
+      [
+        "1px",
+        73
+      ],
+      [
+        "11px",
+        64
+      ],
+      [
+        "2.5px",
+        64
+      ],
+      [
+        "5.5px",
+        64
+      ],
+      [
+        "24px",
+        62
+      ],
+      [
+        "32px",
+        50
+      ],
+      [
+        "2px",
+        48
+      ],
+      [
+        "4px",
+        48
+      ],
+      [
+        "6px",
+        48
+      ],
+      [
+        "28px",
+        46
+      ],
+      [
+        "5px",
+        40
+      ],
+      [
+        "80px",
+        17
+      ],
+      [
+        "140px",
+        14
+      ],
+      [
+        "108px",
+        12
+      ],
+      [
+        "190px",
+        12
+      ],
+      [
+        "50px",
+        12
+      ],
+      [
+        "144px",
+        6
+      ],
+      [
+        "96px",
+        3
+      ],
+      [
+        "14px",
+        2
+      ],
+      [
+        "10px",
+        1
+      ],
+      [
+        "160px",
+        1
+      ],
+      [
+        "18px",
+        1
+      ],
+      [
+        "256px",
+        1
+      ],
+      [
+        "265px",
+        1
+      ],
+      [
+        "340px",
+        1
+      ]
+    ],
+    "breakpoints": [
+      [
+        "800px",
+        160
+      ],
+      [
+        "1200px",
+        112
+      ],
+      [
+        "1000px",
+        16
+      ],
+      [
+        "360px",
+        16
+      ],
+      [
+        "500px",
+        16
+      ],
+      [
+        "599px",
+        16
+      ],
+      [
+        "600px",
+        16
+      ],
+      [
+        "640px",
+        16
+      ],
+      [
+        "928px",
+        16
+      ]
+    ],
+    "durations": [
+      [
+        "0.2s",
+        1700
+      ],
+      [
+        "0.65s",
+        104
+      ],
+      [
+        "0.15s",
+        30
+      ],
+      [
+        "0.4s",
+        16
+      ],
+      [
+        "auto",
+        16
+      ],
+      [
+        "1.68s",
+        14
+      ],
+      [
+        "1.62s",
+        8
+      ],
+      [
+        "3.2s",
+        8
+      ],
+      [
+        "1.2s",
+        6
+      ],
+      [
+        "1.6800000000000002s",
+        5
+      ],
+      [
+        "1.26s",
+        3
+      ],
+      [
+        "1.32s",
+        3
+      ],
+      [
+        "1.44s",
+        3
+      ],
+      [
+        "1.56s",
+        3
+      ],
+      [
+        "1.5s",
+        3
+      ],
+      [
+        "1.86s",
+        3
+      ],
+      [
+        "1.8s",
+        3
+      ],
+      [
+        "1.98s",
+        3
+      ],
+      [
+        "2.04s",
+        3
+      ],
+      [
+        "0.3s",
+        2
+      ],
+      [
+        "1.38s",
+        2
+      ],
+      [
+        "1.74s",
+        2
+      ],
+      [
+        "1.92s",
+        2
+      ],
+      [
+        "1.2000000000000002s",
+        1
+      ],
+      [
+        "1.3800000000000003s",
+        1
+      ],
+      [
+        "1.7400000000000002s",
+        1
+      ],
+      [
+        "1.9200000000000002s",
+        1
+      ]
+    ],
+    "easings": [
+      [
+        "ease",
+        1562
+      ],
+      [
+        "cubic-bezier(0.4, 0, 0.2, 1)",
+        158
+      ],
+      [
+        "linear",
+        92
+      ],
+      [
+        "cubic-bezier(0.16, 1, 0.3, 1)",
+        52
+      ],
+      [
+        "cubic-bezier(0.25, 0.1, 0.25, 1)",
+        44
+      ],
+      [
+        "cubic-bezier(0.4, 0, 1, 1)",
+        20
+      ],
+      [
+        "cubic-bezier(0.87, 0, 0.13, 1)",
+        16
+      ],
+      [
+        "cubic-bezier(0, 0, 0.2, 1)",
+        2
+      ]
+    ],
+    "cssVariables": {
+      "--banner-reveal": "1",
+      "--banner-exit": "1",
+      "--tw-translate-x": "0",
+      "--tw-translate-y": "0",
+      "--tw-translate-z": "0",
+      "--tw-scale-x": "1",
+      "--tw-scale-y": "1",
+      "--tw-scale-z": "1",
+      "--tw-rotate-x": "initial",
+      "--tw-rotate-y": "initial",
+      "--tw-rotate-z": "initial",
+      "--tw-skew-x": "initial",
+      "--tw-skew-y": "initial",
+      "--tw-border-style": "solid",
+      "--tw-leading": "initial",
+      "--tw-font-weight": "initial",
+      "--tw-tracking": "initial",
+      "--tw-ordinal": "initial",
+      "--tw-slashed-zero": "initial",
+      "--tw-numeric-figure": "initial",
+      "--tw-numeric-spacing": "initial",
+      "--tw-numeric-fraction": "initial",
+      "--tw-shadow": "0 0 #0000",
+      "--tw-shadow-color": "initial",
+      "--tw-shadow-alpha": "100%",
+      "--tw-inset-shadow": "0 0 #0000",
+      "--tw-inset-shadow-color": "initial",
+      "--tw-inset-shadow-alpha": "100%",
+      "--tw-ring-color": "initial",
+      "--tw-ring-shadow": "0 0 #0000",
+      "--tw-inset-ring-color": "initial",
+      "--tw-inset-ring-shadow": "0 0 #0000",
+      "--tw-ring-inset": "initial",
+      "--tw-ring-offset-width": "0px",
+      "--tw-ring-offset-color": "rgb(255,255,255)",
+      "--tw-ring-offset-shadow": "0 0 #0000",
+      "--tw-outline-style": "solid",
+      "--tw-blur": "initial",
+      "--tw-brightness": "initial",
+      "--tw-contrast": "initial",
+      "--tw-grayscale": "initial",
+      "--tw-hue-rotate": "initial",
+      "--tw-invert": "initial",
+      "--tw-opacity": "initial",
+      "--tw-saturate": "initial",
+      "--tw-sepia": "initial",
+      "--tw-drop-shadow": "initial",
+      "--tw-drop-shadow-color": "initial",
+      "--tw-drop-shadow-alpha": "100%",
+      "--tw-drop-shadow-size": "initial",
+      "--tw-backdrop-blur": "initial",
+      "--tw-backdrop-brightness": "initial",
+      "--tw-backdrop-contrast": "initial",
+      "--tw-backdrop-grayscale": "initial",
+      "--tw-backdrop-hue-rotate": "initial",
+      "--tw-backdrop-invert": "initial",
+      "--tw-backdrop-opacity": "initial",
+      "--tw-backdrop-saturate": "initial",
+      "--tw-backdrop-sepia": "initial",
+      "--tw-duration": "initial",
+      "--tw-ease": "initial",
+      "--tw-content": "\"\"",
+      "--font-sans": "\"twkLausanne\", \"twkLausanne Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "--font-mono": "\"twkEverettMono\", ui-monospace, SFMono-Regular, Menlo, monospace, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "--spacing": ".1rem",
+      "--font-weight-normal": "400",
+      "--font-weight-medium": "500",
+      "--font-weight-semibold": "600",
+      "--font-weight-bold": "700",
+      "--ease-out": "cubic-bezier(0, 0, .2, 1)",
+      "--default-transition-duration": ".15s",
+      "--default-transition-timing-function": "cubic-bezier(.4, 0, .2, 1)",
+      "--default-font-family": "\"twkLausanne\", \"twkLausanne Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "--default-mono-font-family": "\"twkEverettMono\", ui-monospace, SFMono-Regular, Menlo, monospace, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "--color-graphic-subtle": "rgb(33,61,62)",
+      "--color-graphic-details": "rgb(70,99,99)",
+      "--color-graphic-green-one": "rgb(221,231,231)",
+      "--color-graphic-green-two": "rgb(94,132,132)",
+      "--color-graphic-green-three": "rgb(24,51,53)",
+      "--color-text-primary": "rgb(250,251,251)",
+      "--color-text-primary-green": "rgb(247,248,248)",
+      "--color-text-secondary": "rgb(221,231,231)",
+      "--color-text-secondary-green": "rgb(169,188,188)",
+      "--color-text-tertiary": "rgb(169,188,188)",
+      "--color-text-tertiary-green": "rgb(255,255,255)",
+      "--color-text-paragraph-subtle-gray": "rgb(255,255,255)",
+      "--color-text-paragraph-subtle-green": "rgb(70,99,99)",
+      "--color-text-paragraph": "rgb(169,188,188)",
+      "--color-text-paragraph-dark-gray": "rgb(255,255,255)",
+      "--color-text-link": "rgb(169,188,188)",
+      "--color-text-link-hover": "rgb(238,243,243)",
+      "--color-text-idle": "rgb(94,132,132)",
+      "--color-text-button-primary": "rgb(24,51,53)",
+      "--color-text-button-primary-hover": "rgb(17,29,27)",
+      "--color-text-button-secondary": "rgb(169,188,188)",
+      "--color-text-button-secondary-hover": "rgb(221,231,231)",
+      "--color-surface-cards-primary": "rgba(17,29,27,0.9)",
+      "--color-surface-cards-hover": "rgba(24,51,53,0.5)",
+      "--color-surface-button-primary": "rgb(238,243,243)",
+      "--color-surface-button-primary-hover": "rgb(255,255,255)",
+      "--color-surface-button-secondary": "rgba(17,29,27,0.9)",
+      "--color-surface-button-secondary-hover": "rgb(33,61,62)",
+      "--color-surface-link-hover": "rgb(24,51,53)",
+      "--color-surface-menu-item-hover": "rgba(24,51,53,0.3)",
+      "--color-surface-labels-primary": "rgba(24,51,53,0.5)",
+      "--color-border-primary-gray": "rgb(51,51,51)",
+      "--color-border-secondary-gray": "rgb(82,82,82)",
+      "--color-border-primary-green": "rgb(70,99,99)",
+      "--color-border-secondary-green": "rgb(33,61,62)",
+      "--color-border-tertiary-green": "rgba(70,99,99,0.5)",
+      "--color-border-nav": "rgb(24,51,53)",
+      "--color-border-cards-primary": "rgb(24,51,53)",
+      "--color-border-cards-primary-hover": "rgb(33,61,62)",
+      "--color-border-button-primary": "rgb(247,248,248)",
+      "--color-border-button-primary-hover": "rgb(221,231,231)",
+      "--color-border-button-secondary": "rgba(70,99,99,0.5)",
+      "--color-border-button-secondary-hover": "rgb(255,255,255)",
+      "--color-icon-primary": "rgb(70,99,99)",
+      "--color-icon-primary-hover": "rgb(169,188,188)",
+      "--color-icon-menu-icon-border": "rgb(70,99,99)",
+      "--color-icon-menu-icon-border-hover": "rgb(169,188,188)",
+      "--color-icon-menu-background-hover": "rgba(24,51,53,0.5)",
+      "--color-icon-menu-icon-stroke-hover": "rgb(255,255,255)",
+      "--color-icon-arrow-fill": "rgb(255,255,255)",
+      "--radius-1": ".1rem",
+      "--radius-2": ".2rem",
+      "--radius-3": ".3rem",
+      "--radius-4": ".4rem",
+      "--radius-6": ".6rem",
+      "--focus-ring-width": "1px",
+      "--focus-ring-offset": "2px",
+      "--color-focus-ring": "rgb(250,251,251)",
+      "--ease-out-quart": "cubic-bezier(.165, .84, .44, 1)",
+      "--animate-spotlight-mark-draw": "spotlight-mark-draw .9s cubic-bezier(.5, 0, .2, 1) 50ms backwards",
+      "--animate-memo-hero-sweep-ltr": "memo-hero-sweep-ltr 3.2s ease infinite",
+      "--animate-memo-hero-sweep-rtl": "memo-hero-sweep-rtl 3.2s ease infinite",
+      "--animate-header-fade-ground": "header-fade-ground linear both",
+      "--animate-banner-reveal": "banner-reveal 1.2s ease backwards",
+      "--animate-market-pulse": "market-pulse 2s ease-out infinite",
+      "--green-10": "rgb(250,251,251)",
+      "--green-10-50": "rgba(250,251,251,0.5)",
+      "--green-20": "rgb(247,248,248)",
+      "--green-20-50": "rgba(247,248,248,0.5)",
+      "--green-30": "rgb(238,243,243)",
+      "--green-30-50": "rgba(238,243,243,0.5)",
+      "--green-40": "rgb(221,231,231)",
+      "--green-40-50": "rgba(221,231,231,0.5)",
+      "--green-50": "rgb(169,188,188)",
+      "--green-50-50": "rgba(169,188,188,0.5)",
+      "--green-60": "rgb(94,132,132)",
+      "--green-60-50": "rgba(94,132,132,0.5)",
+      "--green-70": "rgb(70,99,99)",
+      "--green-70-50": "rgba(70,99,99,0.5)",
+      "--green-80": "rgb(33,61,62)",
+      "--green-80-50": "rgba(33,61,62,0.5)",
+      "--green-90": "rgb(24,51,53)",
+      "--green-90-50": "rgba(24,51,53,0.5)",
+      "--green-100": "rgb(17,29,27)",
+      "--green-100-90": "rgba(17,29,27,0.9)",
+      "--green-100-50": "rgba(17,29,27,0.5)",
+      "--gray-10": "rgb(255,255,255)",
+      "--gray-10-90": "rgba(255,255,255,0.9)",
+      "--gray-10-50": "rgba(255,255,255,0.5)",
+      "--gray-20": "rgb(240,240,240)",
+      "--gray-20-50": "rgba(240,240,240,0.5)",
+      "--gray-30": "rgb(224,224,224)",
+      "--gray-40": "rgb(204,204,204)",
+      "--gray-50": "rgb(171,171,171)",
+      "--gray-60": "rgb(136,136,136)",
+      "--gray-70": "rgb(82,82,82)",
+      "--gray-80": "rgb(51,51,51)",
+      "--gray-90": "rgb(34,34,34)",
+      "--gray-90-50": "rgba(34,34,34,0.5)",
+      "--gray-100": "rgb(8,8,8)",
+      "--gray-100-90": "rgba(8,8,8,0.9)",
+      "--gray-100-50": "rgba(8,8,8,0.5)",
+      "--color-graphic-quote-bg": "rgb(17,29,27)",
+      "--color-graphic-quote-grid": "rgb(169,188,188)",
+      "--color-graphic-quote-accent": "rgb(24,51,53)",
+      "--color-graphic-quote-card": "rgba(17,29,27,0.5)",
+      "--color-surface-background-primary": "rgb(17,29,27)",
+      "--color-surface-background-secondary": "rgba(17,29,27,0.9)",
+      "--color-surface-background-tertiary": "rgba(17,29,27,0.5)",
+      "--color-surface-background-graphic": "rgb(17,29,27)",
+      "--bg-primary": "rgb(17,29,27)",
+      "--bg-secondary": "rgb(17,29,27)",
+      "--bg-accent": "rgb(24,51,53)",
+      "--text-primary": "rgb(247,248,248)",
+      "--text-secondary": "rgb(169,188,188)",
+      "--text-inverse": "rgb(17,29,27)",
+      "--text-muted": "rgb(169,188,188)",
+      "--stroke-primary": "rgb(51,51,51)",
+      "--lightningcss-light": "",
+      "--lightningcss-dark": "initial"
+    }
+  },
+  "routes": [
+    {
+      "route": "/",
+      "title": "Moment · The AI Partner for Investment Management",
+      "h1": "The AI Partner forInvestment Management",
+      "template": "template.group",
+      "file": "src/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            48,
+            116
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "content.block",
+          "tag": "div",
+          "anchor": "pointer-events-none",
+          "lines": [
+            117,
+            209
+          ]
+        },
+        {
+          "idx": 2,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            210,
+            381
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/memo",
+      "title": "Memo · Moment",
+      "h1": "",
+      "template": "template.memo",
+      "file": "src/memo/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "content.block",
+          "tag": "div",
+          "anchor": "pointer-events-none",
+          "lines": [
+            132,
+            231
+          ]
+        },
+        {
+          "idx": 2,
+          "id": "content.section",
+          "tag": "section",
+          "anchor": "relative",
+          "lines": [
+            232,
+            265
+          ]
+        },
+        {
+          "idx": 3,
+          "id": "content.section",
+          "tag": "section",
+          "anchor": "w-full",
+          "lines": [
+            266,
+            296
+          ]
+        },
+        {
+          "idx": 4,
+          "id": "content.section",
+          "tag": "section",
+          "anchor": "w-full",
+          "lines": [
+            297,
+            337
+          ]
+        },
+        {
+          "idx": 5,
+          "id": "content.section",
+          "tag": "section",
+          "anchor": "w-full",
+          "lines": [
+            338,
+            410
+          ]
+        },
+        {
+          "idx": 6,
+          "id": "features.section",
+          "tag": "section",
+          "anchor": "w-full",
+          "lines": [
+            411,
+            439
+          ]
+        },
+        {
+          "idx": 7,
+          "id": "content.section",
+          "tag": "section",
+          "anchor": "w-full",
+          "lines": [
+            440,
+            491
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/careers",
+      "title": "Careers · Moment",
+      "h1": "Build the future of investment management with us",
+      "template": "template.group",
+      "file": "src/careers/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "content.block",
+          "tag": "div",
+          "anchor": "pointer-events-none",
+          "lines": [
+            132,
+            228
+          ]
+        },
+        {
+          "idx": 2,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            229,
+            1740
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/series-c",
+      "title": "Series C · Moment",
+      "h1": "Moment Raises $78 Million as Largest Wealth Firms Standardize on its AI Operating System for Investment Management",
+      "template": "template.group",
+      "file": "src/series-c/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "content.block",
+          "tag": "div",
+          "anchor": "pointer-events-none",
+          "lines": [
+            132,
+            228
+          ]
+        },
+        {
+          "idx": 2,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            229,
+            1653
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+      "title": "Agent Engineer · Moment",
+      "h1": "Agent Engineer",
+      "template": "template.careers",
+      "file": "src/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            132,
+            364
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+      "title": "Distributed Systems Engineer · Moment",
+      "h1": "Distributed Systems Engineer",
+      "template": "template.careers",
+      "file": "src/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            132,
+            358
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+      "title": "Front End / Full Stack Engineer · Moment",
+      "h1": "Front End / Full Stack Engineer",
+      "template": "template.careers",
+      "file": "src/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            132,
+            370
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+      "title": "Head of Security · Moment",
+      "h1": "Head of Security",
+      "template": "template.careers",
+      "file": "src/careers/f679da84-db6f-4a08-801b-dd63508d6310/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            132,
+            430
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+      "title": "Platform Engineer · Moment",
+      "h1": "Platform Engineer",
+      "template": "template.careers",
+      "file": "src/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            132,
+            383
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+      "title": "Security Engineer · Moment",
+      "h1": "Security Engineer",
+      "template": "template.careers",
+      "file": "src/careers/30f72628-dd96-4fb2-b998-ab310e90ad82/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            132,
+            369
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
+      "title": "Design Engineer · Moment",
+      "h1": "Design Engineer",
+      "template": "template.careers",
+      "file": "src/careers/1db991e4-9480-4847-b300-c430cc057d56/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            132,
+            346
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+      "title": "Product Designer · Moment",
+      "h1": "Product Designer",
+      "template": "template.careers",
+      "file": "src/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            132,
+            377
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+      "title": "Marketing Leader · Moment",
+      "h1": "Marketing Leader",
+      "template": "template.careers",
+      "file": "src/careers/9a3a451a-43bf-42cd-9c24-78e309c07104/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            132,
+            420
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+      "title": "Strategy & Ops Leader · Moment",
+      "h1": "Strategy & Ops Leader",
+      "template": "template.careers",
+      "file": "src/careers/707c9117-1b1e-4260-96b3-28f735f7d840/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            132,
+            381
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+      "title": "Deployment Strategist · Moment",
+      "h1": "Deployment Strategist",
+      "template": "template.careers",
+      "file": "src/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            132,
+            410
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
+      "title": "Technical Recruiter · Moment",
+      "h1": "Technical Recruiter",
+      "template": "template.careers",
+      "file": "src/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5/index.html",
+      "sections": [
+        {
+          "idx": 0,
+          "id": "shell.header",
+          "tag": "header",
+          "anchor": "pointer-events-none",
+          "lines": [
+            61,
+            131
+          ]
+        },
+        {
+          "idx": 1,
+          "id": "hero.mask-intersect",
+          "tag": "div",
+          "anchor": "[--edge-feather:24px]",
+          "lines": [
+            132,
+            402
+          ]
+        }
+      ]
+    }
+  ]
+}

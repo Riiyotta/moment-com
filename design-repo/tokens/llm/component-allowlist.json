@@ -1,0 +1,70 @@
+{
+  "version": "1",
+  "sections": [
+    "content.block",
+    "content.section",
+    "features.section",
+    "hero.mask-intersect",
+    "shell.header"
+  ],
+  "components": [
+    "align-middle",
+    "careerstestgraphpaper",
+    "contents",
+    "focus-ring",
+    "frosted-frame",
+    "group",
+    "italic",
+    "mask-intersect",
+    "rich-text",
+    "rich-text-highlight",
+    "rich-text-inline",
+    "richtext",
+    "seriescpage",
+    "subtitle-1",
+    "tabular-nums",
+    "title-3",
+    "title-4"
+  ],
+  "primitives": [
+    "button",
+    "canvas",
+    "heading",
+    "image",
+    "link",
+    "list",
+    "paragraph",
+    "svg"
+  ],
+  "nodeProperties": [
+    "type",
+    "content",
+    "motion"
+  ],
+  "contentFields": {
+    "content.block": [
+      "body",
+      "ctas"
+    ],
+    "content.section": [
+      "heading",
+      "body"
+    ],
+    "features.section": [
+      "heading",
+      "body"
+    ],
+    "hero.mask-intersect": [
+      "heading",
+      "subheading",
+      "body",
+      "ctas",
+      "items",
+      "images"
+    ],
+    "shell.header": [
+      "body",
+      "ctas"
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "$description": "Foundation typography tokens: the values observed on the site, ordered by usage. Not referenced directly by generators; semantic tokens reference these.",
+  "tokens": {
+    "fontFamily.01": {
+      "$type": "fontFamily",
+      "$value": "twkLausanne",
+      "usage": 1321
+    },
+    "fontFamily.02": {
+      "$type": "fontFamily",
+      "$value": "STIX Two Text",
+      "usage": 96
+    },
+    "fontFamily.03": {
+      "$type": "fontFamily",
+      "$value": "twkEverettMono",
+      "usage": 70
+    },
+    "fontFamily.04": {
+      "$type": "fontFamily",
+      "$value": "JetBrains Mono",
+      "usage": 16
+    },
+    "fontSize.10": {
+      "$type": "dimension",
+      "$value": "10px",
+      "usage": 16
+    },
+    "fontSize.12": {
+      "$type": "dimension",
+      "$value": "12px",
+      "usage": 86
+    },
+    "fontSize.14": {
+      "$type": "dimension",
+      "$value": "14px",
+      "usage": 254
+    },
+    "fontSize.16": {
+      "$type": "dimension",
+      "$value": "16px",
+      "usage": 1010
+    },
+    "fontSize.18": {
+      "$type": "dimension",
+      "$value": "18px",
+      "usage": 9
+    },
+    "fontSize.20": {
+      "$type": "dimension",
+      "$value": "20px",
+      "usage": 38
+    },
+    "fontSize.24": {
+      "$type": "dimension",
+      "$value": "24px",
+      "usage": 64
+    },
+    "fontSize.28": {
+      "$type": "dimension",
+      "$value": "28px",
+      "usage": 6
+    },
+    "fontSize.32": {
+      "$type": "dimension",
+      "$value": "32px",
+      "usage": 2
+    },
+    "fontSize.35": {
+      "$type": "dimension",
+      "$value": "35px",
+      "usage": 6
+    },
+    "fontSize.40": {
+      "$type": "dimension",
+      "$value": "40px",
+      "usage": 12
+    },
+    "fontWeight.350": {
+      "$type": "fontWeight",
+      "$value": "350",
+      "usage": 1145
+    },
+    "fontWeight.400": {
+      "$type": "fontWeight",
+      "$value": "400",
+      "usage": 283
+    },
+    "fontWeight.500": {
+      "$type": "fontWeight",
+      "$value": "500",
+      "usage": 60
+    },
+    "fontWeight.600": {
+      "$type": "fontWeight",
+      "$value": "600",
+      "usage": 4
+    },
+    "fontWeight.700": {
+      "$type": "fontWeight",
+      "$value": "700",
+      "usage": 11
+    },
+    "lineHeight.14": {
+      "$type": "dimension",
+      "$value": "14px",
+      "usage": 104
+    },
+    "lineHeight.15": {
+      "$type": "dimension",
+      "$value": "15px",
+      "usage": 16
+    },
+    "lineHeight.16": {
+      "$type": "dimension",
+      "$value": "16px",
+      "usage": 98
+    },
+    "lineHeight.20": {
+      "$type": "dimension",
+      "$value": "20px",
+      "usage": 220
+    },
+    "lineHeight.22_05": {
+      "$type": "dimension",
+      "$value": "22.05px",
+      "usage": 9
+    },
+    "lineHeight.24": {
+      "$type": "dimension",
+      "$value": "24px",
+      "usage": 109
+    },
+    "lineHeight.24_5": {
+      "$type": "dimension",
+      "$value": "24.5px",
+      "usage": 9
+    },
+    "lineHeight.26": {
+      "$type": "dimension",
+      "$value": "26px",
+      "usage": 819
+    },
+    "lineHeight.28": {
+      "$type": "dimension",
+      "$value": "28px",
+      "usage": 25
+    },
+    "lineHeight.29_4": {
+      "$type": "dimension",
+      "$value": "29.4px",
+      "usage": 6
+    },
+    "lineHeight.32": {
+      "$type": "dimension",
+      "$value": "32px",
+      "usage": 68
+    },
+    "lineHeight.36_75": {
+      "$type": "dimension",
+      "$value": "36.75px",
+      "usage": 6
+    },
+    "lineHeight.40": {
+      "$type": "dimension",
+      "$value": "40px",
+      "usage": 2
+    },
+    "lineHeight.48": {
+      "$type": "dimension",
+      "$value": "48px",
+      "usage": 12
+    }
+  }
+}

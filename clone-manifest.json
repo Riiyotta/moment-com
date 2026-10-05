@@ -1,0 +1,466 @@
+{
+  "generatedBy": "website-builder lib/clone.mjs",
+  "source": "https://moment.com/",
+  "routes": [
+    {
+      "route": "/",
+      "page": "src/pages/HomePage.jsx",
+      "sections": 3
+    },
+    {
+      "route": "/memo",
+      "page": "src/pages/Memo.jsx",
+      "sections": 8
+    },
+    {
+      "route": "/careers",
+      "page": "src/pages/Careers.jsx",
+      "sections": 3
+    },
+    {
+      "route": "/series-c",
+      "page": "src/pages/SeriesC.jsx",
+      "sections": 3
+    },
+    {
+      "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+      "page": "src/pages/CareersF8e990cd451747bb.jsx",
+      "sections": 2
+    },
+    {
+      "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+      "page": "src/pages/CareersB13c29c2Fe724055.jsx",
+      "sections": 2
+    },
+    {
+      "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+      "page": "src/pages/Careers9e9306c1987b4609.jsx",
+      "sections": 2
+    },
+    {
+      "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+      "page": "src/pages/CareersF679da84Db6f4a08.jsx",
+      "sections": 2
+    },
+    {
+      "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+      "page": "src/pages/Careers93c2d5e10a4042bc.jsx",
+      "sections": 2
+    },
+    {
+      "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+      "page": "src/pages/Careers30f72628Dd964fb2.jsx",
+      "sections": 2
+    },
+    {
+      "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
+      "page": "src/pages/Careers1db991e494804847.jsx",
+      "sections": 2
+    },
+    {
+      "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+      "page": "src/pages/Careers5fb2d42b95424d54.jsx",
+      "sections": 2
+    },
+    {
+      "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+      "page": "src/pages/Careers9a3a451a43bf42cd.jsx",
+      "sections": 2
+    },
+    {
+      "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+      "page": "src/pages/Careers707c91171b1e4260.jsx",
+      "sections": 2
+    },
+    {
+      "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+      "page": "src/pages/Careers752a96ec5ad1456e.jsx",
+      "sections": 2
+    },
+    {
+      "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
+      "page": "src/pages/CareersEd7b7afdC6c14de5.jsx",
+      "sections": 2
+    }
+  ],
+  "components": [
+    {
+      "component": "PointerEventsNone",
+      "file": "src/sections/PointerEventsNone.jsx",
+      "usedBy": [
+        {
+          "route": "/",
+          "idx": 0
+        }
+      ]
+    },
+    {
+      "component": "PointerEventsNone2",
+      "file": "src/sections/PointerEventsNone2.jsx",
+      "usedBy": [
+        {
+          "route": "/",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect",
+      "file": "src/sections/MaskIntersect.jsx",
+      "usedBy": [
+        {
+          "route": "/",
+          "idx": 2
+        }
+      ]
+    },
+    {
+      "component": "PointerEventsNone3",
+      "file": "src/sections/PointerEventsNone3.jsx",
+      "usedBy": [
+        {
+          "route": "/memo",
+          "idx": 0
+        }
+      ]
+    },
+    {
+      "component": "PointerEventsNone4",
+      "file": "src/sections/PointerEventsNone4.jsx",
+      "usedBy": [
+        {
+          "route": "/memo",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "Section",
+      "file": "src/sections/Section.jsx",
+      "usedBy": [
+        {
+          "route": "/memo",
+          "idx": 2
+        }
+      ]
+    },
+    {
+      "component": "WFull",
+      "file": "src/sections/WFull.jsx",
+      "usedBy": [
+        {
+          "route": "/memo",
+          "idx": 3
+        }
+      ]
+    },
+    {
+      "component": "WFull2",
+      "file": "src/sections/WFull2.jsx",
+      "usedBy": [
+        {
+          "route": "/memo",
+          "idx": 4
+        }
+      ]
+    },
+    {
+      "component": "WFull3",
+      "file": "src/sections/WFull3.jsx",
+      "usedBy": [
+        {
+          "route": "/memo",
+          "idx": 5
+        }
+      ]
+    },
+    {
+      "component": "WFull4",
+      "file": "src/sections/WFull4.jsx",
+      "usedBy": [
+        {
+          "route": "/memo",
+          "idx": 6
+        }
+      ]
+    },
+    {
+      "component": "WFull5",
+      "file": "src/sections/WFull5.jsx",
+      "usedBy": [
+        {
+          "route": "/memo",
+          "idx": 7
+        }
+      ]
+    },
+    {
+      "component": "PointerEventsNone5",
+      "file": "src/sections/PointerEventsNone5.jsx",
+      "usedBy": [
+        {
+          "route": "/careers",
+          "idx": 0
+        }
+      ]
+    },
+    {
+      "component": "PointerEventsNone6",
+      "file": "src/sections/PointerEventsNone6.jsx",
+      "usedBy": [
+        {
+          "route": "/careers",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect2",
+      "file": "src/sections/MaskIntersect2.jsx",
+      "usedBy": [
+        {
+          "route": "/careers",
+          "idx": 2
+        }
+      ]
+    },
+    {
+      "component": "PointerEventsNone7",
+      "file": "src/sections/PointerEventsNone7.jsx",
+      "usedBy": [
+        {
+          "route": "/series-c",
+          "idx": 0
+        }
+      ]
+    },
+    {
+      "component": "PointerEventsNone8",
+      "file": "src/sections/PointerEventsNone8.jsx",
+      "usedBy": [
+        {
+          "route": "/series-c",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect3",
+      "file": "src/sections/MaskIntersect3.jsx",
+      "usedBy": [
+        {
+          "route": "/series-c",
+          "idx": 2
+        }
+      ]
+    },
+    {
+      "component": "PointerEventsNone9",
+      "file": "src/sections/PointerEventsNone9.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+          "idx": 0
+        },
+        {
+          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+          "idx": 0
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect4",
+      "file": "src/sections/MaskIntersect4.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect5",
+      "file": "src/sections/MaskIntersect5.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "PointerEventsNone10",
+      "file": "src/sections/PointerEventsNone10.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+          "idx": 0
+        },
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 0
+        },
+        {
+          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+          "idx": 0
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect6",
+      "file": "src/sections/MaskIntersect6.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect7",
+      "file": "src/sections/MaskIntersect7.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect8",
+      "file": "src/sections/MaskIntersect8.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "PointerEventsNone11",
+      "file": "src/sections/PointerEventsNone11.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+          "idx": 0
+        },
+        {
+          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
+          "idx": 0
+        },
+        {
+          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+          "idx": 0
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect9",
+      "file": "src/sections/MaskIntersect9.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect10",
+      "file": "src/sections/MaskIntersect10.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect11",
+      "file": "src/sections/MaskIntersect11.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "PointerEventsNone12",
+      "file": "src/sections/PointerEventsNone12.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+          "idx": 0
+        },
+        {
+          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+          "idx": 0
+        },
+        {
+          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+          "idx": 0
+        },
+        {
+          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
+          "idx": 0
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect12",
+      "file": "src/sections/MaskIntersect12.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect13",
+      "file": "src/sections/MaskIntersect13.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect14",
+      "file": "src/sections/MaskIntersect14.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+          "idx": 1
+        }
+      ]
+    },
+    {
+      "component": "MaskIntersect15",
+      "file": "src/sections/MaskIntersect15.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
+          "idx": 1
+        }
+      ]
+    }
+  ],
+  "stills": [
+    {
+      "route": "/",
+      "key": "still0",
+      "w": 1440,
+      "h": 900,
+      "file": "/stills/31803eb7.png",
+      "lit": 0.131
+    }
+  ],
+  "rive": [],
+  "dropped": [],
+  "motionNotReproduced": {
+    "pinnedSections": [],
+    "libraries": []
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "features.section",
+  "category": "FEATURES",
+  "label": "Section",
+  "tag": "section",
+  "purpose": "Explains what the product does and why it matters. Example headline: \"THE END OF TOOLS\".",
+  "purposeIsInferred": true,
+  "nameSource": "heading",
+  "evidence": {
+    "level": "measured",
+    "instances": 1,
+    "routes": 1,
+    "measuredFrom": [
+      "src/memo/index.html:411-439"
+    ]
+  },
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "heading": {
+        "type": "string",
+        "required": true,
+        "maxWords": 4
+      },
+      "body": {
+        "type": "string[]",
+        "required": true,
+        "maxItems": 5,
+        "maxWords": 40
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-animation",
+      "css-transition",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 460,
+      "columns": 1
+    },
+    "mobile": {
+      "heightPx": 512,
+      "columns": 1,
+      "hiddenShare": 0
+    },
+    "changes": []
+  },
+  "assetRoles": [],
+  "implementedBy": "src/sections/Section.jsx"
+}

@@ -1,0 +1,57 @@
+{
+  "repositoryId": "moment-com-design-repo",
+  "site": "moment-com",
+  "status": "design-review-pending",
+  "productionApproved": false,
+  "repositoryVersion": "0.1.0",
+  "pageSpecVersion": "0.1.0",
+  "allowlistVersion": "1",
+  "versionFieldNote": "allowlistVersion is machine-checked (verify_all.py fails if it differs from tokens/llm/component-allowlist.json). repositoryVersion and pageSpecVersion are documentation-only markers; pageSpecVersion is additionally pinned as a const in the schema.",
+  "defaultTheme": "light",
+  "schemaValidatedThemes": [
+    "light"
+  ],
+  "theme": {
+    "id": "light",
+    "file": "tokens/themes/light.json"
+  },
+  "sourceProject": {
+    "url": "https://moment.com/",
+    "framework": "React+Next.js",
+    "scrapedAt": "2026-10-05T10:47:03Z"
+  },
+  "generatedBy": "website-builder (heuristic extraction; see README)",
+  "counts": {
+    "sections": 5,
+    "templates": 3,
+    "routes": 16,
+    "primitives": 8,
+    "components": 17,
+    "assets": 32,
+    "tokens": {
+      "foundation": 107,
+      "semantic": 18,
+      "component": 16,
+      "layout": 9
+    },
+    "themes": 1,
+    "rules": 7
+  },
+  "entryPoints": {
+    "tokenCatalog": "tokens/llm/token-catalog.json",
+    "tokenPolicy": "tokens/llm/token-policy.json",
+    "componentAllowlist": "tokens/llm/component-allowlist.json",
+    "compatibilityGraph": "compatibility/graph.json",
+    "assetContract": "assets/asset-roles.json",
+    "motionContract": "motion/motion-contract.json",
+    "templates": "templates/templates.json",
+    "pagespecSchema": "schema/pagespec.schema.json",
+    "examplePageSpec": "schema/example.pagespec.json",
+    "semanticValidate": "schema/semantic_validate.py",
+    "adversarialSuite": "schema/tests/adversarial_test.py",
+    "admission": "extraction/verify_all.py",
+    "driftProof": "extraction/prove_drift.py",
+    "measuredValues": "extraction/measured-values.json",
+    "defaultTheme": "tokens/themes/light.json"
+  }
+}

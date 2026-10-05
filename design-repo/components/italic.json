@@ -1,0 +1,10 @@
+{
+  "id": "italic",
+  "name": "italic",
+  "occurrences": 4,
+  "composedOf": [],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/memo"
+  }
+}

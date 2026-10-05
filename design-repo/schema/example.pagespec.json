@@ -1,0 +1,103 @@
+{
+  "pageSpecVersion": "0.1.0",
+  "template": "template.careers",
+  "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+  "nodes": [
+    {
+      "type": "shell.header",
+      "content": {
+        "body": [
+          "Market closed",
+          "6:44 AM ET"
+        ],
+        "ctas": [
+          {
+            "label": "Open menu"
+          },
+          {
+            "label": "Moment home",
+            "href": "/"
+          },
+          {
+            "label": "Memo",
+            "href": "/memo"
+          },
+          {
+            "label": "Careers",
+            "href": "/careers"
+          },
+          {
+            "label": "Contact"
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "css-transition",
+        "reducedMotionFallback": "disable-animation"
+      }
+    },
+    {
+      "type": "hero.mask-intersect",
+      "content": {
+        "heading": "Agent Engineer",
+        "body": [
+          "CAREERS / ENGINEERING",
+          "The infrastructure managing $300 trillion in assets was built in the 90s. Now, all of it is up for grabs. The winner of the AI era of investment management will be a $100B+ company. We intend to be that company.",
+          "To get there, we're assembling the most talent‑dense startup in New York. We hire people who are 1) exceptional, 2) allergic to anything that's not exceptional. We also have no tolerance for brilliant jerks.",
+          "We run lean by design. We work with a select group of the largest financial insti- tutions in the world, go incredibly deep with each, and sit in the flow of trillions of dollars. We hire fewer people, ask each to own the outcome, and pay on impact ‑ not tenure or experience.",
+          "Moment is not for everyone. The standards are unreasonably high. The pace is intense. And there is no playbook.",
+          "In return: the best work of your career, building a generational company.",
+          "Moment is the AI operating system for investment management, built for the world's largest wealth firms and fintechs. Moment works with firms managing more than $10 trillion in client assets and is backed by Index, a16z, and Lightspeed. Moment was founded by former quants from Citadel and Jane Street and is based in NYC.",
+          "As we enter a new era, we're hiring an Agent Engineer to take new AI products from 0 to 1 for the largest financial institutions in the world.",
+          "AI is reshaping financial software faster than any technology shift in a genera- tion, and the leading institutions of the world are looking to Moment to build what comes next. The agents we ship will sit at the center of how billions of dollars get analyzed, managed, and moved ‑which means they need to be more than impres- sive demos. They need to be evaluated rigorously and orchestrated reliably.",
+          "As an Agent Engineer at Moment, you will architect and ship AI products that solve real problems for real users. You'll work across the full agent stack ‑ evaluation and observability, multi‑agent orchestration, durable graph‑based workflow exe- cution, and context engineering. Moment will be a generational company, and the products you ship will define what AI looks like in this industry.",
+          "You'll work closely with leadership, engineering, and customers to deliver soft- ware that is as ambitious and distinctive as the company itself. This is a highly autonomous, highly collaborative role for a 0‑to‑1 builder. You can navigate dif- ferent levels of abstraction; from prompt‑level craft to system‑level architecture ‑ and clearly articulate, lead, and execute work that spans research, engineer- ing, and product.",
+          "Experience with AI development techniques & frameworks:",
+          "Evaluation and Observability",
+          "Multi agent Orchestration",
+          "Durable graph‑based workflow execution",
+          "Context Engineering",
+          "Experience working with distributed systems.",
+          "Are familiar with Go, Python, or Typescript.",
+          "Are an ex‑founder or an early engineer at a startup.",
+          "Base salary: $200K‑$400K",
+          "Equity: aggressive initial grant + annual performance‑based bonuses",
+          "Our beautiful West Village Office with a terrace / 5x a week in office",
+          "Free lunch and dinner.",
+          "$150 monthly gym stipend.",
+          "Health, dental, and vision coverage.",
+          "Interested in this role?"
+        ],
+        "ctas": [
+          {
+            "label": "Apply"
+          },
+          {
+            "label": "Apply for this position"
+          }
+        ],
+        "items": [
+          {
+            "title": "Build the future of investment management with us"
+          },
+          {
+            "title": "About Moment"
+          },
+          {
+            "title": "The Role"
+          },
+          {
+            "title": "You’re a good fit if you have"
+          },
+          {
+            "title": "Compensation & Benefits"
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "css-transition",
+        "reducedMotionFallback": "disable-animation"
+      }
+    }
+  ]
+}

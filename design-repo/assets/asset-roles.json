@@ -1,0 +1,375 @@
+{
+  "version": "0.1.0",
+  "sourceIsLiveSite": true,
+  "defaultPolicy": "Assets are evidence from a real, live site. Do not reuse without licence review; never reproduce real logos, real people's photos or proprietary content.",
+  "roles": {
+    "logo": {
+      "generationPolicy": "must-reuse-exact",
+      "pinned": true,
+      "description": "The site's own brand mark.",
+      "licensing": "Use the exact supplied file. Never redraw, recolour, or invent a variant.",
+      "observed": 0
+    },
+    "customer-logo": {
+      "generationPolicy": "must-not-fabricate",
+      "pinned": true,
+      "description": "Third-party company logos shown as social proof.",
+      "licensing": "Real trademarks. A generator must never create or reproduce a real company's logo; use an explicit placeholder.",
+      "observed": 0
+    },
+    "avatar": {
+      "generationPolicy": "must-not-fabricate",
+      "pinned": true,
+      "description": "Photos of real people (customers, team, authors).",
+      "licensing": "Real people's likeness. Never generate or reuse a real person's photo; use a neutral placeholder.",
+      "observed": 0
+    },
+    "icon": {
+      "generationPolicy": "may-generate-new",
+      "pinned": false,
+      "description": "Small glyphs (<=48px) used as UI or feature markers.",
+      "licensing": "Generic glyphs may be generated; do not copy a proprietary icon set verbatim.",
+      "observed": 7
+    },
+    "illustration": {
+      "generationPolicy": "may-generate-new",
+      "pinned": false,
+      "description": "Large vector artwork.",
+      "licensing": "May be regenerated in the same style; do not reproduce the original artwork.",
+      "observed": 13
+    },
+    "background": {
+      "generationPolicy": "may-generate-new",
+      "pinned": false,
+      "description": "Full-bleed or decorative backgrounds.",
+      "licensing": "May be regenerated; do not reuse the original file.",
+      "observed": 0
+    },
+    "hero-image": {
+      "generationPolicy": "may-generate-new",
+      "pinned": false,
+      "description": "Large image in the page-opening block.",
+      "licensing": "May be regenerated; do not reproduce real product or customer content.",
+      "observed": 0
+    },
+    "content-image": {
+      "generationPolicy": "may-generate-new",
+      "pinned": false,
+      "description": "Other in-page imagery (screenshots, photos, cards).",
+      "licensing": "May be regenerated; never include real customer data, names or proprietary UI.",
+      "observed": 3
+    },
+    "animation": {
+      "generationPolicy": "must-reuse-exact",
+      "pinned": false,
+      "description": "Rive / Lottie animation files that drive canvas animations.",
+      "licensing": "The site's own animation assets. Reuse only the supplied file; never recreate or imitate it for a different brand.",
+      "observed": 0
+    },
+    "video": {
+      "generationPolicy": "must-reuse-exact",
+      "pinned": false,
+      "description": "Video files or embeds.",
+      "licensing": "Reuse only the supplied file; never fabricate footage of real products or people.",
+      "observed": 0
+    },
+    "font": {
+      "generationPolicy": "must-reuse-exact",
+      "pinned": true,
+      "description": "Web font files.",
+      "licensing": "Fonts carry their own licence; reuse only as shipped and review the licence before redistribution.",
+      "observed": 9
+    },
+    "live-embed": {
+      "generationPolicy": "must-not-reuse-live-endpoint",
+      "pinned": true,
+      "description": "Live third-party iframes and form endpoints.",
+      "licensing": "Never point generated pages at the original site's live endpoints (forms, widgets).",
+      "observed": 0
+    },
+    "founder-contact-email": {
+      "generationPolicy": "must-not-reuse-live-endpoint",
+      "pinned": true,
+      "description": "A real mailto contact address (e.g. a founder or support email) exposed in page copy.",
+      "licensing": "A real, live inbox. Generated pages must not reuse the original address; use a placeholder.",
+      "observed": 0
+    }
+  },
+  "generationPolicies": [
+    "may-generate-new",
+    "must-reuse-exact",
+    "must-not-fabricate",
+    "must-not-reuse-live-endpoint"
+  ],
+  "assets": [
+    {
+      "path": "og-v2.png",
+      "bytes": 373747,
+      "role": "content-image",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "graphics/about/hero-mobile-right.svg",
+      "bytes": 106778,
+      "role": "illustration",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "graphics/about/hero-mobile-left.svg",
+      "bytes": 88762,
+      "role": "illustration",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "graphics/about/hero-tablet-left.svg",
+      "bytes": 75953,
+      "role": "illustration",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "graphics/about/hero-tablet-right.svg",
+      "bytes": 75227,
+      "role": "illustration",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "graphics/about/hero-desktop-left.svg",
+      "bytes": 56735,
+      "role": "illustration",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "graphics/about/hero-desktop-right.svg",
+      "bytes": 55957,
+      "role": "illustration",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/TWKEverettMono_Italic.p.2n7bg09r6ywvp.woff2",
+      "bytes": 39300,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/TWKEverettMono_Regular.p.17bazm5lg-2gr.woff2",
+      "bytes": 37396,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/051742360c26797e-s.p.1wmoa0e_blxrz.woff2",
+      "bytes": 31340,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/a1c7a484c510d19c-s.p.0wluu3xg-hx03.woff2",
+      "bytes": 31016,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/TWKLausanne_350Italic-s.p.17feu_-ukajth.woff2",
+      "bytes": 30520,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/TWKLausanne_400Italic-s.p.2-omsyi6yzr5y.woff2",
+      "bytes": 30488,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/TWKLausanne_400-s.p.30x2d1w128kct.woff2",
+      "bytes": 29092,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/TWKLausanne_350-s.p.1xq_9bwn--t9r.woff2",
+      "bytes": 28988,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/62c2ceb5e93c1826-s.p.03874znv80-ea.woff2",
+      "bytes": 28448,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_ext/cdn.sanity.io/images/jsu06cwb/production/6e0a205c1dce67a42c8d9c2bb4c7e4a82766e431-167x19__e4f09a51.svg",
+      "bytes": 16755,
+      "role": "illustration",
+      "evidence": {
+        "route": "/",
+        "section": "hero.mask-intersect",
+        "rendered": "152x17"
+      }
+    },
+    {
+      "path": "_ext/cdn.sanity.io/images/jsu06cwb/production/6e0a205c1dce67a42c8d9c2bb4c7e4a82766e431-167x19.svg",
+      "bytes": 16755,
+      "role": "illustration",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "favicon__1c96020f.ico",
+      "bytes": 15086,
+      "role": "content-image",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "_ext/cdn.sanity.io/images/jsu06cwb/production/072a42483575d6d25eeab2098209b56341191e55-114x21__e4f09a51.svg",
+      "bytes": 12651,
+      "role": "illustration",
+      "evidence": {
+        "route": "/",
+        "section": "hero.mask-intersect",
+        "rendered": "120x22"
+      }
+    },
+    {
+      "path": "_ext/cdn.sanity.io/images/jsu06cwb/production/072a42483575d6d25eeab2098209b56341191e55-114x21.svg",
+      "bytes": 12651,
+      "role": "icon",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "_ext/cdn.sanity.io/images/jsu06cwb/production/84fe0c88bfbd0f6a259755ec279a39aab7b3c7e7-107x18__e4f09a51.svg",
+      "bytes": 6504,
+      "role": "illustration",
+      "evidence": {
+        "route": "/",
+        "section": "hero.mask-intersect",
+        "rendered": "104x17"
+      }
+    },
+    {
+      "path": "_ext/cdn.sanity.io/images/jsu06cwb/production/84fe0c88bfbd0f6a259755ec279a39aab7b3c7e7-107x18.svg",
+      "bytes": 6504,
+      "role": "icon",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "_ext/cdn.sanity.io/images/jsu06cwb/production/0267a87663c0d64389c763ae369c01e115412eed-131x16__e4f09a51.svg",
+      "bytes": 5966,
+      "role": "illustration",
+      "evidence": {
+        "route": "/",
+        "section": "hero.mask-intersect",
+        "rendered": "128x16"
+      }
+    },
+    {
+      "path": "_ext/cdn.sanity.io/images/jsu06cwb/production/0267a87663c0d64389c763ae369c01e115412eed-131x16.svg",
+      "bytes": 5966,
+      "role": "icon",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "_ext/cdn.sanity.io/images/jsu06cwb/production/28af6c52377bbbb4489aa32433e6a77c440947cd-74x21__e4f09a51.svg",
+      "bytes": 2418,
+      "role": "illustration",
+      "evidence": {
+        "route": "/",
+        "section": "hero.mask-intersect",
+        "rendered": "89x25"
+      }
+    },
+    {
+      "path": "_ext/cdn.sanity.io/images/jsu06cwb/production/28af6c52377bbbb4489aa32433e6a77c440947cd-74x21.svg",
+      "bytes": 2418,
+      "role": "icon",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "_ext/cdn.sanity.io/images/jsu06cwb/production/c3b8b03f86989bd3b97ceda2adbe1bfa14148c9e-58x16__e4f09a51.svg",
+      "bytes": 2178,
+      "role": "illustration",
+      "evidence": {
+        "route": "/",
+        "section": "hero.mask-intersect",
+        "rendered": "72x20"
+      }
+    },
+    {
+      "path": "_ext/cdn.sanity.io/images/jsu06cwb/production/c3b8b03f86989bd3b97ceda2adbe1bfa14148c9e-58x16.svg",
+      "bytes": 2178,
+      "role": "icon",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "apple-icon.png",
+      "bytes": 1317,
+      "role": "content-image",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "icon__91da6ba0.svg",
+      "bytes": 836,
+      "role": "icon",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "icon.svg",
+      "bytes": 836,
+      "role": "icon",
+      "evidence": {
+        "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    }
+  ],
+  "embeds": []
+}

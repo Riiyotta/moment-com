@@ -1,0 +1,213 @@
+{
+  "gate": 0.8,
+  "average": 0.742,
+  "rows": [
+    {
+      "route": "/",
+      "reference": "original crawl screenshot",
+      "sections": 3,
+      "compared": 3,
+      "sectionsInClone": 3,
+      "mirrorPageHeight": 900,
+      "clonePageHeight": 900,
+      "score": 0.97,
+      "below": [],
+      "secRows": [
+        {
+          "idx": 0,
+          "component": "PointerEventsNone",
+          "mirrorHeight": 80,
+          "cloneHeight": 80,
+          "pixelMatch": 0.977,
+          "score": 0.977
+        },
+        {
+          "idx": 1,
+          "component": "PointerEventsNone2",
+          "mirrorHeight": 68,
+          "cloneHeight": 68,
+          "pixelMatch": 0.956,
+          "score": 0.956
+        },
+        {
+          "idx": 2,
+          "component": "MaskIntersect",
+          "mirrorHeight": 900,
+          "cloneHeight": 900,
+          "pixelMatch": 0.971,
+          "score": 0.971
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "/careers",
+      "reference": "original crawl screenshot",
+      "sections": 3,
+      "compared": 3,
+      "sectionsInClone": 3,
+      "mirrorPageHeight": 2322,
+      "clonePageHeight": 3657,
+      "score": 0.63,
+      "below": [
+        "2:MaskIntersect2 61%"
+      ],
+      "secRows": [
+        {
+          "idx": 0,
+          "component": "PointerEventsNone5",
+          "mirrorHeight": 80,
+          "cloneHeight": 80,
+          "pixelMatch": 0.947,
+          "score": 0.947
+        },
+        {
+          "idx": 1,
+          "component": "PointerEventsNone6",
+          "mirrorHeight": 68,
+          "cloneHeight": 68,
+          "pixelMatch": 0.956,
+          "score": 0.956
+        },
+        {
+          "idx": 2,
+          "component": "MaskIntersect2",
+          "mirrorHeight": 2322,
+          "cloneHeight": 3657,
+          "pixelMatch": 0.961,
+          "score": 0.61
+        }
+      ],
+      "pass": false
+    },
+    {
+      "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+      "reference": "original crawl screenshot",
+      "sections": 2,
+      "compared": 2,
+      "sectionsInClone": 2,
+      "mirrorPageHeight": 2667,
+      "clonePageHeight": 3435,
+      "score": 0.709,
+      "below": [
+        "1:MaskIntersect5 70%"
+      ],
+      "secRows": [
+        {
+          "idx": 0,
+          "component": "PointerEventsNone9",
+          "mirrorHeight": 80,
+          "cloneHeight": 80,
+          "pixelMatch": 0.963,
+          "score": 0.963
+        },
+        {
+          "idx": 1,
+          "component": "MaskIntersect5",
+          "mirrorHeight": 2667,
+          "cloneHeight": 3435,
+          "pixelMatch": 0.903,
+          "score": 0.701
+        }
+      ],
+      "pass": false
+    },
+    {
+      "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+      "reference": "original crawl screenshot",
+      "sections": 2,
+      "compared": 2,
+      "sectionsInClone": 2,
+      "mirrorPageHeight": 2899,
+      "clonePageHeight": 3667,
+      "score": 0.716,
+      "below": [
+        "1:MaskIntersect8 71%"
+      ],
+      "secRows": [
+        {
+          "idx": 0,
+          "component": "PointerEventsNone10",
+          "mirrorHeight": 80,
+          "cloneHeight": 80,
+          "pixelMatch": 1,
+          "score": 1
+        },
+        {
+          "idx": 1,
+          "component": "MaskIntersect8",
+          "mirrorHeight": 2899,
+          "cloneHeight": 3667,
+          "pixelMatch": 0.896,
+          "score": 0.708
+        }
+      ],
+      "pass": false
+    },
+    {
+      "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
+      "reference": "original crawl screenshot",
+      "sections": 2,
+      "compared": 2,
+      "sectionsInClone": 2,
+      "mirrorPageHeight": 2547,
+      "clonePageHeight": 3315,
+      "score": 0.706,
+      "below": [
+        "1:MaskIntersect10 70%"
+      ],
+      "secRows": [
+        {
+          "idx": 0,
+          "component": "PointerEventsNone11",
+          "mirrorHeight": 80,
+          "cloneHeight": 80,
+          "pixelMatch": 1,
+          "score": 1
+        },
+        {
+          "idx": 1,
+          "component": "MaskIntersect10",
+          "mirrorHeight": 2547,
+          "cloneHeight": 3315,
+          "pixelMatch": 0.907,
+          "score": 0.697
+        }
+      ],
+      "pass": false
+    },
+    {
+      "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+      "reference": "original crawl screenshot",
+      "sections": 2,
+      "compared": 2,
+      "sectionsInClone": 2,
+      "mirrorPageHeight": 2761,
+      "clonePageHeight": 3529,
+      "score": 0.722,
+      "below": [
+        "1:MaskIntersect13 72%"
+      ],
+      "secRows": [
+        {
+          "idx": 0,
+          "component": "PointerEventsNone12",
+          "mirrorHeight": 80,
+          "cloneHeight": 80,
+          "pixelMatch": 0.956,
+          "score": 0.956
+        },
+        {
+          "idx": 1,
+          "component": "MaskIntersect13",
+          "mirrorHeight": 2761,
+          "cloneHeight": 3529,
+          "pixelMatch": 0.914,
+          "score": 0.715
+        }
+      ],
+      "pass": false
+    }
+  ],
+  "pass": false
+}

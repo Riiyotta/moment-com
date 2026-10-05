@@ -1,0 +1,75 @@
+{
+  "$description": "Foundation motion tokens: the values observed on the site, ordered by usage. Not referenced directly by generators; semantic tokens reference these.",
+  "tokens": {
+    "duration.200ms": {
+      "$type": "duration",
+      "$value": "0.2s",
+      "usage": 1700
+    },
+    "duration.650ms": {
+      "$type": "duration",
+      "$value": "0.65s",
+      "usage": 104
+    },
+    "duration.150ms": {
+      "$type": "duration",
+      "$value": "0.15s",
+      "usage": 30
+    },
+    "duration.400ms": {
+      "$type": "duration",
+      "$value": "0.4s",
+      "usage": 16
+    },
+    "duration.NaNms": {
+      "$type": "duration",
+      "$value": "auto",
+      "usage": 16
+    },
+    "duration.1680ms": {
+      "$type": "duration",
+      "$value": "1.68s",
+      "usage": 14
+    },
+    "duration.1620ms": {
+      "$type": "duration",
+      "$value": "1.62s",
+      "usage": 8
+    },
+    "duration.3200ms": {
+      "$type": "duration",
+      "$value": "3.2s",
+      "usage": 8
+    },
+    "easing.01": {
+      "$type": "cubicBezier",
+      "$value": "ease",
+      "usage": 1562
+    },
+    "easing.02": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "usage": 158
+    },
+    "easing.03": {
+      "$type": "cubicBezier",
+      "$value": "linear",
+      "usage": 92
+    },
+    "easing.04": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "usage": 52
+    },
+    "easing.05": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+      "usage": 44
+    },
+    "easing.06": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(0.4, 0, 1, 1)",
+      "usage": 20
+    }
+  }
+}
