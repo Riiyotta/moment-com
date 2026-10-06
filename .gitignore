@@ -4,8 +4,4 @@ __pycache__/
 .DS_Store
 design-repo.zip
 qa/parity/*.png
-# evidence: recon/mirror/ (rendered-DOM snapshots + asset mirror) and recon/meta.json are committed so verify_all.py can check every citation and asset;
-# the crawl screenshots and preview video are not
-recon/images/
-recon/preview.webm
-recon/_video/
+recon/
