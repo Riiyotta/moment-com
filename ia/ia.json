@@ -62,7 +62,9 @@
         "shell.header",
         "content.block",
         "hero.mask-intersect"
-      ]
+      ],
+      "generationEligible": true,
+      "evidenceOnly": false
     },
     {
       "id": "template.memo",
@@ -81,7 +83,9 @@
         "content.section",
         "features.section",
         "content.section"
-      ]
+      ],
+      "generationEligible": true,
+      "evidenceOnly": false
     },
     {
       "id": "template.careers",
@@ -105,7 +109,9 @@
       "sections": [
         "shell.header",
         "hero.mask-intersect"
-      ]
+      ],
+      "generationEligible": true,
+      "evidenceOnly": false
     }
   ]
 }
