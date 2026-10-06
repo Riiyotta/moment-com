@@ -1,0 +1,23 @@
+{
+  "version": "clone-v2",
+  "base": "https://moment.com/",
+  "pages": [
+    "https://moment.com/",
+    "https://moment.com/memo",
+    "https://moment.com/careers",
+    "https://moment.com/series-c",
+    "https://moment.com/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+    "https://moment.com/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+    "https://moment.com/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+    "https://moment.com/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+    "https://moment.com/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+    "https://moment.com/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+    "https://moment.com/careers/1db991e4-9480-4847-b300-c430cc057d56",
+    "https://moment.com/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+    "https://moment.com/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+    "https://moment.com/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+    "https://moment.com/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+    "https://moment.com/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5"
+  ],
+  "resources": 175
+}

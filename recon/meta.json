@@ -1,0 +1,11 @@
+{
+  "name": "Moment · The AI Partner for Investment Management",
+  "slug": "moment-com",
+  "source": "https://moment.com/",
+  "scrapedAt": "2026-10-06T08:16:10Z",
+  "routes": 16,
+  "unmodelledRoutes": [],
+  "framework": "React+Next.js",
+  "screenshots": 16,
+  "video": "preview.webm"
+}
