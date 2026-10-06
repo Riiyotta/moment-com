@@ -1,0 +1,14 @@
+{
+  "id": "hs-form-private",
+  "name": "hs-form-private",
+  "occurrences": 16,
+  "composedOf": [
+    "input",
+    "select",
+    "textarea"
+  ],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/"
+  }
+}

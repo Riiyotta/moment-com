@@ -1,0 +1,12 @@
+{
+  "id": "hs-submit",
+  "name": "hs_submit",
+  "occurrences": 16,
+  "composedOf": [
+    "input"
+  ],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/"
+  }
+}

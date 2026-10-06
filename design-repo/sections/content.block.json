@@ -11,10 +11,10 @@
     "instances": 4,
     "routes": 4,
     "measuredFrom": [
-      "src/index.html:117-209",
-      "src/careers/index.html:132-228",
-      "src/memo/index.html:132-231",
-      "src/series-c/index.html:132-228"
+      "src/index.html:116-208",
+      "src/careers/index.html:131-227",
+      "src/memo/index.html:131-230",
+      "src/series-c/index.html:131-227"
     ]
   },
   "content": {
@@ -65,5 +65,11 @@
     ]
   },
   "assetRoles": [],
-  "implementedBy": "src/pages/HomePage.jsx"
+  "implementedBy": "src/sections/PointerEventsNone2.jsx",
+  "implementedByAll": [
+    "src/sections/PointerEventsNone2.jsx",
+    "src/sections/PointerEventsNone4.jsx",
+    "src/sections/PointerEventsNone6.jsx",
+    "src/sections/PointerEventsNone8.jsx"
+  ]
 }

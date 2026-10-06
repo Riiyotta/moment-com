@@ -1,0 +1,12 @@
+{
+  "id": "hs-fieldtype-textarea",
+  "name": "hs-fieldtype-textarea",
+  "occurrences": 16,
+  "composedOf": [
+    "textarea"
+  ],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/"
+  }
+}

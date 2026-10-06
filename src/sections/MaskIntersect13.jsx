@@ -1,3 +1,4 @@
+// IA section(s): hero.mask-intersect (ia/ia.json, design-repo/sections/)
 import A from "../lib/A.jsx";
 
 // mask-intersect — the section's real markup, read from the rendered page (route /careers/707c9117-1b1e-4260-96b3-28f735f7d840, section 1).

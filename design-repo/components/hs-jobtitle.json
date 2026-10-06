@@ -1,0 +1,12 @@
+{
+  "id": "hs-jobtitle",
+  "name": "hs_jobtitle",
+  "occurrences": 16,
+  "composedOf": [
+    "input"
+  ],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/"
+  }
+}

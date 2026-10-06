@@ -3,7 +3,7 @@
   "mode": "light",
   "$description": "The only theme measured (the page as served). Every semantic token resolves to a real foundation value.",
   "resolves": {
-    "surface.default": "rgb(33,61,62)",
+    "surface.default": "rgba(17,29,27,0.9)",
     "surface.alt": "rgb(238,243,243)",
     "surface.inverse": "rgb(238,243,243)",
     "surface.accent": "rgb(24,51,53)",
@@ -11,7 +11,7 @@
     "text.secondary": "rgb(169,188,188)",
     "text.inverse": "rgb(70,99,99)",
     "text.accent": "rgb(24,51,53)",
-    "border.default": "rgb(247,248,248)",
+    "border.default": "rgb(51,51,51)",
     "accent.primary": "rgb(24,51,53)",
     "typography.display": {
       "fontFamily": "twkLausanne",

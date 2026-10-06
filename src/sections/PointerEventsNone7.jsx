@@ -1,3 +1,4 @@
+// IA section(s): shell.header (ia/ia.json, design-repo/sections/)
 import A from "../lib/A.jsx";
 
 // pointer-events-none — the section's real markup, read from the rendered page (route /series-c, section 0).
@@ -25,7 +26,7 @@ export default function PointerEventsNone7() {
               {" "}
               <span aria-hidden="true" className="[font-feature-settings:'case']">·</span>
               {" "}
-              <span className="tabular-nums">7:50 AM ET</span>
+              <span className="tabular-nums">4:17 AM ET</span>
             </span>
           </div>
         </div>
@@ -54,7 +55,7 @@ export default function PointerEventsNone7() {
                 {" "}
                 <span aria-hidden="true" className="[font-feature-settings:'case']">·</span>
                 {" "}
-                <span className="tabular-nums">7:50 AM ET</span>
+                <span className="tabular-nums">4:17 AM ET</span>
               </span>
             </div>
           </div>

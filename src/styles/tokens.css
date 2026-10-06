@@ -4,6 +4,7 @@
 :root {
   /* foundation */
   --breakpoint-360: 360px;
+  --breakpoint-400: 400px;
   --breakpoint-500: 500px;
   --breakpoint-599: 599px;
   --breakpoint-600: 600px;
@@ -21,27 +22,28 @@
   --color-teal-04: rgb(221,231,231);
   --color-neutral-04: rgb(0,0,0);
   --color-teal-05: rgb(70,99,99);
-  --color-teal-06: rgb(181,213,215);
-  --color-neutral-05: rgb(238,243,243);
-  --color-teal-07: rgb(33,61,62);
-  --color-teal-08: rgb(24,51,53);
+  --color-neutral-05: rgb(51,51,51);
   --color-neutral-06: rgba(17,29,27,0.9);
-  --color-neutral-07: rgba(17,29,27,0.85);
-  --color-neutral-08: rgb(51,51,51);
+  --color-neutral-07: rgb(238,243,243);
+  --color-teal-06: rgb(181,213,215);
+  --color-teal-07: rgb(24,51,53);
+  --color-teal-08: rgb(33,61,62);
+  --color-neutral-08: rgb(17,29,27);
+  --color-neutral-09: rgba(17,29,27,0.85);
   --color-teal-09: rgba(169,188,188,0.07);
-  --color-neutral-09: rgba(17,29,27,0.55);
-  --color-neutral-10: rgba(168,175,172,0.8);
+  --color-neutral-10: rgba(17,29,27,0.55);
+  --color-neutral-11: rgba(168,175,172,0.8);
   --color-teal-10: rgba(24,51,53,0.6);
   --iconSize-16: 16px;
   --iconSize-23: 23px;
   --duration-200ms: 0.2s;
+  --duration-300ms: 0.3s;
   --duration-650ms: 0.65s;
   --duration-150ms: 0.15s;
+  --duration-350ms: 0.35s;
   --duration-400ms: 0.4s;
   --duration-NaNms: auto;
   --duration-1680ms: 1.68s;
-  --duration-1620ms: 1.62s;
-  --duration-3200ms: 3.2s;
   --easing-01: ease;
   --easing-02: cubic-bezier(0.4, 0, 0.2, 1);
   --easing-03: linear;
@@ -59,10 +61,10 @@
   --space-5: 5px;
   --space-5_5: 5.5px;
   --space-6: 6px;
+  --space-6_5: 6.5px;
   --space-8: 8px;
   --space-11: 11px;
   --space-12: 12px;
-  --space-14: 14px;
   --space-16: 16px;
   --space-20: 20px;
   --space-24: 24px;
@@ -82,6 +84,7 @@
   --fontFamily-04: JetBrains Mono;
   --fontSize-10: 10px;
   --fontSize-12: 12px;
+  --fontSize-13: 13px;
   --fontSize-14: 14px;
   --fontSize-16: 16px;
   --fontSize-18: 18px;
@@ -111,18 +114,18 @@
   --lineHeight-40: 40px;
   --lineHeight-48: 48px;
   /* semantic */
-  --surface-default: var(--color-teal-07); /* most-used opaque background (32 uses) */
-  --surface-alt: var(--color-neutral-05); /* second most-used neutral background (24 uses) */
-  --surface-inverse: var(--color-neutral-05); /* most-used background neutral, with opposite lightness to surface.default (24 uses) */
-  --surface-accent: var(--color-teal-08); /* most-used saturated background (4 uses) */
-  --text-primary: var(--color-neutral-01); /* most-used text colour (2067 uses) */
+  --surface-default: var(--color-neutral-06); /* most-used opaque background (83 uses) */
+  --surface-alt: var(--color-neutral-07); /* second most-used neutral background (40 uses) */
+  --surface-inverse: var(--color-neutral-07); /* most-used background neutral, with opposite lightness to surface.default (40 uses) */
+  --surface-accent: var(--color-teal-07); /* most-used saturated background (4 uses) */
+  --text-primary: var(--color-neutral-01); /* most-used text colour (2467 uses) */
   --text-secondary: var(--color-teal-03); /* most-used neutral text colour with lower contrast than text.primary on surface.default (410 uses) */
   --text-inverse: var(--color-teal-05); /* most-used text colour neutral, with opposite lightness to text.primary (104 uses) */
-  --text-accent: var(--color-teal-08); /* most-used saturated text/fill colour (24 uses) */
-  --border-default: var(--color-neutral-03); /* most-used border colour (24 uses) */
-  --accent-primary: var(--color-teal-08); /* most-used saturated colour overall (28 uses) */
-  --motion-duration-default: var(--duration-200ms); /* most-used duration (1700 uses) */
-  --motion-easing-default: var(--easing-01); /* most-used easing (1562 uses) */
+  --text-accent: var(--color-teal-07); /* most-used saturated text/fill colour (40 uses) */
+  --border-default: var(--color-neutral-05); /* most-used border colour (108 uses) */
+  --accent-primary: var(--color-teal-07); /* most-used saturated colour overall (44 uses) */
+  --motion-duration-default: var(--duration-200ms); /* most-used duration (1620 uses) */
+  --motion-easing-default: var(--easing-01); /* most-used easing (1722 uses) */
   --radius-control: var(--radius-4); /* radius of the most common button style */
   --radius-surface: var(--radius-1); /* most-used radius other than radius.control (64 uses) */
   --typography-display-font-family: var(--fontFamily-01);
@@ -147,11 +150,18 @@
   --button-radius: var(--radius-4);
   --button-paddingY: var(--space-5);
   --button-paddingX: var(--space-12);
-  --button-fontSize: var(--space-14);
+  --button-fontSize: var(--fontSize-14);
   --button-fontWeight: 400;
   --button-borderWidth: 1px;
   --image-radius: 0px;
   --image-objectFit: contain;
+  --input-background: transparent;
+  --input-color: var(--text-primary);
+  --input-radius: 0px;
+  --input-borderColor: var(--text-primary);
+  --input-paddingY: var(--space-6);
+  --input-paddingX: var(--space-8);
+  --input-fontSize: var(--fontSize-13);
   --link-color: var(--text-secondary);
   --link-textDecoration: none;
   --link-fontWeight: 350;

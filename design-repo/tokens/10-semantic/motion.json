@@ -5,12 +5,12 @@
     "motion.duration.default": {
       "$type": "motion",
       "$value": "{duration.200ms}",
-      "basis": "most-used duration (1700 uses)"
+      "basis": "most-used duration (1620 uses)"
     },
     "motion.easing.default": {
       "$type": "motion",
       "$value": "{easing.01}",
-      "basis": "most-used easing (1562 uses)"
+      "basis": "most-used easing (1722 uses)"
     }
   }
 }

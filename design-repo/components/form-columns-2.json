@@ -1,0 +1,12 @@
+{
+  "id": "form-columns-2",
+  "name": "form-columns-2",
+  "occurrences": 16,
+  "composedOf": [
+    "input"
+  ],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/"
+  }
+}

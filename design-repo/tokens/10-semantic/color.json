@@ -4,28 +4,28 @@
   "tokens": {
     "surface.default": {
       "$type": "color",
-      "$value": "{color.teal.07}",
-      "basis": "most-used opaque background (32 uses)"
+      "$value": "{color.neutral.06}",
+      "basis": "most-used opaque background (83 uses)"
     },
     "surface.alt": {
       "$type": "color",
-      "$value": "{color.neutral.05}",
-      "basis": "second most-used neutral background (24 uses)"
+      "$value": "{color.neutral.07}",
+      "basis": "second most-used neutral background (40 uses)"
     },
     "surface.inverse": {
       "$type": "color",
-      "$value": "{color.neutral.05}",
-      "basis": "most-used background neutral, with opposite lightness to surface.default (24 uses)"
+      "$value": "{color.neutral.07}",
+      "basis": "most-used background neutral, with opposite lightness to surface.default (40 uses)"
     },
     "surface.accent": {
       "$type": "color",
-      "$value": "{color.teal.08}",
+      "$value": "{color.teal.07}",
       "basis": "most-used saturated background (4 uses)"
     },
     "text.primary": {
       "$type": "color",
       "$value": "{color.neutral.01}",
-      "basis": "most-used text colour (2067 uses)"
+      "basis": "most-used text colour (2467 uses)"
     },
     "text.secondary": {
       "$type": "color",
@@ -39,18 +39,18 @@
     },
     "text.accent": {
       "$type": "color",
-      "$value": "{color.teal.08}",
-      "basis": "most-used saturated text/fill colour (24 uses)"
+      "$value": "{color.teal.07}",
+      "basis": "most-used saturated text/fill colour (40 uses)"
     },
     "border.default": {
       "$type": "color",
-      "$value": "{color.neutral.03}",
-      "basis": "most-used border colour (24 uses)"
+      "$value": "{color.neutral.05}",
+      "basis": "most-used border colour (108 uses)"
     },
     "accent.primary": {
       "$type": "color",
-      "$value": "{color.teal.08}",
-      "basis": "most-used saturated colour overall (28 uses)"
+      "$value": "{color.teal.07}",
+      "basis": "most-used saturated colour overall (44 uses)"
     }
   }
 }

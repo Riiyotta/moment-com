@@ -7,6 +7,12 @@
       "usage": 16,
       "source": "CSS @media width conditions"
     },
+    "breakpoint.400": {
+      "$type": "dimension",
+      "$value": "400px",
+      "usage": 32,
+      "source": "CSS @media width conditions"
+    },
     "breakpoint.500": {
       "$type": "dimension",
       "$value": "500px",

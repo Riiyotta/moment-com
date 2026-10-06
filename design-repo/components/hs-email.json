@@ -1,0 +1,12 @@
+{
+  "id": "hs-email",
+  "name": "hs_email",
+  "occurrences": 16,
+  "composedOf": [
+    "input"
+  ],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/"
+  }
+}

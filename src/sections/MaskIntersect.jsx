@@ -1,3 +1,4 @@
+// IA section(s): hero.mask-intersect (ia/ia.json, design-repo/sections/)
 // mask-intersect — the section's real markup, read from the rendered page (route /, section 2).
 export default function MaskIntersect() {
   return (
@@ -9,7 +10,7 @@ export default function MaskIntersect() {
               <div className="relative min-h-full lg:h-full short-landscape:h-auto short-landscape:min-h-[480px]">
                 <div className="pointer-events-none absolute inset-x-0 -top-[74px] h-dvh overflow-hidden opacity-50 lg:inset-0 lg:h-full lg:opacity-100 short-landscape:-top-80 short-landscape:bottom-auto short-landscape:h-[560px]">
                   <div aria-hidden="true" className="absolute inset-0 h-full w-full max-lg:[mask-image:linear-gradient(to_bottom,black_calc(100%-min(28%,280px)),transparent)]">
-                    <img src="/stills/31803eb7.png" alt="" className="pointer-events-auto block h-full w-full" style={{ "transition": "none", "opacity": "1" }} width={1440} height={900} />
+                    <img src="/stills/bbd63372.png" alt="" className="pointer-events-auto block h-full w-full" style={{ "transition": "none", "opacity": "1" }} width={1440} height={900} />
                   </div>
                 </div>
                 <div className="pointer-events-none relative z-10 flex min-h-[calc(100dvh-74px)] flex-col px-24 pb-24 sm:px-40 lg:hidden" style={{ "width": "var(--site-viewport-width, 100vw)" }}>

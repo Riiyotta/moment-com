@@ -11,11 +11,11 @@
     "instances": 5,
     "routes": 1,
     "measuredFrom": [
-      "src/memo/index.html:232-265",
-      "src/memo/index.html:266-296",
-      "src/memo/index.html:297-337",
-      "src/memo/index.html:338-410",
-      "src/memo/index.html:440-491"
+      "src/memo/index.html:231-264",
+      "src/memo/index.html:265-295",
+      "src/memo/index.html:296-336",
+      "src/memo/index.html:337-409",
+      "src/memo/index.html:439-571"
     ]
   },
   "content": {
@@ -63,5 +63,12 @@
     "changes": []
   },
   "assetRoles": [],
-  "implementedBy": "src/sections/Section.jsx"
+  "implementedBy": "src/sections/Section.jsx",
+  "implementedByAll": [
+    "src/sections/Section.jsx",
+    "src/sections/WFull.jsx",
+    "src/sections/WFull2.jsx",
+    "src/sections/WFull3.jsx",
+    "src/sections/WFull5.jsx"
+  ]
 }

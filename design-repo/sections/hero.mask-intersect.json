@@ -11,11 +11,11 @@
     "instances": 15,
     "routes": 15,
     "measuredFrom": [
-      "src/index.html:210-381",
-      "src/careers/index.html:229-1740",
-      "src/careers/1db991e4-9480-4847-b300-c430cc057d56/index.html:132-346",
-      "src/careers/30f72628-dd96-4fb2-b998-ab310e90ad82/index.html:132-369",
-      "src/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490/index.html:132-377"
+      "src/index.html:209-461",
+      "src/careers/index.html:228-1820",
+      "src/careers/1db991e4-9480-4847-b300-c430cc057d56/index.html:131-426",
+      "src/careers/30f72628-dd96-4fb2-b998-ab310e90ad82/index.html:131-449",
+      "src/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490/index.html:131-457"
     ]
   },
   "content": {
@@ -95,5 +95,22 @@
     "background",
     "illustration"
   ],
-  "implementedBy": "src/sections/MaskIntersect.jsx"
+  "implementedBy": "src/sections/MaskIntersect.jsx",
+  "implementedByAll": [
+    "src/sections/MaskIntersect.jsx",
+    "src/sections/MaskIntersect10.jsx",
+    "src/sections/MaskIntersect11.jsx",
+    "src/sections/MaskIntersect12.jsx",
+    "src/sections/MaskIntersect13.jsx",
+    "src/sections/MaskIntersect14.jsx",
+    "src/sections/MaskIntersect15.jsx",
+    "src/sections/MaskIntersect2.jsx",
+    "src/sections/MaskIntersect3.jsx",
+    "src/sections/MaskIntersect4.jsx",
+    "src/sections/MaskIntersect5.jsx",
+    "src/sections/MaskIntersect6.jsx",
+    "src/sections/MaskIntersect7.jsx",
+    "src/sections/MaskIntersect8.jsx",
+    "src/sections/MaskIntersect9.jsx"
+  ]
 }

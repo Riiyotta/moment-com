@@ -12,19 +12,49 @@ Everything the pages loaded, saved under `recon/mirror/public/`. Paths are relat
 | twkLausanne | 400 | italic | `TWKLausanne_400Italic-s.p.2-omsyi6yzr5y.woff2` |
 | twkEverettMono | 400 | normal | `TWKEverettMono_Regular.p.17bazm5lg-2gr.woff2` |
 | twkEverettMono | 400 | italic | `TWKEverettMono_Italic.p.2n7bg09r6ywvp.woff2` |
+| STIX Two Text | 400 | italic | `169964a708a16db9-s.0n3rc8lf61k6o.woff2` |
+| STIX Two Text | 400 | italic | `f73554b76b3968b4-s.1szap0sm0xuhn.woff2` |
+| STIX Two Text | 400 | italic | `6a5ee69d6a4389bc-s.0eoora2vj-zmt.woff2` |
+| STIX Two Text | 400 | italic | `844757ee197428ee-s.2kljua520w9vz.woff2` |
+| STIX Two Text | 400 | italic | `5e56e1bd35970baf-s.41l_2w43chchu.woff2` |
 | STIX Two Text | 400 | italic | `a1c7a484c510d19c-s.p.0wluu3xg-hx03.woff2` |
+| STIX Two Text | 700 | italic | `169964a708a16db9-s.0n3rc8lf61k6o.woff2` |
+| STIX Two Text | 700 | italic | `f73554b76b3968b4-s.1szap0sm0xuhn.woff2` |
+| STIX Two Text | 700 | italic | `6a5ee69d6a4389bc-s.0eoora2vj-zmt.woff2` |
+| STIX Two Text | 700 | italic | `844757ee197428ee-s.2kljua520w9vz.woff2` |
+| STIX Two Text | 700 | italic | `5e56e1bd35970baf-s.41l_2w43chchu.woff2` |
 | STIX Two Text | 700 | italic | `a1c7a484c510d19c-s.p.0wluu3xg-hx03.woff2` |
+| STIX Two Text | 400 | normal | `b1d5dad78a0d12b5-s.1xtj9yne7zfhx.woff2` |
+| STIX Two Text | 400 | normal | `17381594d15ffe51-s.0x6g2-e0030vd.woff2` |
+| STIX Two Text | 400 | normal | `f8ed89659f8cd9f4-s.3813ocq4ejija.woff2` |
+| STIX Two Text | 400 | normal | `ea20f3f596d3a0b3-s.322bd5_47qnof.woff2` |
+| STIX Two Text | 400 | normal | `1995f8c0ebebeccd-s.3_ul9q3tcrf5j.woff2` |
 | STIX Two Text | 400 | normal | `62c2ceb5e93c1826-s.p.03874znv80-ea.woff2` |
+| STIX Two Text | 700 | normal | `b1d5dad78a0d12b5-s.1xtj9yne7zfhx.woff2` |
+| STIX Two Text | 700 | normal | `17381594d15ffe51-s.0x6g2-e0030vd.woff2` |
+| STIX Two Text | 700 | normal | `f8ed89659f8cd9f4-s.3813ocq4ejija.woff2` |
+| STIX Two Text | 700 | normal | `ea20f3f596d3a0b3-s.322bd5_47qnof.woff2` |
+| STIX Two Text | 700 | normal | `1995f8c0ebebeccd-s.3_ul9q3tcrf5j.woff2` |
 | STIX Two Text | 700 | normal | `62c2ceb5e93c1826-s.p.03874znv80-ea.woff2` |
+| JetBrains Mono | 400 | normal | `04c5164763c40239-s.1zakzi6q17d4o.woff2` |
+| JetBrains Mono | 400 | normal | `26f284dcc38c84c0-s.2htf8h-pf57mm.woff2` |
+| JetBrains Mono | 400 | normal | `7e7f32a39836f228-s.3skwie1wjplzh.woff2` |
+| JetBrains Mono | 400 | normal | `fa39153a3fc630ba-s.3zhbgtelpa5ua.woff2` |
+| JetBrains Mono | 400 | normal | `6a5386fd6038edbe-s.3vf5yzuqk3fsd.woff2` |
 | JetBrains Mono | 400 | normal | `051742360c26797e-s.p.1wmoa0e_blxrz.woff2` |
+| JetBrains Mono | 700 | normal | `04c5164763c40239-s.1zakzi6q17d4o.woff2` |
+| JetBrains Mono | 700 | normal | `26f284dcc38c84c0-s.2htf8h-pf57mm.woff2` |
+| JetBrains Mono | 700 | normal | `7e7f32a39836f228-s.3skwie1wjplzh.woff2` |
+| JetBrains Mono | 700 | normal | `fa39153a3fc630ba-s.3zhbgtelpa5ua.woff2` |
+| JetBrains Mono | 700 | normal | `6a5386fd6038edbe-s.3vf5yzuqk3fsd.woff2` |
 | JetBrains Mono | 700 | normal | `051742360c26797e-s.p.1wmoa0e_blxrz.woff2` |
 
 ## Files by role
 
 | Role | Files | Total size |
 |---|---|---|
+| font | 24 | 0.5 MB |
 | illustration | 13 | 0.5 MB |
-| font | 9 | 0.3 MB |
 | icon | 7 | 0.0 MB |
 | content-image | 3 | 0.4 MB |
 
@@ -52,6 +82,8 @@ Everything the pages loaded, saved under `recon/mirror/public/`. Paths are relat
 
 ### font
 
+- `_next/static/immutable/media/5e56e1bd35970baf-s.41l_2w43chchu.woff2` (59 KB)
+- `_next/static/immutable/media/1995f8c0ebebeccd-s.3_ul9q3tcrf5j.woff2` (54 KB)
 - `_next/static/immutable/media/TWKEverettMono_Italic.p.2n7bg09r6ywvp.woff2` (38 KB)
 - `_next/static/immutable/media/TWKEverettMono_Regular.p.17bazm5lg-2gr.woff2` (37 KB)
 - `_next/static/immutable/media/051742360c26797e-s.p.1wmoa0e_blxrz.woff2` (31 KB)
@@ -61,6 +93,19 @@ Everything the pages loaded, saved under `recon/mirror/public/`. Paths are relat
 - `_next/static/immutable/media/TWKLausanne_400-s.p.30x2d1w128kct.woff2` (28 KB)
 - `_next/static/immutable/media/TWKLausanne_350-s.p.1xq_9bwn--t9r.woff2` (28 KB)
 - `_next/static/immutable/media/62c2ceb5e93c1826-s.p.03874znv80-ea.woff2` (28 KB)
+- `_next/static/immutable/media/f73554b76b3968b4-s.1szap0sm0xuhn.woff2` (20 KB)
+- `_next/static/immutable/media/17381594d15ffe51-s.0x6g2-e0030vd.woff2` (17 KB)
+- `_next/static/immutable/media/6a5ee69d6a4389bc-s.0eoora2vj-zmt.woff2` (16 KB)
+- `_next/static/immutable/media/f8ed89659f8cd9f4-s.3813ocq4ejija.woff2` (15 KB)
+- `_next/static/immutable/media/6a5386fd6038edbe-s.3vf5yzuqk3fsd.woff2` (11 KB)
+- `_next/static/immutable/media/844757ee197428ee-s.2kljua520w9vz.woff2` (10 KB)
+- `_next/static/immutable/media/ea20f3f596d3a0b3-s.322bd5_47qnof.woff2` (9 KB)
+- `_next/static/immutable/media/26f284dcc38c84c0-s.2htf8h-pf57mm.woff2` (9 KB)
+- `_next/static/immutable/media/7e7f32a39836f228-s.3skwie1wjplzh.woff2` (7 KB)
+- `_next/static/immutable/media/fa39153a3fc630ba-s.3zhbgtelpa5ua.woff2` (6 KB)
+- `_next/static/immutable/media/169964a708a16db9-s.0n3rc8lf61k6o.woff2` (3 KB)
+- `_next/static/immutable/media/b1d5dad78a0d12b5-s.1xtj9yne7zfhx.woff2` (3 KB)
+- `_next/static/immutable/media/04c5164763c40239-s.1zakzi6q17d4o.woff2` (2 KB)
 
 ### icon
 

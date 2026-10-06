@@ -92,6 +92,9 @@
           "route": "/",
           "idx": 0
         }
+      ],
+      "sections": [
+        "shell.header"
       ]
     },
     {
@@ -102,6 +105,9 @@
           "route": "/",
           "idx": 1
         }
+      ],
+      "sections": [
+        "content.block"
       ]
     },
     {
@@ -112,6 +118,9 @@
           "route": "/",
           "idx": 2
         }
+      ],
+      "sections": [
+        "hero.mask-intersect"
       ]
     },
     {
@@ -122,6 +131,9 @@
           "route": "/memo",
           "idx": 0
         }
+      ],
+      "sections": [
+        "shell.header"
       ]
     },
     {
@@ -132,6 +144,9 @@
           "route": "/memo",
           "idx": 1
         }
+      ],
+      "sections": [
+        "content.block"
       ]
     },
     {
@@ -142,6 +157,9 @@
           "route": "/memo",
           "idx": 2
         }
+      ],
+      "sections": [
+        "content.section"
       ]
     },
     {
@@ -152,6 +170,9 @@
           "route": "/memo",
           "idx": 3
         }
+      ],
+      "sections": [
+        "content.section"
       ]
     },
     {
@@ -162,6 +183,9 @@
           "route": "/memo",
           "idx": 4
         }
+      ],
+      "sections": [
+        "content.section"
       ]
     },
     {
@@ -172,6 +196,9 @@
           "route": "/memo",
           "idx": 5
         }
+      ],
+      "sections": [
+        "content.section"
       ]
     },
     {
@@ -182,6 +209,9 @@
           "route": "/memo",
           "idx": 6
         }
+      ],
+      "sections": [
+        "features.section"
       ]
     },
     {
@@ -192,6 +222,9 @@
           "route": "/memo",
           "idx": 7
         }
+      ],
+      "sections": [
+        "content.section"
       ]
     },
     {
@@ -202,6 +235,9 @@
           "route": "/careers",
           "idx": 0
         }
+      ],
+      "sections": [
+        "shell.header"
       ]
     },
     {
@@ -212,6 +248,9 @@
           "route": "/careers",
           "idx": 1
         }
+      ],
+      "sections": [
+        "content.block"
       ]
     },
     {
@@ -222,6 +261,9 @@
           "route": "/careers",
           "idx": 2
         }
+      ],
+      "sections": [
+        "hero.mask-intersect"
       ]
     },
     {
@@ -232,6 +274,9 @@
           "route": "/series-c",
           "idx": 0
         }
+      ],
+      "sections": [
+        "shell.header"
       ]
     },
     {
@@ -242,6 +287,9 @@
           "route": "/series-c",
           "idx": 1
         }
+      ],
+      "sections": [
+        "content.block"
       ]
     },
     {
@@ -252,6 +300,9 @@
           "route": "/series-c",
           "idx": 2
         }
+      ],
+      "sections": [
+        "hero.mask-intersect"
       ]
     },
     {
@@ -261,11 +312,10 @@
         {
           "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
           "idx": 0
-        },
-        {
-          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
-          "idx": 0
         }
+      ],
+      "sections": [
+        "shell.header"
       ]
     },
     {
@@ -276,6 +326,30 @@
           "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
           "idx": 1
         }
+      ],
+      "sections": [
+        "hero.mask-intersect"
+      ]
+    },
+    {
+      "component": "PointerEventsNone10",
+      "file": "src/sections/PointerEventsNone10.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+          "idx": 0
+        },
+        {
+          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+          "idx": 0
+        },
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 0
+        }
+      ],
+      "sections": [
+        "shell.header"
       ]
     },
     {
@@ -286,24 +360,9 @@
           "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
           "idx": 1
         }
-      ]
-    },
-    {
-      "component": "PointerEventsNone10",
-      "file": "src/sections/PointerEventsNone10.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
-          "idx": 0
-        },
-        {
-          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
-          "idx": 0
-        },
-        {
-          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
-          "idx": 0
-        }
+      ],
+      "sections": [
+        "hero.mask-intersect"
       ]
     },
     {
@@ -314,6 +373,9 @@
           "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
           "idx": 1
         }
+      ],
+      "sections": [
+        "hero.mask-intersect"
       ]
     },
     {
@@ -324,6 +386,30 @@
           "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
           "idx": 1
         }
+      ],
+      "sections": [
+        "hero.mask-intersect"
+      ]
+    },
+    {
+      "component": "PointerEventsNone11",
+      "file": "src/sections/PointerEventsNone11.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+          "idx": 0
+        },
+        {
+          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+          "idx": 0
+        },
+        {
+          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
+          "idx": 0
+        }
+      ],
+      "sections": [
+        "shell.header"
       ]
     },
     {
@@ -334,24 +420,9 @@
           "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
           "idx": 1
         }
-      ]
-    },
-    {
-      "component": "PointerEventsNone11",
-      "file": "src/sections/PointerEventsNone11.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
-          "idx": 0
-        },
-        {
-          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
-          "idx": 0
-        },
-        {
-          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
-          "idx": 0
-        }
+      ],
+      "sections": [
+        "hero.mask-intersect"
       ]
     },
     {
@@ -362,6 +433,9 @@
           "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
           "idx": 1
         }
+      ],
+      "sections": [
+        "hero.mask-intersect"
       ]
     },
     {
@@ -372,6 +446,30 @@
           "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
           "idx": 1
         }
+      ],
+      "sections": [
+        "hero.mask-intersect"
+      ]
+    },
+    {
+      "component": "PointerEventsNone12",
+      "file": "src/sections/PointerEventsNone12.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+          "idx": 0
+        },
+        {
+          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+          "idx": 0
+        },
+        {
+          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+          "idx": 0
+        }
+      ],
+      "sections": [
+        "shell.header"
       ]
     },
     {
@@ -382,28 +480,9 @@
           "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
           "idx": 1
         }
-      ]
-    },
-    {
-      "component": "PointerEventsNone12",
-      "file": "src/sections/PointerEventsNone12.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
-          "idx": 0
-        },
-        {
-          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
-          "idx": 0
-        },
-        {
-          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
-          "idx": 0
-        },
-        {
-          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
-          "idx": 0
-        }
+      ],
+      "sections": [
+        "hero.mask-intersect"
       ]
     },
     {
@@ -414,6 +493,9 @@
           "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
           "idx": 1
         }
+      ],
+      "sections": [
+        "hero.mask-intersect"
       ]
     },
     {
@@ -424,6 +506,26 @@
           "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
           "idx": 1
         }
+      ],
+      "sections": [
+        "hero.mask-intersect"
+      ]
+    },
+    {
+      "component": "PointerEventsNone13",
+      "file": "src/sections/PointerEventsNone13.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+          "idx": 0
+        },
+        {
+          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
+          "idx": 0
+        }
+      ],
+      "sections": [
+        "shell.header"
       ]
     },
     {
@@ -434,6 +536,9 @@
           "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
           "idx": 1
         }
+      ],
+      "sections": [
+        "hero.mask-intersect"
       ]
     },
     {
@@ -444,6 +549,9 @@
           "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
           "idx": 1
         }
+      ],
+      "sections": [
+        "hero.mask-intersect"
       ]
     }
   ],
@@ -453,8 +561,8 @@
       "key": "still0",
       "w": 1440,
       "h": 900,
-      "file": "/stills/31803eb7.png",
-      "lit": 0.131
+      "file": "/stills/bbd63372.png",
+      "lit": 0.145
     }
   ],
   "rive": [],

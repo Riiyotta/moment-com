@@ -7,39 +7,40 @@ Measured from the rendered pages at 1440, 1280 and 390px wide. Colours are hex. 
 
 | Token | Hex | Uses | Mostly used as |
 |---|---|---|---|
-| `color.neutral.01` | `#fafbfb` | 2069 | text, border |
-| `color.neutral.02` | `#ffffff` | 1398 | text, fill |
+| `color.neutral.01` | `#fafbfb` | 2469 | text, border |
+| `color.neutral.02` | `#ffffff` | 1590 | text, fill |
 | `color.teal.01` | `#5a7b7d` | 562 | fill |
 | `color.teal.02` | `#2f4041` | 496 | fill |
-| `color.neutral.03` | `#f7f8f8` | 432 | text, fill, border |
+| `color.neutral.03` | `#f7f8f8` | 448 | text, border, fill |
 | `color.teal.03` | `#a9bcbc` | 410 | text |
-| `color.teal.04` | `#dde7e7` | 180 | text |
+| `color.teal.04` | `#dde7e7` | 292 | text |
 | `color.neutral.04` | `#000000` | 125 | fill |
 | `color.teal.05` | `#466363` | 118 | text, fill, bg |
+| `color.neutral.05` | `#333333` | 108 | border |
+| `color.neutral.06` | `#111d1be6` | 83 | bg |
+| `color.neutral.07` | `#eef3f3` | 68 | bg, text |
 | `color.teal.06` | `#b5d5d7` | 66 | fill |
-| `color.neutral.05` | `#eef3f3` | 52 | text, bg |
-| `color.teal.07` | `#213d3e` | 36 | bg, border |
-| `color.teal.08` | `#183335` | 28 | text, bg |
-| `color.neutral.06` | `#111d1be6` | 19 | bg |
-| `color.neutral.07` | `#111d1bd9` | 16 | bg |
-| `color.neutral.08` | `#333333` | 12 | border |
+| `color.teal.07` | `#183335` | 44 | text, bg |
+| `color.teal.08` | `#213d3e` | 36 | bg, border |
+| `color.neutral.08` | `#111d1b` | 32 | bg |
+| `color.neutral.09` | `#111d1bd9` | 16 | bg |
 | `color.teal.09` | `#a9bcbc12` | 4 | bg |
-| `color.neutral.09` | `#111d1b8c` | 4 | bg |
-| `color.neutral.10` | `#a8afaccc` | 2 | text |
+| `color.neutral.10` | `#111d1b8c` | 4 | bg |
+| `color.neutral.11` | `#a8afaccc` | 2 | text |
 | `color.teal.10` | `#18333599` | 2 | bg |
 
 Semantic roles:
 
-- `surface.default` → `color.teal.07` (#213d3e): most-used opaque background (32 uses)
-- `surface.alt` → `color.neutral.05` (#eef3f3): second most-used neutral background (24 uses)
-- `surface.inverse` → `color.neutral.05` (#eef3f3): most-used background neutral, with opposite lightness to surface.default (24 uses)
-- `surface.accent` → `color.teal.08` (#183335): most-used saturated background (4 uses)
-- `text.primary` → `color.neutral.01` (#fafbfb): most-used text colour (2067 uses)
+- `surface.default` → `color.neutral.06` (#111d1be6): most-used opaque background (83 uses)
+- `surface.alt` → `color.neutral.07` (#eef3f3): second most-used neutral background (40 uses)
+- `surface.inverse` → `color.neutral.07` (#eef3f3): most-used background neutral, with opposite lightness to surface.default (40 uses)
+- `surface.accent` → `color.teal.07` (#183335): most-used saturated background (4 uses)
+- `text.primary` → `color.neutral.01` (#fafbfb): most-used text colour (2467 uses)
 - `text.secondary` → `color.teal.03` (#a9bcbc): most-used neutral text colour with lower contrast than text.primary on surface.default (410 uses)
 - `text.inverse` → `color.teal.05` (#466363): most-used text colour neutral, with opposite lightness to text.primary (104 uses)
-- `text.accent` → `color.teal.08` (#183335): most-used saturated text/fill colour (24 uses)
-- `border.default` → `color.neutral.03` (#f7f8f8): most-used border colour (24 uses)
-- `accent.primary` → `color.teal.08` (#183335): most-used saturated colour overall (28 uses)
+- `text.accent` → `color.teal.07` (#183335): most-used saturated text/fill colour (40 uses)
+- `border.default` → `color.neutral.05` (#333333): most-used border colour (108 uses)
+- `accent.primary` → `color.teal.07` (#183335): most-used saturated colour overall (44 uses)
 
 ## Type roles
 
@@ -52,22 +53,22 @@ Semantic roles:
 
 ## Radii
 
-- `radius.4`: 4px (104 uses)
+- `radius.4`: 4px (200 uses)
 - `radius.1`: 1px (64 uses)
 - `radius.3`: 3px (15 uses)
 - `radius.2`: 2px (8 uses)
 
 ## Motion
 
-- `duration.200ms`: 0.2s (1700 uses)
+- `duration.200ms`: 0.2s (1620 uses)
+- `duration.300ms`: 0.3s (226 uses)
 - `duration.650ms`: 0.65s (104 uses)
 - `duration.150ms`: 0.15s (30 uses)
+- `duration.350ms`: 0.35s (16 uses)
 - `duration.400ms`: 0.4s (16 uses)
 - `duration.NaNms`: auto (16 uses)
 - `duration.1680ms`: 1.68s (14 uses)
-- `duration.1620ms`: 1.62s (8 uses)
-- `duration.3200ms`: 3.2s (8 uses)
-- `easing.01`: ease (1562 uses)
+- `easing.01`: ease (1722 uses)
 - `easing.02`: cubic-bezier(0.4, 0, 0.2, 1) (158 uses)
 - `easing.03`: linear (92 uses)
 - `easing.04`: cubic-bezier(0.16, 1, 0.3, 1) (52 uses)
@@ -77,6 +78,7 @@ Semantic roles:
 ## Breakpoints (from the site's CSS)
 
 - `breakpoint.360`: 360px
+- `breakpoint.400`: 400px
 - `breakpoint.500`: 500px
 - `breakpoint.599`: 599px
 - `breakpoint.600`: 600px

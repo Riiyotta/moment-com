@@ -78,7 +78,7 @@
       "pinned": true,
       "description": "Web font files.",
       "licensing": "Fonts carry their own licence; reuse only as shipped and review the licence before redistribution.",
-      "observed": 9
+      "observed": 24
     },
     "live-embed": {
       "generationPolicy": "must-not-reuse-live-endpoint",
@@ -143,6 +143,14 @@
       }
     },
     {
+      "path": "_next/static/immutable/media/5e56e1bd35970baf-s.41l_2w43chchu.woff2",
+      "bytes": 60564,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
       "path": "graphics/about/hero-desktop-left.svg",
       "bytes": 56735,
       "role": "illustration",
@@ -156,6 +164,14 @@
       "role": "illustration",
       "evidence": {
         "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/1995f8c0ebebeccd-s.3_ul9q3tcrf5j.woff2",
+      "bytes": 54988,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
       }
     },
     {
@@ -231,6 +247,22 @@
       }
     },
     {
+      "path": "_next/static/immutable/media/f73554b76b3968b4-s.1szap0sm0xuhn.woff2",
+      "bytes": 20632,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/17381594d15ffe51-s.0x6g2-e0030vd.woff2",
+      "bytes": 17208,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
       "path": "_ext/cdn.sanity.io/images/jsu06cwb/production/6e0a205c1dce67a42c8d9c2bb4c7e4a82766e431-167x19__e4f09a51.svg",
       "bytes": 16755,
       "role": "illustration",
@@ -246,6 +278,22 @@
       "role": "illustration",
       "evidence": {
         "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/6a5ee69d6a4389bc-s.0eoora2vj-zmt.woff2",
+      "bytes": 16508,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/f8ed89659f8cd9f4-s.3813ocq4ejija.woff2",
+      "bytes": 15256,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
       }
     },
     {
@@ -272,6 +320,46 @@
       "role": "icon",
       "evidence": {
         "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/6a5386fd6038edbe-s.3vf5yzuqk3fsd.woff2",
+      "bytes": 11596,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/844757ee197428ee-s.2kljua520w9vz.woff2",
+      "bytes": 9936,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/ea20f3f596d3a0b3-s.322bd5_47qnof.woff2",
+      "bytes": 9148,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/26f284dcc38c84c0-s.2htf8h-pf57mm.woff2",
+      "bytes": 8892,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/7e7f32a39836f228-s.3skwie1wjplzh.woff2",
+      "bytes": 6800,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
       }
     },
     {
@@ -311,6 +399,30 @@
       }
     },
     {
+      "path": "_next/static/immutable/media/fa39153a3fc630ba-s.3zhbgtelpa5ua.woff2",
+      "bytes": 5872,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/169964a708a16db9-s.0n3rc8lf61k6o.woff2",
+      "bytes": 3280,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/b1d5dad78a0d12b5-s.1xtj9yne7zfhx.woff2",
+      "bytes": 3144,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
+      }
+    },
+    {
       "path": "_ext/cdn.sanity.io/images/jsu06cwb/production/28af6c52377bbbb4489aa32433e6a77c440947cd-74x21__e4f09a51.svg",
       "bytes": 2418,
       "role": "illustration",
@@ -344,6 +456,14 @@
       "role": "icon",
       "evidence": {
         "note": "not referenced by the rendered DOM (CSS or lazy reference)"
+      }
+    },
+    {
+      "path": "_next/static/immutable/media/04c5164763c40239-s.1zakzi6q17d4o.woff2",
+      "bytes": 1664,
+      "role": "font",
+      "evidence": {
+        "note": "loaded by the page's CSS"
       }
     },
     {

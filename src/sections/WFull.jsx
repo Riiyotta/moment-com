@@ -1,3 +1,4 @@
+// IA section(s): content.section (ia/ia.json, design-repo/sections/)
 // w-full — the section's real markup, read from the rendered page (route /memo, section 3).
 export default function WFull() {
   return (

@@ -1,0 +1,12 @@
+{
+  "id": "hs-firstname",
+  "name": "hs_firstname",
+  "occurrences": 16,
+  "composedOf": [
+    "input"
+  ],
+  "evidence": {
+    "level": "measured",
+    "sampleRoute": "/"
+  }
+}

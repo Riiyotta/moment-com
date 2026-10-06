@@ -3,7 +3,7 @@
   "meta": {
     "source": "https://moment.com/",
     "status": "measured-from-mirror",
-    "mirror": "website-builder crawl, 2026-10-05T10:47:03Z",
+    "mirror": "website-builder crawl, 2026-10-06T08:16:10Z",
     "productionApproved": false,
     "totalRoutes": 16,
     "totalTemplates": 3,
@@ -20,31 +20,75 @@
       "category": "CONTENT",
       "description": "Untitled <div> block classified as content by its content. Typically 68px tall at 1440px wide.",
       "scope": "Appears on 4 routes.",
-      "implementedBy": "src/pages/HomePage.jsx"
+      "implementedBy": "src/sections/PointerEventsNone2.jsx",
+      "implementedByAll": [
+        "src/sections/PointerEventsNone2.jsx",
+        "src/sections/PointerEventsNone4.jsx",
+        "src/sections/PointerEventsNone6.jsx",
+        "src/sections/PointerEventsNone8.jsx"
+      ]
     },
     "content.section": {
       "category": "CONTENT",
       "description": "Untitled <section> block classified as content by its content. Typically 770px tall at 1440px wide.",
       "scope": "Appears on 1 route.",
-      "implementedBy": "src/sections/Section.jsx"
+      "implementedBy": "src/sections/Section.jsx",
+      "implementedByAll": [
+        "src/sections/Section.jsx",
+        "src/sections/WFull.jsx",
+        "src/sections/WFull2.jsx",
+        "src/sections/WFull3.jsx",
+        "src/sections/WFull5.jsx"
+      ]
     },
     "features.section": {
       "category": "FEATURES",
       "description": "Untitled <section> block classified as features by its content; the first one reads \"THE END OF TOOLS\". Typically 460px tall at 1440px wide.",
       "scope": "Appears on 1 route.",
-      "implementedBy": "src/sections/Section.jsx"
+      "implementedBy": "src/sections/WFull4.jsx",
+      "implementedByAll": [
+        "src/sections/WFull4.jsx"
+      ]
     },
     "hero.mask-intersect": {
       "category": "HERO",
       "description": "\"mask-intersect\" — a <div> block named by its CSS class; first heading: \"The AI Partner forInvestment Management\". Typically 2751px tall at 1440px wide.",
       "scope": "Appears on 15 routes.",
-      "implementedBy": "src/sections/MaskIntersect.jsx"
+      "implementedBy": "src/sections/MaskIntersect.jsx",
+      "implementedByAll": [
+        "src/sections/MaskIntersect.jsx",
+        "src/sections/MaskIntersect10.jsx",
+        "src/sections/MaskIntersect11.jsx",
+        "src/sections/MaskIntersect12.jsx",
+        "src/sections/MaskIntersect13.jsx",
+        "src/sections/MaskIntersect14.jsx",
+        "src/sections/MaskIntersect15.jsx",
+        "src/sections/MaskIntersect2.jsx",
+        "src/sections/MaskIntersect3.jsx",
+        "src/sections/MaskIntersect4.jsx",
+        "src/sections/MaskIntersect5.jsx",
+        "src/sections/MaskIntersect6.jsx",
+        "src/sections/MaskIntersect7.jsx",
+        "src/sections/MaskIntersect8.jsx",
+        "src/sections/MaskIntersect9.jsx"
+      ]
     },
     "shell.header": {
       "category": "SHELL",
       "description": "\"Header\" — a <header> block named by its HTML landmark tag. Typically 80px tall at 1440px wide.",
       "scope": "Appears on all 16 routes.",
-      "implementedBy": "src/pages/HomePage.jsx"
+      "implementedBy": "src/sections/PointerEventsNone10.jsx",
+      "implementedByAll": [
+        "src/sections/PointerEventsNone10.jsx",
+        "src/sections/PointerEventsNone11.jsx",
+        "src/sections/PointerEventsNone12.jsx",
+        "src/sections/PointerEventsNone13.jsx",
+        "src/sections/PointerEventsNone.jsx",
+        "src/sections/PointerEventsNone3.jsx",
+        "src/sections/PointerEventsNone5.jsx",
+        "src/sections/PointerEventsNone7.jsx",
+        "src/sections/PointerEventsNone9.jsx"
+      ]
     }
   },
   "templates": [

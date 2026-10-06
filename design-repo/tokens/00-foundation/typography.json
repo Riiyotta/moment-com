@@ -4,7 +4,7 @@
     "fontFamily.01": {
       "$type": "fontFamily",
       "$value": "twkLausanne",
-      "usage": 1321
+      "usage": 1513
     },
     "fontFamily.02": {
       "$type": "fontFamily",
@@ -31,10 +31,15 @@
       "$value": "12px",
       "usage": 86
     },
+    "fontSize.13": {
+      "$type": "dimension",
+      "$value": "13px",
+      "usage": 208
+    },
     "fontSize.14": {
       "$type": "dimension",
       "$value": "14px",
-      "usage": 254
+      "usage": 238
     },
     "fontSize.16": {
       "$type": "dimension",
@@ -79,12 +84,12 @@
     "fontWeight.350": {
       "$type": "fontWeight",
       "$value": "350",
-      "usage": 1145
+      "usage": 1225
     },
     "fontWeight.400": {
       "$type": "fontWeight",
       "$value": "400",
-      "usage": 283
+      "usage": 395
     },
     "fontWeight.500": {
       "$type": "fontWeight",
@@ -119,7 +124,7 @@
     "lineHeight.20": {
       "$type": "dimension",
       "$value": "20px",
-      "usage": 220
+      "usage": 412
     },
     "lineHeight.22_05": {
       "$type": "dimension",

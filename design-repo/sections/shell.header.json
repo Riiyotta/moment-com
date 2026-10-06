@@ -11,11 +11,11 @@
     "instances": 16,
     "routes": 16,
     "measuredFrom": [
-      "src/index.html:48-116",
-      "src/careers/index.html:61-131",
-      "src/careers/1db991e4-9480-4847-b300-c430cc057d56/index.html:61-131",
-      "src/careers/30f72628-dd96-4fb2-b998-ab310e90ad82/index.html:61-131",
-      "src/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490/index.html:61-131"
+      "src/index.html:47-115",
+      "src/careers/index.html:60-130",
+      "src/careers/1db991e4-9480-4847-b300-c430cc057d56/index.html:60-130",
+      "src/careers/30f72628-dd96-4fb2-b998-ab310e90ad82/index.html:60-130",
+      "src/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490/index.html:60-130"
     ]
   },
   "content": {
@@ -67,5 +67,16 @@
     ]
   },
   "assetRoles": [],
-  "implementedBy": "src/pages/HomePage.jsx"
+  "implementedBy": "src/sections/PointerEventsNone10.jsx",
+  "implementedByAll": [
+    "src/sections/PointerEventsNone10.jsx",
+    "src/sections/PointerEventsNone11.jsx",
+    "src/sections/PointerEventsNone12.jsx",
+    "src/sections/PointerEventsNone13.jsx",
+    "src/sections/PointerEventsNone.jsx",
+    "src/sections/PointerEventsNone3.jsx",
+    "src/sections/PointerEventsNone5.jsx",
+    "src/sections/PointerEventsNone7.jsx",
+    "src/sections/PointerEventsNone9.jsx"
+  ]
 }

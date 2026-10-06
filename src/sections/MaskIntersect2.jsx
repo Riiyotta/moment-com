@@ -1,3 +1,4 @@
+// IA section(s): hero.mask-intersect (ia/ia.json, design-repo/sections/)
 import A from "../lib/A.jsx";
 
 // mask-intersect — the section's real markup, read from the rendered page (route /careers, section 2).
@@ -8,7 +9,7 @@ export default function MaskIntersect2() {
         <div data-page-surface="true" data-page-composition="true">
           <section className="relative flex w-full flex-col overflow-hidden pb-[140px]" style={{ "--home-test-max-w": "1132px" }}>
             <div data-page-reveal="ground" aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 z-0 aspect-[1440/810] w-full select-none">
-              <div data-hovering="false" className="group/graph-paper relative h-full w-full" style={{ "--careers-grid-mouse-x": "0px", "--careers-grid-mouse-y": "0px" }}>
+              <div data-hovering="true" className="group/graph-paper relative h-full w-full" style={{ "--careers-grid-mouse-x": "3.192377279745941px", "--careers-grid-mouse-y": "0.5495255663825334px" }}>
                 <svg aria-hidden="true" focusable="false" width="100%" height="100%" viewBox="0 0 1440 810" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ "display": "block" }}>
                   <defs>
                     <linearGradient id="careers-graph-paper-dim-mask-gradient" x1="1011" y1="705.5" x2="1372.5" y2="56" gradientUnits="userSpaceOnUse">
@@ -308,7 +309,7 @@ export default function MaskIntersect2() {
                     </g>
                   </g>
                 </svg>
-                <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 ease-out group-data-[hovering=true]/graph-paper:opacity-100" style={{ "maskImage": "radial-gradient(320px circle at var(--careers-grid-mouse-x) var(--careers-grid-mouse-y), black 0%, transparent 72%)", "WebkitMaskImage": "radial-gradient(320px circle at var(--careers-grid-mouse-x) var(--careers-grid-mouse-y), black 0%, transparent 72%)" }}>
+                <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 ease-out group-data-[hovering=true]/graph-paper:opacity-100" style={{ "maskImage": "radial-gradient(320px circle at var(--careers-grid-mouse-x) var(--careers-grid-mouse-y), black 0%, transparent 72%)", "WebkitMaskImage": "radial-gradient(320px circle at var(--careers-grid-mouse-x) var(--careers-grid-mouse-y), black 0%, transparent 72%)" }} data-reveal="">
                   <svg aria-hidden="true" focusable="false" width="100%" height="100%" viewBox="0 0 1440 810" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ "display": "block" }}>
                     <defs>
                       <linearGradient id="careers-graph-paper-bright-mask-gradient" x1="1011" y1="705.5" x2="1372.5" y2="56" gradientUnits="userSpaceOnUse">

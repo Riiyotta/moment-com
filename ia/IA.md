@@ -1,6 +1,6 @@
 # https://moment.com/
 
-Source: https://moment.com/ · website-builder crawl, 2026-10-05T10:47:03Z
+Source: https://moment.com/ · website-builder crawl, 2026-10-06T08:16:10Z
 Status: **measured-from-mirror** · production approved: **false**
 16 routes · 3 templates · 5 unique sections
 
@@ -27,11 +27,11 @@ component library or stays local to its page.
 
 | section | category | templates | routes | implementation | scope |
 |---|---|---:|---:|---|---|
-| `shell.header` | SHELL | 3 | 16 | `src/pages/HomePage.jsx` | Appears on all 16 routes. |
+| `shell.header` | SHELL | 3 | 16 | `src/sections/PointerEventsNone10.jsx` | Appears on all 16 routes. |
 | `hero.mask-intersect` | HERO | 2 | 15 | `src/sections/MaskIntersect.jsx` | Appears on 15 routes. |
-| `content.block` | CONTENT | 2 | 4 | `src/pages/HomePage.jsx` | Appears on 4 routes. |
+| `content.block` | CONTENT | 2 | 4 | `src/sections/PointerEventsNone2.jsx` | Appears on 4 routes. |
 | `content.section` | CONTENT | 1 | 1 | `src/sections/Section.jsx` | Appears on 1 route. |
-| `features.section` | FEATURES | 1 | 1 | `src/sections/Section.jsx` | Appears on 1 route. |
+| `features.section` | FEATURES | 1 | 1 | `src/sections/WFull4.jsx` | Appears on 1 route. |
 
 **3 shared sections** appear in more than one template and belong in a component library.
 
@@ -83,7 +83,7 @@ _Site chrome: navigation, header, footer, announcement bars and other elements c
 
 **`shell.header`** — "Header" — a <header> block named by its HTML landmark tag. Typically 80px tall at 1440px wide.
 
-· Appears on all 16 routes. · appears on 16 routes · implemented by `src/pages/HomePage.jsx`
+· Appears on all 16 routes. · appears on 16 routes · implemented by `src/sections/PointerEventsNone10.jsx`
 
 ### CONTENT
 
@@ -91,7 +91,7 @@ _The substantive body of a page: articles, listings, resources and general secti
 
 **`content.block`** — Untitled <div> block classified as content by its content. Typically 68px tall at 1440px wide.
 
-· Appears on 4 routes. · appears on 4 routes · implemented by `src/pages/HomePage.jsx`
+· Appears on 4 routes. · appears on 4 routes · implemented by `src/sections/PointerEventsNone2.jsx`
 
 **`content.section`** — Untitled <section> block classified as content by its content. Typically 770px tall at 1440px wide.
 
@@ -111,4 +111,4 @@ _Product explanation: capabilities, benefits, workflows and integrations._
 
 **`features.section`** — Untitled <section> block classified as features by its content; the first one reads "THE END OF TOOLS". Typically 460px tall at 1440px wide.
 
-· Appears on 1 route. · appears on 1 routes · implemented by `src/sections/Section.jsx`
+· Appears on 1 route. · appears on 1 routes · implemented by `src/sections/WFull4.jsx`

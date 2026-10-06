@@ -18,7 +18,7 @@
       "$value": "{space.12}"
     },
     "fontSize": {
-      "$value": "{space.14}"
+      "$value": "{fontSize.14}"
     },
     "fontWeight": {
       "$value": "400"

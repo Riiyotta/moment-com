@@ -1,6 +1,6 @@
 import A from "../lib/A.jsx";
 import usePageChrome from "../lib/usePageChrome.js";
-import PointerEventsNone12 from "../sections/PointerEventsNone12.jsx";
+import PointerEventsNone13 from "../sections/PointerEventsNone13.jsx";
 import MaskIntersect14 from "../sections/MaskIntersect14.jsx";
 
 
@@ -12,7 +12,7 @@ export default function Careers752a96ec5ad1456e() {
     <div hidden></div>
     <div className="contents">
       <div data-site-canvas="true" className="relative w-[var(--site-viewport-width,100vw)] bg-[linear-gradient(154deg,#0A1312_calc(100svh*0.1822+65px),#111D1B_calc(100svh*0.8988))] [--site-banner-bottom:0px] [--site-banner-height:105px] [--site-banner-top:74px] [--site-home-banner-space:0px] lg:[--site-banner-top:75px] xl:[--site-banner-height:68px] has-[[data-site-announcement]]:[--site-banner-bottom:calc(var(--site-banner-top)+var(--site-banner-height))] has-[[data-site-announcement]]:[--site-home-banner-space:calc(var(--site-banner-bottom)-74px)] stix_two_text_c05fb4e7-module__FftGeG__variable jetbrains_mono_7dbd547a-module__2I1Dga__variable" style={{ "--page-beat": "0.6s", "--page-stagger-word": "0.06s", "--page-stagger-line": "0.06s", "--page-stagger-group": "0.05s", "--page-stagger-logo": "0.06s", "--page-enter": "0.65s", "--page-item-enter": "2.1s", "--page-item-ease": "cubic-bezier(0.25,0.1,0.25,1)", "--page-exit": "0.2s", "--page-ease": "cubic-bezier(0.16,1,0.3,1)", "--page-exit-ease": "cubic-bezier(0.4,0,1,1)" }}>
-        <PointerEventsNone12 />
+        <PointerEventsNone13 />
         <div inert="" className="motion-reduce:translate-none fixed inset-x-16 top-[68px] z-[99] flex flex-col border border-border-secondary-green bg-surface-bg-secondary p-16 transition-[opacity,translate,visibility] duration-250 ease-out-quart lg:hidden pointer-events-none invisible -translate-y-8 opacity-0" style={{ "backgroundColor": "rgba(17, 29, 27, 0.92)", "backdropFilter": "blur(8px)", "WebkitBackdropFilter": "blur(8px)" }}>
           <nav className="flex flex-col items-end gap-8 md:items-start" aria-label="Primary">
             <A className="focus-ring relative items-center bg-transparent text-small text-text-link whitespace-nowrap transition-[color,background-color] duration-200 hover:bg-surface-link-hover hover:text-text-link-hover focus-visible:bg-surface-link-hover focus-visible:text-text-link-hover inline-flex rounded-1 px-12 pt-6 pb-2" href="/memo">Memo</A>

@@ -1,3 +1,4 @@
+// IA section(s): content.section (ia/ia.json, design-repo/sections/)
 // section — the section's real markup, read from the rendered page (route /memo, section 2).
 export default function Section() {
   return (

@@ -4,7 +4,12 @@
     "duration.200ms": {
       "$type": "duration",
       "$value": "0.2s",
-      "usage": 1700
+      "usage": 1620
+    },
+    "duration.300ms": {
+      "$type": "duration",
+      "$value": "0.3s",
+      "usage": 226
     },
     "duration.650ms": {
       "$type": "duration",
@@ -15,6 +20,11 @@
       "$type": "duration",
       "$value": "0.15s",
       "usage": 30
+    },
+    "duration.350ms": {
+      "$type": "duration",
+      "$value": "0.35s",
+      "usage": 16
     },
     "duration.400ms": {
       "$type": "duration",
@@ -31,20 +41,10 @@
       "$value": "1.68s",
       "usage": 14
     },
-    "duration.1620ms": {
-      "$type": "duration",
-      "$value": "1.62s",
-      "usage": 8
-    },
-    "duration.3200ms": {
-      "$type": "duration",
-      "$value": "3.2s",
-      "usage": 8
-    },
     "easing.01": {
       "$type": "cubicBezier",
       "$value": "ease",
-      "usage": 1562
+      "usage": 1722
     },
     "easing.02": {
       "$type": "cubicBezier",

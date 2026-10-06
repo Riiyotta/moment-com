@@ -19,18 +19,19 @@ export default {
         "teal-04": "rgb(221,231,231)",
         "neutral-04": "rgb(0,0,0)",
         "teal-05": "rgb(70,99,99)",
-        "teal-06": "rgb(181,213,215)",
-        "neutral-05": "rgb(238,243,243)",
-        "teal-07": "rgb(33,61,62)",
-        "teal-08": "rgb(24,51,53)",
+        "neutral-05": "rgb(51,51,51)",
         "neutral-06": "rgba(17,29,27,0.9)",
-        "neutral-07": "rgba(17,29,27,0.85)",
-        "neutral-08": "rgb(51,51,51)",
+        "neutral-07": "rgb(238,243,243)",
+        "teal-06": "rgb(181,213,215)",
+        "teal-07": "rgb(24,51,53)",
+        "teal-08": "rgb(33,61,62)",
+        "neutral-08": "rgb(17,29,27)",
+        "neutral-09": "rgba(17,29,27,0.85)",
         "teal-09": "rgba(169,188,188,0.07)",
-        "neutral-09": "rgba(17,29,27,0.55)",
-        "neutral-10": "rgba(168,175,172,0.8)",
+        "neutral-10": "rgba(17,29,27,0.55)",
+        "neutral-11": "rgba(168,175,172,0.8)",
         "teal-10": "rgba(24,51,53,0.6)",
-        "surface-default": "rgb(33,61,62)",
+        "surface-default": "rgba(17,29,27,0.9)",
         "surface-alt": "rgb(238,243,243)",
         "surface-inverse": "rgb(238,243,243)",
         "surface-accent": "rgb(24,51,53)",
@@ -38,7 +39,7 @@ export default {
         "text-secondary": "rgb(169,188,188)",
         "text-inverse": "rgb(70,99,99)",
         "text-accent": "rgb(24,51,53)",
-        "border-default": "rgb(247,248,248)",
+        "border-default": "rgb(51,51,51)",
         "accent-primary": "rgb(24,51,53)"
       },
       "spacing": {
@@ -49,10 +50,10 @@ export default {
         "sp-5": "5px",
         "sp-5_5": "5.5px",
         "sp-6": "6px",
+        "sp-6_5": "6.5px",
         "sp-8": "8px",
         "sp-11": "11px",
         "sp-12": "12px",
-        "sp-14": "14px",
         "sp-16": "16px",
         "sp-20": "20px",
         "sp-24": "24px",
@@ -113,6 +114,7 @@ export default {
       "fontSize": {
         "fs-10": "10px",
         "fs-12": "12px",
+        "fs-13": "13px",
         "fs-14": "14px",
         "fs-16": "16px",
         "fs-18": "18px",
@@ -153,13 +155,13 @@ export default {
       },
       "transitionDuration": {
         "d-200ms": "0.2s",
+        "d-300ms": "0.3s",
         "d-650ms": "0.65s",
         "d-150ms": "0.15s",
+        "d-350ms": "0.35s",
         "d-400ms": "0.4s",
         "d-NaNms": "auto",
         "d-1680ms": "1.68s",
-        "d-1620ms": "1.62s",
-        "d-3200ms": "3.2s",
         "motion-default": "0.2s"
       },
       "transitionTimingFunction": {
@@ -172,6 +174,9 @@ export default {
         "motion-default": "ease"
       },
       "screens": {
+        "bp-400": {
+          "min": "400px"
+        },
         "bp-500": {
           "min": "500px"
         },

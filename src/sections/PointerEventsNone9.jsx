@@ -1,6 +1,7 @@
+// IA section(s): shell.header (ia/ia.json, design-repo/sections/)
 import A from "../lib/A.jsx";
 
-// pointer-events-none — the section's real markup, read from the rendered page (route /careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07, section 0; shared by 2 routes).
+// pointer-events-none — the section's real markup, read from the rendered page (route /careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07, section 0).
 export default function PointerEventsNone9() {
   return (
     <header className="pointer-events-none fixed inset-x-0 top-0 z-[100] h-[74px] w-[var(--site-viewport-width,100vw)] lg:h-[80px]" style={{ "--home-test-header-h-mobile": "74px", "--home-test-header-h-desktop": "80px" }} data-clone-section="PointerEventsNone9">
@@ -25,7 +26,7 @@ export default function PointerEventsNone9() {
               {" "}
               <span aria-hidden="true" className="[font-feature-settings:'case']">·</span>
               {" "}
-              <span className="tabular-nums">7:50 AM ET</span>
+              <span className="tabular-nums">4:17 AM ET</span>
             </span>
           </div>
         </div>
@@ -54,7 +55,7 @@ export default function PointerEventsNone9() {
                 {" "}
                 <span aria-hidden="true" className="[font-feature-settings:'case']">·</span>
                 {" "}
-                <span className="tabular-nums">7:50 AM ET</span>
+                <span className="tabular-nums">4:17 AM ET</span>
               </span>
             </div>
           </div>

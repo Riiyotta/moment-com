@@ -9,10 +9,10 @@ for what a generator may and may not reproduce.
 - Sections: 5
 - Templates: 3
 - Routes: 16
-- Primitives: 8
-- Components: 17
-- Assets: 32
-- Foundation tokens: 107
+- Primitives: 12
+- Components: 31
+- Assets: 47
+- Foundation tokens: 110
 - Semantic tokens: 18
 - Rules: 7
 

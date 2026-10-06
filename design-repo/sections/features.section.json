@@ -11,7 +11,7 @@
     "instances": 1,
     "routes": 1,
     "measuredFrom": [
-      "src/memo/index.html:411-439"
+      "src/memo/index.html:410-438"
     ]
   },
   "content": {
@@ -59,5 +59,8 @@
     "changes": []
   },
   "assetRoles": [],
-  "implementedBy": "src/sections/Section.jsx"
+  "implementedBy": "src/sections/WFull4.jsx",
+  "implementedByAll": [
+    "src/sections/WFull4.jsx"
+  ]
 }

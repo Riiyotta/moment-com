@@ -4,18 +4,18 @@
     "color.neutral.01": {
       "$type": "color",
       "$value": "rgb(250,251,251)",
-      "usage": 2069,
+      "usage": 2469,
       "roles": {
-        "text": 2067,
+        "text": 2467,
         "border": 2
       }
     },
     "color.neutral.02": {
       "$type": "color",
       "$value": "rgb(255,255,255)",
-      "usage": 1398,
+      "usage": 1590,
       "roles": {
-        "text": 1386,
+        "text": 1578,
         "fill": 12
       }
     },
@@ -38,11 +38,11 @@
     "color.neutral.03": {
       "$type": "color",
       "$value": "rgb(247,248,248)",
-      "usage": 432,
+      "usage": 448,
       "roles": {
         "text": 376,
         "fill": 32,
-        "border": 24
+        "border": 40
       }
     },
     "color.teal.03": {
@@ -56,9 +56,9 @@
     "color.teal.04": {
       "$type": "color",
       "$value": "rgb(221,231,231)",
-      "usage": 180,
+      "usage": 292,
       "roles": {
-        "text": 180
+        "text": 292
       }
     },
     "color.neutral.04": {
@@ -79,6 +79,31 @@
         "bg": 6
       }
     },
+    "color.neutral.05": {
+      "$type": "color",
+      "$value": "rgb(51,51,51)",
+      "usage": 108,
+      "roles": {
+        "border": 108
+      }
+    },
+    "color.neutral.06": {
+      "$type": "color",
+      "$value": "rgba(17,29,27,0.9)",
+      "usage": 83,
+      "roles": {
+        "bg": 83
+      }
+    },
+    "color.neutral.07": {
+      "$type": "color",
+      "$value": "rgb(238,243,243)",
+      "usage": 68,
+      "roles": {
+        "text": 28,
+        "bg": 40
+      }
+    },
     "color.teal.06": {
       "$type": "color",
       "$value": "rgb(181,213,215)",
@@ -87,16 +112,16 @@
         "fill": 66
       }
     },
-    "color.neutral.05": {
+    "color.teal.07": {
       "$type": "color",
-      "$value": "rgb(238,243,243)",
-      "usage": 52,
+      "$value": "rgb(24,51,53)",
+      "usage": 44,
       "roles": {
-        "text": 28,
-        "bg": 24
+        "text": 40,
+        "bg": 4
       }
     },
-    "color.teal.07": {
+    "color.teal.08": {
       "$type": "color",
       "$value": "rgb(33,61,62)",
       "usage": 36,
@@ -105,37 +130,20 @@
         "border": 4
       }
     },
-    "color.teal.08": {
+    "color.neutral.08": {
       "$type": "color",
-      "$value": "rgb(24,51,53)",
-      "usage": 28,
+      "$value": "rgb(17,29,27)",
+      "usage": 32,
       "roles": {
-        "bg": 4,
-        "text": 24
+        "bg": 32
       }
     },
-    "color.neutral.06": {
-      "$type": "color",
-      "$value": "rgba(17,29,27,0.9)",
-      "usage": 19,
-      "roles": {
-        "bg": 19
-      }
-    },
-    "color.neutral.07": {
+    "color.neutral.09": {
       "$type": "color",
       "$value": "rgba(17,29,27,0.85)",
       "usage": 16,
       "roles": {
         "bg": 16
-      }
-    },
-    "color.neutral.08": {
-      "$type": "color",
-      "$value": "rgb(51,51,51)",
-      "usage": 12,
-      "roles": {
-        "border": 12
       }
     },
     "color.teal.09": {
@@ -146,7 +154,7 @@
         "bg": 4
       }
     },
-    "color.neutral.09": {
+    "color.neutral.10": {
       "$type": "color",
       "$value": "rgba(17,29,27,0.55)",
       "usage": 4,
@@ -154,7 +162,7 @@
         "bg": 4
       }
     },
-    "color.neutral.10": {
+    "color.neutral.11": {
       "$type": "color",
       "$value": "rgba(168,175,172,0.8)",
       "usage": 2,

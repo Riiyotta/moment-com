@@ -4,8 +4,11 @@
   "occurrences": 19,
   "composedOf": [
     "button",
-    "paragraph",
-    "svg"
+    "form",
+    "input",
+    "svg",
+    "select",
+    "textarea"
   ],
   "evidence": {
     "level": "measured",

@@ -18,20 +18,20 @@
   "sourceProject": {
     "url": "https://moment.com/",
     "framework": "React+Next.js",
-    "scrapedAt": "2026-10-05T10:47:03Z"
+    "scrapedAt": "2026-10-06T08:16:10Z"
   },
   "generatedBy": "website-builder (heuristic extraction; see README)",
   "counts": {
     "sections": 5,
     "templates": 3,
     "routes": 16,
-    "primitives": 8,
-    "components": 17,
-    "assets": 32,
+    "primitives": 12,
+    "components": 31,
+    "assets": 47,
     "tokens": {
-      "foundation": 107,
+      "foundation": 110,
       "semantic": 18,
-      "component": 16,
+      "component": 23,
       "layout": 9
     },
     "themes": 1,

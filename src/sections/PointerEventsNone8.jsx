@@ -1,3 +1,4 @@
+// IA section(s): content.block (ia/ia.json, design-repo/sections/)
 import A from "../lib/A.jsx";
 
 // pointer-events-none — the section's real markup, read from the rendered page (route /series-c, section 1).
