@@ -10,7 +10,6 @@ Offline mirror, information architecture and design repo for **Moment · The AI 
 | `ia/` | `ia.json` is the IA source of truth (ia-builder schema) and the **only IA file to hand-edit**. `IA.md` and `matrix.csv` are generated from it by `build.mjs`. |
 | `design-repo/` | Generated design repo (BUILD-GUIDE layout). Start at `design-repo/registry.manifest.json`. |
 | `design-repo.zip` | Clean zip of `design-repo/` (no `.DS_Store` / `__MACOSX`); `verify_all.py` fails if any file is newer than it. |
-| `ir/` | Composition IR: base envelope schema, this site's profile schema, the IR document (every captured route composed as a pageSpec), and `validate_ir.py`. |
 | `CLONE_SPEC.md`, `ASSET_MANIFEST.md`, `ROUTES.md` | Recon docs: tokens in hex, every section's geometry at 1440 / 1280 / 390; the font / image / icon / embed inventory; the route list. Generated. |
 | `recon/` | Evidence. `recon/mirror/` is the offline mirror (`public/`, plus `src/` rendered-DOM snapshots that the design repo's `path:line-line` citations point at; serve it with `python3 recon/mirror/_serve.py`). `recon/images/`: screenshots; `recon/meta.json`: scrape metadata. |
 | `qa/` | Parity pictures (original | clone) for sections below the gate. |
@@ -38,7 +37,6 @@ Offline mirror, information architecture and design repo for **Moment · The AI 
 (cd ia && node validate.mjs && node build.mjs)   # IA
 python3 design-repo/extraction/verify_all.py        # design-repo admission
 python3 design-repo/extraction/prove_drift.py       # prove the checks catch drift
-python3 ir/validate_ir.py                           # composition IR
 ```
 
 ## Clone (the project root)
