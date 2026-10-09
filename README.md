@@ -29,7 +29,6 @@ Offline mirror, information architecture and design repo for **Moment · The AI 
 | Admission: verify_all.py in place (with recon/mirror/) | PASS | REPO OK — structure, entryPoints, versions, counts, parity, templates, graph, citations, tokens, pinned assets, motion, paths, schema and adversarial suite all pass. |
 | IA: ia-builder validate.mjs | PASS | All hard invariants reconcile. |
 | IA: every implementedBy file exists | PASS | 5 section(s) linked to src/sections/*.jsx |
-| IR: composition IR (envelope + profile + pageSpec + contract paths) | PASS | IR OK: 1 IR document(s), 16 page(s): envelope, profile, every pageSpec against the repo's pagespec schema and semantic checks (16 pages), and contract paths all pass. |
 
 ## Re-run
 
