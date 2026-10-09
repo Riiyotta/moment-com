@@ -1,4 +1,5 @@
 // IA section(s): hero.mask-intersect (ia/ia.json, design-repo/sections/)
+import A from "../lib/A.jsx";
 // mask-intersect — the section's real markup, read from the rendered page (route /series-c, section 2).
 export default function MaskIntersect3() {
   return (
@@ -307,7 +308,7 @@ export default function MaskIntersect3() {
                     </g>
                   </g>
                 </svg>
-                <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 ease-out group-data-[hovering=true]/graph-paper:opacity-100" style={{ "maskImage": "radial-gradient(320px circle at var(--careers-grid-mouse-x) var(--careers-grid-mouse-y), black 0%, transparent 72%)" }} data-reveal="">
+                <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 ease-out group-data-[hovering=true]/graph-paper:opacity-100" style={{ "maskImage": "radial-gradient(320px circle at var(--careers-grid-mouse-x) var(--careers-grid-mouse-y), black 0%, transparent 72%)" }}>
                   <svg aria-hidden="true" focusable="false" width="100%" height="100%" viewBox="0 0 1440 810" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ "display": "block" }}>
                     <defs>
                       <linearGradient id="careers-graph-paper-bright-mask-gradient" x1="1011" y1="705.5" x2="1372.5" y2="56" gradientUnits="userSpaceOnUse">
@@ -623,12 +624,12 @@ export default function MaskIntersect3() {
                 <div className="text-pretty rich-text" style={{ "textAlign": "start" }} data-text-ready="">
                   <p>
                     <span data-kp-line="" data-kp-break="space" style={{ "display": "block", "whiteSpace": "nowrap", "wordSpacing": "1.52805px" }}>
-                      Moment
+                      <A className="focus-ring" href="/">Moment</A>
                       , the AI operating system for investment management, has raised $78
                     </span>
                     <span data-kp-line="" data-kp-break="space" style={{ "display": "block", "whiteSpace": "nowrap", "wordSpacing": "-0.108273px" }}>
                       {"million in a Series C funding round led by "}
-                      Index Ventures
+                      <a className="focus-ring">Index Ventures</a>
                       , with participation from
                     </span>
                     <span data-kp-line="" data-kp-break="space" style={{ "display": "block", "whiteSpace": "nowrap", "wordSpacing": "-0.306992px", "textIndent": "-0.71864px" }}>Andreessen Horowitz, Avra, and other existing investors. This comes less than 10</span>

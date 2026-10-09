@@ -8,8 +8,7 @@ export default function WFull3() {
           <header className="flex flex-col items-center gap-y-8 text-center text-text-primary min-[1000px]:gap-y-20">
             <p className="text-[2rem] leading-[2.8rem] min-[1000px]:text-[2.4rem] min-[1000px]:leading-[3.2rem]">
               {"Part "}
-              III
-              .
+              {"III."}
             </p>
             <h2 className="font-semibold text-[2rem] uppercase italic leading-[2.8rem] min-[1000px]:text-[2.4rem] min-[1000px]:leading-[3.2rem]">The Operating System</h2>
           </header>

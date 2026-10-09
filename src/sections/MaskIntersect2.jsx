@@ -309,7 +309,7 @@ export default function MaskIntersect2() {
                     </g>
                   </g>
                 </svg>
-                <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 ease-out group-data-[hovering=true]/graph-paper:opacity-100" style={{ "maskImage": "radial-gradient(320px circle at var(--careers-grid-mouse-x) var(--careers-grid-mouse-y), black 0%, transparent 72%)", "WebkitMaskImage": "radial-gradient(320px circle at var(--careers-grid-mouse-x) var(--careers-grid-mouse-y), black 0%, transparent 72%)" }} data-reveal="">
+                <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 ease-out group-data-[hovering=true]/graph-paper:opacity-100" style={{ "maskImage": "radial-gradient(320px circle at var(--careers-grid-mouse-x) var(--careers-grid-mouse-y), black 0%, transparent 72%)", "WebkitMaskImage": "radial-gradient(320px circle at var(--careers-grid-mouse-x) var(--careers-grid-mouse-y), black 0%, transparent 72%)" }}>
                   <svg aria-hidden="true" focusable="false" width="100%" height="100%" viewBox="0 0 1440 810" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ "display": "block" }}>
                     <defs>
                       <linearGradient id="careers-graph-paper-bright-mask-gradient" x1="1011" y1="705.5" x2="1372.5" y2="56" gradientUnits="userSpaceOnUse">

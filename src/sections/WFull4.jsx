@@ -8,8 +8,7 @@ export default function WFull4() {
           <header className="flex flex-col items-center gap-y-8 text-center text-text-primary min-[1000px]:gap-y-20">
             <p className="text-[2rem] leading-[2.8rem] min-[1000px]:text-[2.4rem] min-[1000px]:leading-[3.2rem]">
               {"Part "}
-              IV
-              .
+              {"IV."}
             </p>
             <h2 className="font-semibold text-[2rem] uppercase italic leading-[2.8rem] min-[1000px]:text-[2.4rem] min-[1000px]:leading-[3.2rem]">The End of Tools</h2>
           </header>

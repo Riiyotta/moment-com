@@ -1,27 +1,20 @@
 import A from "../lib/A.jsx";
 import usePageChrome from "../lib/usePageChrome.js";
-import PointerEventsNone3 from "../sections/PointerEventsNone3.jsx";
-import PointerEventsNone4 from "../sections/PointerEventsNone4.jsx";
-import Section from "../sections/Section.jsx";
-import WFull from "../sections/WFull.jsx";
-import WFull2 from "../sections/WFull2.jsx";
-import WFull3 from "../sections/WFull3.jsx";
-import WFull4 from "../sections/WFull4.jsx";
-import WFull5 from "../sections/WFull5.jsx";
+import PointerEventsNone9 from "../sections/PointerEventsNone9.jsx";
 
 
-// Route /memo — 8 section(s), in page order.
-export default function Memo() {
-  usePageChrome({ title: "Memo · Moment", html: { "lang": "en", "class": "twklausanne_8165b9b1-module__lyC6-a__variable twkeverettmono_eeb061f3-module__scOF0q__variable" }, body: { "class": "h-full" } });
+// Unknown paths — the original answers them with its "Page not found (404)" page inside the usual site chrome.
+export default function NotFound() {
+  usePageChrome({ title: "Page not found", html: { "lang": "en", "class": "twklausanne_8165b9b1-module__lyC6-a__variable twkeverettmono_eeb061f3-module__scOF0q__variable" }, body: { "class": "h-full" } });
   return (
     <>
     <div hidden></div>
     <div className="contents">
       <div data-site-canvas="true" className="relative w-[var(--site-viewport-width,100vw)] bg-[linear-gradient(154deg,#0A1312_calc(100svh*0.1822+65px),#111D1B_calc(100svh*0.8988))] [--site-banner-bottom:0px] [--site-banner-height:105px] [--site-banner-top:74px] [--site-home-banner-space:0px] lg:[--site-banner-top:75px] xl:[--site-banner-height:68px] has-[[data-site-announcement]]:[--site-banner-bottom:calc(var(--site-banner-top)+var(--site-banner-height))] has-[[data-site-announcement]]:[--site-home-banner-space:calc(var(--site-banner-bottom)-74px)] stix_two_text_c05fb4e7-module__FftGeG__variable jetbrains_mono_7dbd547a-module__2I1Dga__variable" style={{ "--page-beat": "0.6s", "--page-stagger-word": "0.06s", "--page-stagger-line": "0.06s", "--page-stagger-group": "0.05s", "--page-stagger-logo": "0.06s", "--page-enter": "0.65s", "--page-item-enter": "2.1s", "--page-item-ease": "cubic-bezier(0.25,0.1,0.25,1)", "--page-exit": "0.2s", "--page-ease": "cubic-bezier(0.16,1,0.3,1)", "--page-exit-ease": "cubic-bezier(0.4,0,1,1)" }}>
-        <PointerEventsNone3 />
+        <PointerEventsNone9 />
         <div inert="" className="motion-reduce:translate-none fixed inset-x-16 top-[68px] z-[99] flex flex-col border border-border-secondary-green bg-surface-bg-secondary p-16 transition-[opacity,translate,visibility] duration-250 ease-out-quart lg:hidden pointer-events-none invisible -translate-y-8 opacity-0" style={{ "backgroundColor": "rgba(17, 29, 27, 0.92)", "backdropFilter": "blur(8px)", "WebkitBackdropFilter": "blur(8px)" }}>
           <nav className="flex flex-col items-end gap-8 md:items-start" aria-label="Primary">
-            <A className="focus-ring relative items-center text-small whitespace-nowrap transition-[color,background-color] duration-200 hover:bg-surface-link-hover hover:text-text-link-hover focus-visible:bg-surface-link-hover focus-visible:text-text-link-hover inline-flex rounded-1 px-12 pt-6 pb-2 bg-surface-link-hover text-text-link-hover" href="/memo">Memo</A>
+            <A className="focus-ring relative items-center bg-transparent text-small text-text-link whitespace-nowrap transition-[color,background-color] duration-200 hover:bg-surface-link-hover hover:text-text-link-hover focus-visible:bg-surface-link-hover focus-visible:text-text-link-hover inline-flex rounded-1 px-12 pt-6 pb-2" href="/memo">Memo</A>
             <A className="focus-ring relative items-center bg-transparent text-small text-text-link whitespace-nowrap transition-[color,background-color] duration-200 hover:bg-surface-link-hover hover:text-text-link-hover focus-visible:bg-surface-link-hover focus-visible:text-text-link-hover inline-flex rounded-1 px-12 pt-6 pb-2" href="/careers">Careers</A>
             <button type="button" className="focus-ring relative items-center bg-transparent text-small text-text-link whitespace-nowrap transition-[color,background-color] duration-200 hover:bg-surface-link-hover hover:text-text-link-hover focus-visible:bg-surface-link-hover focus-visible:text-text-link-hover inline-flex rounded-1 px-12 pt-6 pb-2">Contact</button>
           </nav>
@@ -29,27 +22,17 @@ export default function Memo() {
         <div aria-hidden="true" className="pointer-events-none fixed inset-x-0 top-0 z-50 h-[74px] w-[var(--site-viewport-width,100vw)] overflow-clip lg:h-[72px] [mask-image:linear-gradient(black_58px,transparent)] lg:[mask-image:linear-gradient(black_56px,transparent)] before:pointer-events-auto before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-[58px] before:content-[''] lg:before:h-[56px]">
           <div className="absolute inset-x-0 top-0 h-[calc(100svh+100%)] animate-header-fade-ground [animation-range:0_100svh] [animation-timeline:scroll(root_block)] bg-[linear-gradient(154deg,#0A1312_calc(100svh*0.1822+65px),#111D1B_calc(100svh*0.8988))]"></div>
         </div>
-        <div className="animate-banner-reveal [transition:--banner-exit_var(--page-exit,0.2s)_var(--page-exit-ease,cubic-bezier(0.4,0,1,1))] motion-reduce:animate-none motion-reduce:transition-none pointer-events-none absolute inset-x-0 top-(--site-banner-top) z-30 not-has-[[data-site-announcement]]:hidden scroll-mt-(--site-banner-top) px-24 sm:px-40 lg:px-32 xl:px-40">
-          <div data-site-announcement="true">
-            <div className="mx-auto w-full max-w-[1800px]">
-              <PointerEventsNone4 />
-            </div>
-          </div>
-        </div>
+        <div className="animate-banner-reveal [transition:--banner-exit_var(--page-exit,0.2s)_var(--page-exit-ease,cubic-bezier(0.4,0,1,1))] motion-reduce:animate-none motion-reduce:transition-none pointer-events-none absolute inset-x-0 top-(--site-banner-top) z-30 not-has-[[data-site-announcement]]:hidden scroll-mt-(--site-banner-top) px-24 sm:px-40 lg:px-32 xl:px-40"></div>
         <main id="main-content" className="relative z-[1] min-h-[100dvh]">
-          <div className={"[--edge-feather:24px] [--edge-header:var(--edge-mobile-header,74px)] [--edge-side:16px] lg:[--edge-header:80px] lg:[--edge-side:32px] xl:[--edge-side:40px] mask-intersect mask-no-repeat [mask-image:linear-gradient(to_bottom,black_calc(100%-var(--edge-feather)),transparent),linear-gradient(to_right,transparent,black_var(--edge-side),black_calc(100%-var(--edge-side)),transparent)] [&_:is(a,button,input,select,textarea,[tabindex],[id])]:scroll-mt-[calc(var(--edge-header)+var(--edge-feather))]"} style={{ "--edge-mobile-header": "74px" }}>
-            <div data-page-transition="settled">
-              <div data-page-surface="true" data-page-composition="true">
-                <article className="pb-[40px] font-serif">
-                  <Section />
-                  <section className="flex flex-col min-[1000px]:gap-y-10 min-[800px]:gap-y-62">
-                    <WFull />
-                    <WFull2 />
-                    <WFull3 />
-                    <WFull4 />
-                    <WFull5 />
-                  </section>
-                </article>
+          <div data-page-transition="settled">
+            <div data-page-surface="true" data-page-composition="true">
+              <div className="relative flex min-h-dvh items-center justify-center overflow-hidden p-24">
+                <div className="relative z-[1] flex w-full max-w-[1200px] flex-col items-center gap-72 min-[800px]:justify-center min-[800px]:self-stretch">
+                  <h1 className="sr-only">Page not found (404)</h1>
+                  <div className="flex flex-wrap items-center justify-center gap-8 min-[800px]:absolute min-[800px]:bottom-0 min-[800px]:left-1/2 min-[800px]:-translate-x-1/2">
+                    <A className="inline-flex cursor-pointer items-center justify-center whitespace-nowrap rounded-4 border border-border-button-primary bg-surface-button-primary px-12 pt-[6.5px] pb-[3.5px] text-small text-text-button-primary transition-colors duration-200 [-webkit-tap-highlight-color:transparent] not-disabled:hover:bg-surface-button-primary-hover not-disabled:hover:text-text-button-primary-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-border-button-primary disabled:opacity-50" href="/">Back to home</A>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
