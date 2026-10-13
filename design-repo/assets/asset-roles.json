@@ -334,7 +334,7 @@
       "role": "customer-logo",
       "evidence": {
         "route": "/",
-        "section": "hero.mask-intersect",
+        "section": "proof.logo-strip",
         "rendered": "152x17"
       },
       "entity": "Creative Planning",
@@ -384,7 +384,7 @@
       "role": "customer-logo",
       "evidence": {
         "route": "/",
-        "section": "hero.mask-intersect",
+        "section": "proof.logo-strip",
         "rendered": "120x22"
       },
       "entity": "Hightower",
@@ -448,7 +448,7 @@
       "role": "customer-logo",
       "evidence": {
         "route": "/",
-        "section": "hero.mask-intersect",
+        "section": "proof.logo-strip",
         "rendered": "104x17"
       },
       "entity": "Edward Jones",
@@ -472,7 +472,7 @@
       "role": "customer-logo",
       "evidence": {
         "route": "/",
-        "section": "hero.mask-intersect",
+        "section": "proof.logo-strip",
         "rendered": "128x16"
       },
       "entity": "LPL Financial",
@@ -520,7 +520,7 @@
       "role": "customer-logo",
       "evidence": {
         "route": "/",
-        "section": "hero.mask-intersect",
+        "section": "proof.logo-strip",
         "rendered": "89x25"
       },
       "entity": "Ramp",
@@ -544,7 +544,7 @@
       "role": "customer-logo",
       "evidence": {
         "route": "/",
-        "section": "hero.mask-intersect",
+        "section": "proof.logo-strip",
         "rendered": "72x20"
       },
       "entity": "Altruist",

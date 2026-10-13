@@ -103,6 +103,10 @@ def _logo(r):
     p = os.path.join(r, "assets/asset-roles.json"); return p, jload(p)
 def inj_logo_generic(r):   # a customer logo is filed as a generic illustration again
     p, d = _logo(r); a = next(x for x in d["assets"] if x.get("entity")); a["role"] = "illustration"; jsave(p, d)
+def inj_asset_retired_section(r):   # an asset's evidence still names the retired catch-all
+    p, d = _logo(r); a = next(x for x in d["assets"] if isinstance(x.get("evidence"), dict) and x["evidence"].get("section")); a["evidence"]["section"] = "hero.mask-intersect"; jsave(p, d)
+def inj_asset_wrong_section(r):   # an asset's evidence names a real section that does not render it
+    p, d = _logo(r); a = next(x for x in d["assets"] if isinstance(x.get("evidence"), dict) and x["evidence"].get("section") == "proof.logo-strip"); a["evidence"]["section"] = "proof.metrics-line"; jsave(p, d)
 def inj_logo_audit_only(r):   # same, but the entity tag is dropped so ONLY the evidence audit (what the section range renders) can catch it
     p, d = _logo(r)
     for a in d["assets"]:
@@ -170,6 +174,8 @@ INJECTIONS = [
     ("generic section id (wrapper)", inj_generic_id, "generic id leaf"),
     ("customer logo filed as a generic illustration (entity tag kept)", inj_logo_generic, "names a real entity"),
     ("customer logo filed as a generic illustration (caught by the evidence audit alone)", inj_logo_audit_only, "asset audit", "src"),
+    ("asset evidence cites a retired section", inj_asset_retired_section, "cites section 'hero.mask-intersect', which has no contract"),
+    ("asset evidence cites a section that does not render it", inj_asset_wrong_section, "but its evidence cites section 'proof.metrics-line'", "src"),
     ("protected and generic asset roles mixed in one section", inj_mixed_roles, "mixes protected"),
     ("customer-logo pin changed to a different valid policy", inj_pinned_logo, "pinned asset role 'customer-logo'"),
     ("a role added in 0.2.0 loses its policy", inj_pinned_new, "pinned asset role 'author-photo'"),

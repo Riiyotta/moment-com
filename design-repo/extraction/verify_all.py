@@ -418,6 +418,11 @@ def main():
         if rr & set(prot) and rr & set(gen): errs.append(f"sections/{sid}.json mixes protected {sorted(rr & set(prot))} and generic {sorted(rr & set(gen))} asset roles")
     for a in assets["assets"]:
         if a.get("entity") and a["role"] not in prot: errs.append(f"asset {a['path']} names a real entity ({a['entity']}) but has the non-protected role '{a['role']}'")
+    for a in assets["assets"]:
+        ev = a.get("evidence") if isinstance(a.get("evidence"), dict) else {}
+        if ev.get("section") and ev["section"] not in secs: errs.append(f"asset {a['path']} cites section '{ev['section']}', which has no contract (retired or renamed?)")
+    for e in assets.get("embeds", []):
+        if e.get("section") and e["section"] not in secs: errs.append(f"embed {e.get('kind')} cites section '{e['section']}', which has no contract (retired or renamed?)")
     counts_ = {}
     for a in assets["assets"]: counts_[a["role"]] = counts_.get(a["role"], 0) + 1
     for e in assets.get("embeds", []): counts_[e["role"]] = counts_.get(e["role"], 0) + 1
@@ -439,6 +444,9 @@ def main():
                 for ref in refs:
                     key = base(re.sub(r"\?.*$", "", ref.replace("&amp;", "&")).lstrip("/"))
                     for a in by_base.get(key, []):
+                        ev = a.get("evidence") if isinstance(a.get("evidence"), dict) else {}
+                        if ev.get("route") == r["route"] and ev.get("section") and ev["section"] != s_["id"]:
+                            errs.append(f"asset audit: {a['path']} is rendered in {r['route']} {s_['id']} (lines {s_['lines'][0]}-{s_['lines'][1]}) but its evidence cites section '{ev['section']}'")
                         if a["role"] not in allowed:
                             errs.append(f"asset audit: {a['path']} is rendered in {r['route']} {s_['id']} (lines {s_['lines'][0]}-{s_['lines'][1]}) but is filed as '{a['role']}', which that section does not allow ({sorted(allowed) or 'no assets'})")
 

@@ -6,6 +6,9 @@
 - Templates re-composed by page family: `template.group` (home + careers index + press release) and `template.careers` are replaced by
   `template.home`, `template.careers-index`, `template.press-release`, `template.careers-detail`; `template.memo` kept. Every template now ends
   with `conversion.contact-dialog` (previously folded into the last section's range), which makes `SHELL_MUST_BE_LAST` a real, tested rule.
+- Asset registry: the six customer logos still cited the retired `hero.mask-intersect` as their section; they now cite `proof.logo-strip`
+  (recon/mirror/src/index.html:252-283). `verify_all.py` now rejects an asset or embed citing a section with no contract, and an asset whose
+  cited section is not the one whose snapshot range renders it; both are covered by `prove_drift.py`.
 - Fixed contract defects found while decomposing: the announcement banner holds **two** links (memo, press release), the old contract allowed one;
   the home hero subheading is 9 words, the old budget was 6.
 - Graph: added `MUST_FOLLOW_OBSERVED_PREDECESSOR` (adjacency recomputed from templates), per-section `compatibility`, `sectionKinds`,
