@@ -1,0 +1,86 @@
+{
+  "id": "hero.title-intro",
+  "category": "HERO",
+  "label": "Careers title and intro",
+  "tag": "div",
+  "purpose": "Opens the careers index: the recruiting h1 and the company pitch paragraphs, over the graph-paper backdrop.",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "heading": {
+        "type": "string",
+        "required": true,
+        "maxWords": 8
+      },
+      "body": {
+        "type": "string[]",
+        "required": true,
+        "maxItems": 5,
+        "maxWords": 52
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 1,
+    "routes": 1,
+    "measuredFrom": [
+      "src/careers/index.html:1406-1438"
+    ]
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-animation",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 900
+    },
+    "mobile": {
+      "heightPx": 852
+    },
+    "measuredOnRoute": "/careers",
+    "changes": [
+      "h1 and pitch stack in a single column (max-w-[527px]) and become a row (title left, copy right) from 1200px; top padding pt-64 → pt-[340px] from 1200px"
+    ]
+  },
+  "assetRoles": [],
+  "retrieval": {
+    "semanticLabel": "hero/title-intro",
+    "kind": "hero",
+    "role": "page opener",
+    "summary": "Careers opener: h1 plus a five-paragraph pitch.",
+    "keywords": [
+      "careers",
+      "recruiting",
+      "pitch",
+      "h1"
+    ],
+    "pageFamilies": [
+      "template.careers-index"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/hero-title-intro/Careers.jsx"
+  ],
+  "implementedBy": "src/sections/hero-title-intro/Careers.jsx",
+  "constraints": {
+    "onePerPage": true
+  },
+  "granularity": {
+    "singleResponsibility": "page opener",
+    "copyCapacityWords": 268,
+    "imageCapacity": 0,
+    "bodyItemCapacity": 5
+  }
+}

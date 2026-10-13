@@ -1,6 +1,6 @@
 # CLONE_SPEC — Moment · The AI Partner for Investment Management
 
-Source: https://moment.com/ · stack guess: React+Next.js · 16 route(s), 3 template(s), 5 section type(s).
+Source: https://moment.com/ · stack guess: React+Next.js · 16 route(s), 5 template(s), 17 section type(s).
 Measured from the rendered pages at 1440, 1280 and 390px wide. Colours are hex. Values are measurements; role names are inferred from usage.
 
 ## Colours
@@ -102,80 +102,195 @@ Semantic roles:
 
 ## Sections
 
-Height = median across the type's instances. Phone/laptop columns come from the same section re-measured at that width.
+One entry per design-repo section (0.2.0 decomposition: each section is a single responsibility). Heights are measured at 1440x900 and 390x844 on the route named in each contract (`responsive.measuredOnRoute`). Per-section colour/typography is not repeated here: the colour, type, radius and layout tokens above are site-wide and the section contracts reference them.
+
+### `banner.announcement` (BANNER)
+
+- appears on 4 route(s), 4 instance(s); tag `<div>`, named "Announcement banner"
+- purpose: Announces the $78M Series C and routes the visitor to the memo and the press release.
+- height: 68px @1440 · 105px @390
+- motion: css-transition
+- content budget: body ≤1×7w, ctas ≤2×5w
+- assets: none
+- implemented by: `src/sections/banner-announcement/Careers.jsx` (+3 more)
+
+### `careers.apply-cta` (CAREERS)
+
+- appears on 12 route(s), 12 instance(s); tag `<div>`, named "Apply call to action"
+- purpose: Closes a role page with the 'Interested in this role?' prompt and the Apply link.
+- height: 97px @1440 · 97px @390
+- motion: css-transition
+- content budget: body ≤1×4w, ctas ≤1×4w
+- assets: none
+- implemented by: `src/sections/careers-apply-cta/Job1db991e4.jsx` (+11 more)
+
+### `careers.job-description-block` (CAREERS)
+
+- appears on 12 route(s), 76 instance(s); tag `<h2>`, named "Job description block"
+- purpose: One headed block of a role description (mission, about, the role, requirements, compensation).
+- height: 556px @1440 · 812px @390
+- motion: none
+- content budget: heading ≤8w, body ≤8×77w
+- assets: none
+- implemented by: `src/sections/careers-job-description-block/Job1db991e41.jsx` (+75 more)
+
+### `careers.job-group` (CAREERS)
+
+- appears on 1 route(s), 5 instance(s); tag `<div>`, named "Job group"
+- purpose: Lists the open roles of one department as numbered rows that link to the role pages.
+- height: 335px @1440 · 335px @390
+- motion: css-transition
+- content budget: heading ≤5w, items ≤6×6w
+- assets: none
+- implemented by: `src/sections/careers-job-group/Careers1.jsx` (+4 more)
+
+### `careers.job-header` (CAREERS)
+
+- appears on 12 route(s), 12 instance(s); tag `<div>`, named "Job header"
+- purpose: Identifies a role: breadcrumb, title, the team/location/work-mode/salary facts and the first Apply link.
+- height: 284px @1440 · 272px @390
+- motion: css-animation, css-transition, scroll-linked
+- content budget: heading ≤6w, subheading ≤5w, ctas ≤2×1w, items ≤4×2w
+- assets: none
+- implemented by: `src/sections/careers-job-header/Job1db991e4.jsx` (+11 more)
+
+### `conversion.contact-dialog` (CONVERSION)
+
+- appears on 16 route(s), 16 instance(s); tag `<div>`, named "Contact dialog"
+- purpose: The site-wide 'Request a demo' modal opened from the header's Contact action: a six-field lead form.
+- height: 0px @1440 · 0px @390 (closed modal overlay: takes no space in the page flow (position: fixed))
+- motion: css-transition
+- content budget: heading ≤3w, ctas ≤1×1w, items ≤6×6w
+- assets: none
+- implemented by: `src/sections/conversion-contact-dialog/ConversionContactDialog.jsx`
+
+### `editorial.memo-part` (EDITORIAL)
+
+- appears on 1 route(s), 4 instance(s); tag `<section>`, named "Memo part"
+- purpose: One numbered part of the memo: a 'Part N' eyebrow, a heading and the argument's paragraphs.
+- height: 1116px @1440 · 1268px @390
+- motion: css-animation
+- content budget: heading ≤4w, subheading ≤3w, body ≤11×70w
+- assets: none
+- implemented by: `src/sections/editorial-memo-part/Memo1.jsx` (+3 more)
+
+### `editorial.memo-signoff` (EDITORIAL)
+
+- appears on 1 route(s), 1 instance(s); tag `<section>`, named "Memo sign-off"
+- purpose: Closes the memo with the company name, the memo title and the date between dashed rules.
+- height: 770px @1440 · 718px @390
+- motion: css-animation
+- content budget: heading ≤1w, body ≤2×7w
+- assets: none
+- implemented by: `src/sections/editorial-memo-signoff/Memo.jsx`
+
+### `editorial.press-meta` (EDITORIAL)
+
+- appears on 1 route(s), 1 instance(s); tag `<div>`, named "Press dateline"
+- purpose: Gives the press release its dateline and a link to the external news coverage.
+- height: 16px @1440 · 40px @390
+- motion: css-transition
+- content budget: body ≤1×7w, ctas ≤1×2w
+- assets: none
+- implemented by: `src/sections/editorial-press-meta/SeriesC.jsx`
+
+### `editorial.prose` (EDITORIAL)
+
+- appears on 1 route(s), 4 instance(s); tag `<div>`, named "Press prose block"
+- purpose: One unit of press-release copy: an optional framed subheading followed by rich-text paragraphs.
+- height: 1133px @1440 · 1515px @390
+- motion: none
+- content budget: heading ≤9w, body ≤9×101w
+- assets: none
+- implemented by: `src/sections/editorial-prose/SeriesC1.jsx` (+3 more)
+
+### `hero.canvas-statement` (HERO)
+
+- appears on 1 route(s), 1 instance(s); tag `<div>`, named "Canvas statement hero"
+- purpose: Opens the home page: a canvas-animated backdrop with the h1 value statement and one supporting line.
+- height: 900px @1440 · 844px @390
+- motion: canvas-animation, css-animation
+- content budget: heading ≤6w, subheading ≤9w
+- assets: none
+- implemented by: `src/sections/hero-canvas-statement/Home.jsx`
+
+### `hero.memo-masthead` (HERO)
+
+- appears on 1 route(s), 1 instance(s); tag `<section>`, named "Memo masthead"
+- purpose: Opens the memo: title, author and date over breakpoint-specific animated line-art sweeps.
+- height: 911px @1440 · 706px @390
+- motion: css-animation
+- content budget: heading ≤7w, body ≤2×2w, images ≤2×Nonew
+- assets: background
+- implemented by: `src/sections/hero-memo-masthead/Memo.jsx`
+
+### `hero.press-headline` (HERO)
+
+- appears on 1 route(s), 1 instance(s); tag `<header>`, named "Press headline"
+- purpose: Opens the Series C press release: the announcement headline and its standfirst.
+- height: 376px @1440 · 224px @390
+- motion: css-animation
+- content budget: heading ≤17w, subheading ≤21w
+- assets: none
+- implemented by: `src/sections/hero-press-headline/SeriesC.jsx`
+
+### `hero.title-intro` (HERO)
+
+- appears on 1 route(s), 1 instance(s); tag `<div>`, named "Careers title and intro"
+- purpose: Opens the careers index: the recruiting h1 and the company pitch paragraphs, over the graph-paper backdrop.
+- height: 900px @1440 · 852px @390
+- motion: css-animation
+- content budget: heading ≤8w, body ≤5×52w
+- assets: none
+- implemented by: `src/sections/hero-title-intro/Careers.jsx`
+
+### `proof.logo-strip` (PROOF)
+
+- appears on 1 route(s), 1 instance(s); tag `<div>`, named "Customer logo strip"
+- purpose: Shows the customer firms that build on the platform as a row/grid of third-party logos.
+- height: 32px @1440 · 144px @390 (desktop 1440 height is that of the lg+ variant (lines 315-339): metrics line 20px, logo row 32px; the stacked variant is 0px (display: none) at that width)
+- motion: css-animation
+- content budget: images ≤6×Nonew
+- assets: customer-logo
+- implemented by: `src/sections/proof-logo-strip/Home.jsx`
+
+### `proof.metrics-line` (PROOF)
+
+- appears on 1 route(s), 1 instance(s); tag `<p>`, named "Metrics line"
+- purpose: States the scale of the platform in one line (assets and advisors) directly above the customer logos.
+- height: 20px @1440 · 20px @390 (desktop 1440 height is that of the lg+ variant (lines 315-339): metrics line 20px, logo row 32px; the stacked variant is 0px (display: none) at that width)
+- motion: css-animation
+- content budget: body ≤1×6w
+- assets: none
+- implemented by: `src/sections/proof-metrics-line/Home.jsx`
 
 ### `shell.header` (SHELL)
 
 - appears on 16 route(s), 16 instance(s); tag `<header>`, named "Header"
-- height: 80px @1440 · 80px @1280 · 74px @390
-- columns: 3 @1440 · 3 @1280 · 1 @390
-- box: padding 0/0px · first child 1440px wide · gap 11px
-- colour: background #111d1b · text #fafbfb · align start
-- motion: css-transition, css-animation
-
-### `content.block` (CONTENT)
-
-- appears on 4 route(s), 4 instance(s); tag `<div>`, named "Block"
-- height: 68px @1440 · 68px @1280 · 105px @390
-- columns: 5 @1440 · 5 @1280 · 1 @390
-- box: padding 1/1px · first child 1360px wide · gap 8px
-- colour: background #111d1b · text #fafbfb · align left
-- body: JetBrains Mono 12px/16px weight 400 #dde7e7
-- motion: css-transition
-
-### `hero.mask-intersect` (HERO)
-
-- appears on 15 route(s), 15 instance(s); tag `<div>`, named "mask-intersect"
-- height: 2751px @1440 · 2751px @1280 · 3493px @390
-- columns: 1 @1440 · 1 @1280 · 1 @390
-- box: padding 0/0px · first child 1440px wide · gap 24px
-- colour: background #111d1b · text #fafbfb · align start
-- headline: twkLausanne 40px/48px weight 350 tracking -1.2px #f7f8f8
-- body: twkEverettMono 12px/16px weight 400 #a9bcbc
-- layout: two text columns, 553 / 553px, text on the left
-- motion: css-transition, css-animation, canvas-animation, scroll-linked
-- example headline: "The AI Partner forInvestment Management"
-
-### `content.section` (CONTENT)
-
-- appears on 1 route(s), 5 instance(s); tag `<section>`, named "Section"
-- height: 770px @1440 · 770px @1280 · 718px @390
-- columns: 1 @1440 · 1 @1280 · 1 @390
-- box: padding 40/40px · first child 552px wide · gap none
-- colour: background #111d1b · text #fafbfb · align center
-- headline: STIX Two Text 24px/32px weight 600 #fafbfb
-- body: STIX Two Text 24px/32px weight 400 #fafbfb
-- motion: css-transition, css-animation
-
-### `features.section` (FEATURES)
-
-- appears on 1 route(s), 1 instance(s); tag `<section>`, named "Section"
-- height: 460px @1440 · 460px @1280 · 512px @390
-- columns: 1 @1440 · 1 @1280 · 1 @390
-- box: padding 40/40px · first child 552px wide · gap none
-- colour: background #111d1b · text #fafbfb · align center
-- headline: STIX Two Text 24px/32px weight 600 #fafbfb
-- body: STIX Two Text 24px/32px weight 400 #fafbfb
-- motion: css-transition, css-animation
-- example headline: "THE END OF TOOLS"
+- purpose: Orients the visitor and provides the site-wide navigation (Memo, Careers, Contact) plus the market-status readout; fixed to the top of every page.
+- height: 80px @1440 · 74px @390
+- motion: css-animation, css-transition
+- content budget: body ≤2×3w, ctas ≤5×2w
+- assets: none
+- implemented by: `src/sections/shell-header/Careers.jsx` (+8 more)
 
 ## Routes
 
 | Route | Template | Sections in order |
 |---|---|---|
-| `/` | `template.group` | `shell.header` → `content.block` → `hero.mask-intersect` |
-| `/memo` | `template.memo` | `shell.header` → `content.block` → `content.section` → `content.section` → `content.section` → `content.section` → `features.section` → `content.section` |
-| `/careers` | `template.group` | `shell.header` → `content.block` → `hero.mask-intersect` |
-| `/series-c` | `template.group` | `shell.header` → `content.block` → `hero.mask-intersect` |
-| `/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07` | `template.careers` | `shell.header` → `hero.mask-intersect` |
-| `/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f` | `template.careers` | `shell.header` → `hero.mask-intersect` |
-| `/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44` | `template.careers` | `shell.header` → `hero.mask-intersect` |
-| `/careers/f679da84-db6f-4a08-801b-dd63508d6310` | `template.careers` | `shell.header` → `hero.mask-intersect` |
-| `/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2` | `template.careers` | `shell.header` → `hero.mask-intersect` |
-| `/careers/30f72628-dd96-4fb2-b998-ab310e90ad82` | `template.careers` | `shell.header` → `hero.mask-intersect` |
-| `/careers/1db991e4-9480-4847-b300-c430cc057d56` | `template.careers` | `shell.header` → `hero.mask-intersect` |
-| `/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490` | `template.careers` | `shell.header` → `hero.mask-intersect` |
-| `/careers/9a3a451a-43bf-42cd-9c24-78e309c07104` | `template.careers` | `shell.header` → `hero.mask-intersect` |
-| `/careers/707c9117-1b1e-4260-96b3-28f735f7d840` | `template.careers` | `shell.header` → `hero.mask-intersect` |
-| `/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256` | `template.careers` | `shell.header` → `hero.mask-intersect` |
-| `/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5` | `template.careers` | `shell.header` → `hero.mask-intersect` |
+| `/` | `template.home` | `shell.header` → `banner.announcement` → `hero.canvas-statement` → `proof.metrics-line` → `proof.logo-strip` → `conversion.contact-dialog` |
+| `/memo` | `template.memo` | `shell.header` → `banner.announcement` → `hero.memo-masthead` → `editorial.memo-part` → `editorial.memo-part` → `editorial.memo-part` → `editorial.memo-part` → `editorial.memo-signoff` → `conversion.contact-dialog` |
+| `/careers` | `template.careers-index` | `shell.header` → `banner.announcement` → `hero.title-intro` → `careers.job-group` → `careers.job-group` → `careers.job-group` → `careers.job-group` → `careers.job-group` → `conversion.contact-dialog` |
+| `/series-c` | `template.press-release` | `shell.header` → `banner.announcement` → `hero.press-headline` → `editorial.press-meta` → `editorial.prose` → `editorial.prose` → `editorial.prose` → `editorial.prose` → `conversion.contact-dialog` |
+| `/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07` | `template.careers-detail` | `shell.header` → `careers.job-header` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.apply-cta` → `conversion.contact-dialog` |
+| `/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f` | `template.careers-detail` | `shell.header` → `careers.job-header` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.apply-cta` → `conversion.contact-dialog` |
+| `/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44` | `template.careers-detail` | `shell.header` → `careers.job-header` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.apply-cta` → `conversion.contact-dialog` |
+| `/careers/f679da84-db6f-4a08-801b-dd63508d6310` | `template.careers-detail` | `shell.header` → `careers.job-header` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.apply-cta` → `conversion.contact-dialog` |
+| `/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2` | `template.careers-detail` | `shell.header` → `careers.job-header` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.apply-cta` → `conversion.contact-dialog` |
+| `/careers/30f72628-dd96-4fb2-b998-ab310e90ad82` | `template.careers-detail` | `shell.header` → `careers.job-header` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.apply-cta` → `conversion.contact-dialog` |
+| `/careers/1db991e4-9480-4847-b300-c430cc057d56` | `template.careers-detail` | `shell.header` → `careers.job-header` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.apply-cta` → `conversion.contact-dialog` |
+| `/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490` | `template.careers-detail` | `shell.header` → `careers.job-header` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.apply-cta` → `conversion.contact-dialog` |
+| `/careers/9a3a451a-43bf-42cd-9c24-78e309c07104` | `template.careers-detail` | `shell.header` → `careers.job-header` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.apply-cta` → `conversion.contact-dialog` |
+| `/careers/707c9117-1b1e-4260-96b3-28f735f7d840` | `template.careers-detail` | `shell.header` → `careers.job-header` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.apply-cta` → `conversion.contact-dialog` |
+| `/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256` | `template.careers-detail` | `shell.header` → `careers.job-header` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.apply-cta` → `conversion.contact-dialog` |
+| `/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5` | `template.careers-detail` | `shell.header` → `careers.job-header` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.job-description-block` → `careers.apply-cta` → `conversion.contact-dialog` |

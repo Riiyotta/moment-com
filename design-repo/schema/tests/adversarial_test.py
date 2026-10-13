@@ -19,6 +19,10 @@ TEMPLATES = sv.load("templates/templates.json")["templates"]
 GRAPH = {r["id"]: r for r in sv.load("compatibility/graph.json")["rules"]}
 VERSION = sv.load("schema/pagespec.schema.json")["properties"]["pageSpecVersion"]["const"]
 NONE = {"pattern": "none", "reducedMotionFallback": "disable-animation"}
+PROTECTED = set(sv.load("assets/asset-roles.json")["protectedRoles"])
+GENERIC = sorted(sv.load("assets/asset-roles.json")["genericDecorativeRoles"])
+RETIRED = sv.load("compatibility/graph.json")["retiredSectionIds"]
+RETIRED_T = sv.load("compatibility/graph.json")["retiredTemplateIds"]
 
 
 def minimal_node(sid, motion=None):
@@ -29,6 +33,9 @@ def minimal_node(sid, motion=None):
     if f.get("body", {}).get("required"): content["body"] = ["Sample"]
     if f.get("ctas", {}).get("required"): content["ctas"] = [{"label": "Go"}]
     if f.get("items", {}).get("required"): content["items"] = [{"title": "Sample"}]
+    if f.get("images", {}).get("required"):
+        role = f["images"]["assetRoles"][0]
+        content["images"] = [{"assetRole": role, "alt": "Sample", **({"source": "placeholder"} if role in PROTECTED else {})}]
     return {"type": sid, "content": content, "motion": dict(motion or NONE)}
 
 
@@ -73,6 +80,40 @@ def main():
     if img is not None:
         role = (SECS[example["nodes"][img]["type"]]["content"]["fields"]["images"].get("assetRoles") or ["content-image"])[0]
         mut("alt text over its word budget", lambda s: s["nodes"][img]["content"].__setitem__("images", [{"assetRole": role, "alt": " ".join(["w"] * 17)}]), "alt has 17 words")
+
+    # ---- decomposition + asset-protection layer (0.2.0)
+    mut("retired oversized section id", lambda s: s["nodes"][1].__setitem__("type", sorted(RETIRED)[0]), "retired:")
+    mut("retired template id", lambda s: s.__setitem__("template", sorted(RETIRED_T)[0]), "retired: template")
+    logo_i = first_idx(lambda n: "customer-logo" in SECS[n["type"]].get("assetRoles", []))
+    mut("customer logo filed as a generic decorative role", lambda s: s["nodes"][logo_i]["content"].__setitem__("images", [{"assetRole": GENERIC[0], "alt": "x"}]),
+        "not used by this section", why_not=None if logo_i is not None else "no section carries customer logos")
+    mut("protected logo role without a placeholder/supplied source", lambda s: s["nodes"][logo_i]["content"]["images"][0].pop("source"),
+        "is protected (must-not-fabricate)", why_not=None if logo_i is not None else "no section carries customer logos")
+    mut("person photo used where logos are expected", lambda s: s["nodes"][logo_i]["content"].__setitem__("images", [{"assetRole": "avatar", "source": "placeholder"}]),
+        "not used by this section", why_not=None if logo_i is not None else "no section carries customer logos")
+    mut("more logos than the strip holds", lambda s: s["nodes"][logo_i]["content"].__setitem__("images", s["nodes"][logo_i]["content"]["images"] * 2),
+        "is too long", why_not=None if logo_i is not None else "no section carries customer logos")
+    bodyn = first_idx(lambda n: SECS[n["type"]]["content"]["fields"].get("body", {}).get("maxItems"))
+    if bodyn is not None:
+        mi = SECS[types[bodyn]]["content"]["fields"]["body"]["maxItems"]
+        mut("body paragraphs beyond the section's capacity (one section cannot absorb a whole page)", lambda s: s["nodes"][bodyn]["content"].__setitem__("body", ["word"] * (mi + 1)), "is too long")
+    else: skipped.append("body capacity: example has no body field")
+    # alternative-template mutations (the example's template does not contain these sections)
+    def alt(label, tid, fn, needle, expect="error"):
+        t = next((x for x in TEMPLATES if x["id"] == tid), None)
+        if not t: skipped.append(f"{label}: no template {tid}"); return
+        s = control_for(t); fn(s); cases.append((label, s, expect, needle))
+    alt("customer logo role on the memo masthead (a decorative section)", "template.memo",
+        lambda s: s["nodes"][2]["content"].__setitem__("images", [{"assetRole": "customer-logo", "source": "placeholder"}]), "not used by this section")
+    alt("generic non-background role on the memo masthead", "template.memo",
+        lambda s: s["nodes"][2]["content"].__setitem__("images", [{"assetRole": "illustration"}]), "not used by this section")
+    alt("animation pattern on a rich-text-only section", "template.careers-detail",
+        lambda s: next(n for n in s["nodes"] if n["type"] == "careers.job-description-block")["motion"].__setitem__("pattern", "scroll-linked"), "not allowed")
+    def too_many_blocks(s): s["nodes"][2:2] = [minimal_node("careers.job-description-block") for _ in range(9)]
+    alt("job description block repeated beyond the template's maxCount", "template.careers-detail", too_many_blocks, "repeated")
+    def drop_metrics(s): s["nodes"] = [n for n in s["nodes"] if n["type"] != "proof.metrics-line"]
+    alt("logo strip placed without its observed predecessor", "template.home", drop_metrics, "MUST_FOLLOW_OBSERVED_PREDECESSOR")
+    alt("contact dialog not last", "template.press-release", lambda s: s["nodes"].insert(0, s["nodes"].pop()), "SHELL_MUST_BE_LAST")
 
     # ---- structural layer (template cross-reference)
     once = [i for i, tn in enumerate(tmpl["nodes"]) if tn["required"] and tseq.count(tn["section"]) == 1]
@@ -131,9 +172,6 @@ def main():
     if itn is not None:
         tw = SECS[types[itn]]["content"]["fields"]["items"]["titleMaxWords"]
         mut("maxWords overflow on an item title", lambda s: s["nodes"][itn]["content"]["items"][0].__setitem__("title", " ".join(["word"] * (tw + 1))), "title has")
-    noanim = first_idx(lambda n: SECS[n["type"]]["motion"]["allowedPatterns"] == ["none"])
-    mut("motion pattern not allowed for its section", lambda s: s["nodes"][noanim]["motion"].__setitem__("pattern", "scroll-linked"), "not allowed",
-        why_not=None if noanim is not None else "every section allows animation")
 
     ok = fail = 0
     for label, spec, expect, needle in cases:

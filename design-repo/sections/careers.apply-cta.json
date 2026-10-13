@@ -1,0 +1,99 @@
+{
+  "id": "careers.apply-cta",
+  "category": "CAREERS",
+  "label": "Apply call to action",
+  "tag": "div",
+  "purpose": "Closes a role page with the 'Interested in this role?' prompt and the Apply link.",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "body": {
+        "type": "string[]",
+        "required": true,
+        "maxItems": 1,
+        "maxWords": 4
+      },
+      "ctas": {
+        "type": "cta[]",
+        "required": true,
+        "maxItems": 1,
+        "maxWords": 4
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 12,
+    "routes": 12,
+    "measuredFrom": [
+      "src/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07/index.html:317-320",
+      "src/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f/index.html:311-314",
+      "src/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44/index.html:323-326",
+      "src/careers/f679da84-db6f-4a08-801b-dd63508d6310/index.html:383-386",
+      "src/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2/index.html:336-339"
+    ]
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-transition",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 97
+    },
+    "mobile": {
+      "heightPx": 97
+    },
+    "measuredOnRoute": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+    "changes": []
+  },
+  "assetRoles": [],
+  "retrieval": {
+    "semanticLabel": "careers/apply-cta",
+    "kind": "cta",
+    "role": "job conversion",
+    "summary": "Closing apply prompt and button for a role page.",
+    "keywords": [
+      "apply",
+      "cta",
+      "job"
+    ],
+    "pageFamilies": [
+      "template.careers-detail"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/careers-apply-cta/Job1db991e4.jsx",
+    "src/sections/careers-apply-cta/Job30f72628.jsx",
+    "src/sections/careers-apply-cta/Job5fb2d42b.jsx",
+    "src/sections/careers-apply-cta/Job707c9117.jsx",
+    "src/sections/careers-apply-cta/Job752a96ec.jsx",
+    "src/sections/careers-apply-cta/Job93c2d5e1.jsx",
+    "src/sections/careers-apply-cta/Job9a3a451a.jsx",
+    "src/sections/careers-apply-cta/Job9e9306c1.jsx",
+    "src/sections/careers-apply-cta/JobB13c29c2.jsx",
+    "src/sections/careers-apply-cta/JobEd7b7afd.jsx",
+    "src/sections/careers-apply-cta/JobF679da84.jsx",
+    "src/sections/careers-apply-cta/JobF8e990cd.jsx"
+  ],
+  "implementedBy": "src/sections/careers-apply-cta/Job1db991e4.jsx",
+  "constraints": {
+    "onePerPage": true
+  },
+  "granularity": {
+    "singleResponsibility": "job conversion",
+    "copyCapacityWords": 8,
+    "imageCapacity": 0,
+    "bodyItemCapacity": 1
+  }
+}

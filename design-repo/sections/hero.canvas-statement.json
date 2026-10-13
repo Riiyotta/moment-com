@@ -1,0 +1,87 @@
+{
+  "id": "hero.canvas-statement",
+  "category": "HERO",
+  "label": "Canvas statement hero",
+  "tag": "div",
+  "purpose": "Opens the home page: a canvas-animated backdrop with the h1 value statement and one supporting line.",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "heading": {
+        "type": "string",
+        "required": true,
+        "maxWords": 6
+      },
+      "subheading": {
+        "type": "string",
+        "required": true,
+        "maxWords": 9
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 1,
+    "routes": 1,
+    "measuredFrom": [
+      "src/index.html:214-249"
+    ]
+  },
+  "motion": {
+    "allowedPatterns": [
+      "canvas-animation",
+      "css-animation",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 900
+    },
+    "mobile": {
+      "heightPx": 844
+    },
+    "measuredOnRoute": "/",
+    "changes": [
+      "below lg the statement renders in a stacked column (lines 221-285) over a 50%-opacity canvas with a bottom fade mask; from lg a second, absolutely-positioned copy (lines 286-340) renders the h1 on one non-wrapping line over a full-opacity canvas"
+    ]
+  },
+  "assetRoles": [],
+  "retrieval": {
+    "semanticLabel": "hero/canvas-statement",
+    "kind": "hero",
+    "role": "page opener",
+    "summary": "Full-viewport hero: animated canvas backdrop, h1 positioning statement, one subheading.",
+    "keywords": [
+      "hero",
+      "home",
+      "canvas",
+      "positioning",
+      "h1"
+    ],
+    "pageFamilies": [
+      "template.home"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/hero-canvas-statement/Home.jsx"
+  ],
+  "implementedBy": "src/sections/hero-canvas-statement/Home.jsx",
+  "constraints": {
+    "onePerPage": true
+  },
+  "granularity": {
+    "singleResponsibility": "page opener",
+    "copyCapacityWords": 15,
+    "imageCapacity": 0,
+    "bodyItemCapacity": 0
+  }
+}

@@ -3,7 +3,7 @@
   "site": "moment-com",
   "status": "design-review-pending",
   "productionApproved": false,
-  "repositoryVersion": "0.1.0",
+  "repositoryVersion": "0.2.0",
   "pageSpecVersion": "0.1.0",
   "allowlistVersion": "1",
   "versionFieldNote": "allowlistVersion is machine-checked (verify_all.py fails if it differs from tokens/llm/component-allowlist.json). repositoryVersion and pageSpecVersion are documentation-only markers; pageSpecVersion is additionally pinned as a const in the schema.",
@@ -22,8 +22,8 @@
   },
   "generatedBy": "website-builder (heuristic extraction; see README)",
   "counts": {
-    "sections": 5,
-    "templates": 3,
+    "sections": 17,
+    "templates": 5,
     "routes": 16,
     "primitives": 12,
     "components": 31,
@@ -35,7 +35,7 @@
       "layout": 9
     },
     "themes": 1,
-    "rules": 7
+    "rules": 8
   },
   "entryPoints": {
     "tokenCatalog": "tokens/llm/token-catalog.json",

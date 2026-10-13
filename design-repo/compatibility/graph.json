@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "derivedFrom": "templates/templates.json and sections/*.json constraints (recomputed by verify_all.py)",
   "rules": [
     {
@@ -9,7 +9,7 @@
       "category": "HERO",
       "max": 1,
       "exceptions": [],
-      "description": "A page has at most one HERO section. Templates that genuinely carry more are named in `exceptions`."
+      "description": "A page has at most one HERO section. No measured template carries more; templates without a hero (template.careers-detail) are simply not required to have one."
     },
     {
       "id": "SECTION_PER_PAGE_LIMITS",
@@ -17,10 +17,22 @@
       "kind": "perPageLimits",
       "limits": {
         "shell.header": 1,
-        "content.block": 1,
-        "hero.mask-intersect": 1,
-        "content.section": 5,
-        "features.section": 1
+        "banner.announcement": 1,
+        "hero.canvas-statement": 1,
+        "proof.metrics-line": 1,
+        "proof.logo-strip": 1,
+        "hero.memo-masthead": 1,
+        "editorial.memo-part": 4,
+        "editorial.memo-signoff": 1,
+        "hero.title-intro": 1,
+        "careers.job-group": 5,
+        "hero.press-headline": 1,
+        "editorial.press-meta": 1,
+        "editorial.prose": 4,
+        "careers.job-header": 1,
+        "careers.job-description-block": 8,
+        "careers.apply-cta": 1,
+        "conversion.contact-dialog": 1
       },
       "description": "No section appears more often on one page than it does in any measured template."
     },
@@ -37,15 +49,17 @@
       "id": "SHELL_MUST_BE_LAST",
       "severity": "error",
       "kind": "mustBeLast",
-      "sections": [],
-      "description": "Sections that closed every template they appear in must be the last node."
+      "sections": [
+        "conversion.contact-dialog"
+      ],
+      "description": "Sections that closed every template they appear in must be the last node (the contact dialog is the final node of every page)."
     },
     {
       "id": "NO_CONSECUTIVE_SAME_SECTION",
       "severity": "warn",
       "kind": "noConsecutive",
       "sections": [],
-      "description": "These sections were never observed back-to-back."
+      "description": "These sections were never observed back-to-back. Repeatable sections (memo parts, prose blocks, job groups, description blocks) are observed back-to-back by design, so none are listed."
     },
     {
       "id": "NO_ADJACENT_SAME_CATEGORY",
@@ -53,11 +67,87 @@
       "kind": "noAdjacentSameCategory",
       "exceptions": [
         [
-          "content.block",
-          "content.section"
+          "careers.job-description-block",
+          "careers.apply-cta"
+        ],
+        [
+          "careers.job-header",
+          "careers.job-description-block"
+        ],
+        [
+          "editorial.memo-part",
+          "editorial.memo-signoff"
+        ],
+        [
+          "editorial.press-meta",
+          "editorial.prose"
+        ],
+        [
+          "proof.metrics-line",
+          "proof.logo-strip"
         ]
       ],
-      "description": "Two different sections of the same category should not sit next to each other unless that exact pair was observed (named exceptions)."
+      "description": "Two different sections of the same category should not sit next to each other unless that exact ordered pair was observed (named exceptions, recomputed from templates)."
+    },
+    {
+      "id": "MUST_FOLLOW_OBSERVED_PREDECESSOR",
+      "severity": "error",
+      "kind": "mustFollow",
+      "follows": {
+        "banner.announcement": [
+          "shell.header"
+        ],
+        "careers.apply-cta": [
+          "careers.job-description-block"
+        ],
+        "careers.job-description-block": [
+          "careers.job-header"
+        ],
+        "careers.job-group": [
+          "hero.title-intro"
+        ],
+        "careers.job-header": [
+          "shell.header"
+        ],
+        "conversion.contact-dialog": [
+          "careers.apply-cta",
+          "careers.job-group",
+          "editorial.memo-signoff",
+          "editorial.prose",
+          "proof.logo-strip"
+        ],
+        "editorial.memo-part": [
+          "hero.memo-masthead"
+        ],
+        "editorial.memo-signoff": [
+          "editorial.memo-part"
+        ],
+        "editorial.press-meta": [
+          "hero.press-headline"
+        ],
+        "editorial.prose": [
+          "editorial.press-meta"
+        ],
+        "hero.canvas-statement": [
+          "banner.announcement"
+        ],
+        "hero.memo-masthead": [
+          "banner.announcement"
+        ],
+        "hero.press-headline": [
+          "banner.announcement"
+        ],
+        "hero.title-intro": [
+          "banner.announcement"
+        ],
+        "proof.logo-strip": [
+          "proof.metrics-line"
+        ],
+        "proof.metrics-line": [
+          "hero.canvas-statement"
+        ]
+      },
+      "description": "A section may only sit directly after a section it was observed after in a measured template (the compatibility graph's adjacency, recomputed from templates)."
     },
     {
       "id": "MOTION_BUDGET",
@@ -66,5 +156,304 @@
       "max": 8,
       "description": "No page has more animated sections than the most animated measured page."
     }
-  ]
+  ],
+  "compatibility": {
+    "banner.announcement": {
+      "recommendedAfter": [
+        "shell.header"
+      ],
+      "recommendedBefore": [
+        "hero.canvas-statement",
+        "hero.memo-masthead",
+        "hero.press-headline",
+        "hero.title-intro"
+      ],
+      "templates": [
+        "template.careers-index",
+        "template.home",
+        "template.memo",
+        "template.press-release"
+      ]
+    },
+    "careers.apply-cta": {
+      "recommendedAfter": [
+        "careers.job-description-block"
+      ],
+      "recommendedBefore": [
+        "conversion.contact-dialog"
+      ],
+      "templates": [
+        "template.careers-detail"
+      ]
+    },
+    "careers.job-description-block": {
+      "recommendedAfter": [
+        "careers.job-header"
+      ],
+      "recommendedBefore": [
+        "careers.apply-cta"
+      ],
+      "templates": [
+        "template.careers-detail"
+      ]
+    },
+    "careers.job-group": {
+      "recommendedAfter": [
+        "hero.title-intro"
+      ],
+      "recommendedBefore": [
+        "conversion.contact-dialog"
+      ],
+      "templates": [
+        "template.careers-index"
+      ]
+    },
+    "careers.job-header": {
+      "recommendedAfter": [
+        "shell.header"
+      ],
+      "recommendedBefore": [
+        "careers.job-description-block"
+      ],
+      "templates": [
+        "template.careers-detail"
+      ]
+    },
+    "conversion.contact-dialog": {
+      "recommendedAfter": [
+        "careers.apply-cta",
+        "careers.job-group",
+        "editorial.memo-signoff",
+        "editorial.prose",
+        "proof.logo-strip"
+      ],
+      "recommendedBefore": [],
+      "templates": [
+        "template.careers-detail",
+        "template.careers-index",
+        "template.home",
+        "template.memo",
+        "template.press-release"
+      ]
+    },
+    "editorial.memo-part": {
+      "recommendedAfter": [
+        "hero.memo-masthead"
+      ],
+      "recommendedBefore": [
+        "editorial.memo-signoff"
+      ],
+      "templates": [
+        "template.memo"
+      ]
+    },
+    "editorial.memo-signoff": {
+      "recommendedAfter": [
+        "editorial.memo-part"
+      ],
+      "recommendedBefore": [
+        "conversion.contact-dialog"
+      ],
+      "templates": [
+        "template.memo"
+      ]
+    },
+    "editorial.press-meta": {
+      "recommendedAfter": [
+        "hero.press-headline"
+      ],
+      "recommendedBefore": [
+        "editorial.prose"
+      ],
+      "templates": [
+        "template.press-release"
+      ]
+    },
+    "editorial.prose": {
+      "recommendedAfter": [
+        "editorial.press-meta"
+      ],
+      "recommendedBefore": [
+        "conversion.contact-dialog"
+      ],
+      "templates": [
+        "template.press-release"
+      ]
+    },
+    "hero.canvas-statement": {
+      "recommendedAfter": [
+        "banner.announcement"
+      ],
+      "recommendedBefore": [
+        "proof.metrics-line"
+      ],
+      "templates": [
+        "template.home"
+      ]
+    },
+    "hero.memo-masthead": {
+      "recommendedAfter": [
+        "banner.announcement"
+      ],
+      "recommendedBefore": [
+        "editorial.memo-part"
+      ],
+      "templates": [
+        "template.memo"
+      ]
+    },
+    "hero.press-headline": {
+      "recommendedAfter": [
+        "banner.announcement"
+      ],
+      "recommendedBefore": [
+        "editorial.press-meta"
+      ],
+      "templates": [
+        "template.press-release"
+      ]
+    },
+    "hero.title-intro": {
+      "recommendedAfter": [
+        "banner.announcement"
+      ],
+      "recommendedBefore": [
+        "careers.job-group"
+      ],
+      "templates": [
+        "template.careers-index"
+      ]
+    },
+    "proof.logo-strip": {
+      "recommendedAfter": [
+        "proof.metrics-line"
+      ],
+      "recommendedBefore": [
+        "conversion.contact-dialog"
+      ],
+      "templates": [
+        "template.home"
+      ]
+    },
+    "proof.metrics-line": {
+      "recommendedAfter": [
+        "hero.canvas-statement"
+      ],
+      "recommendedBefore": [
+        "proof.logo-strip"
+      ],
+      "templates": [
+        "template.home"
+      ]
+    },
+    "shell.header": {
+      "recommendedAfter": [],
+      "recommendedBefore": [
+        "banner.announcement",
+        "careers.job-header"
+      ],
+      "templates": [
+        "template.careers-detail",
+        "template.careers-index",
+        "template.home",
+        "template.memo",
+        "template.press-release"
+      ]
+    }
+  },
+  "sectionKinds": {
+    "header": {
+      "description": "site header / navigation",
+      "observedSections": 1
+    },
+    "banner": {
+      "description": "announcement strip",
+      "observedSections": 1
+    },
+    "hero": {
+      "description": "page opener with h1",
+      "observedSections": 4
+    },
+    "logo-strip": {
+      "description": "third-party logo row",
+      "observedSections": 1
+    },
+    "metrics": {
+      "description": "scale / numbers line",
+      "observedSections": 1
+    },
+    "editorial": {
+      "description": "long-form or press copy",
+      "observedSections": 4
+    },
+    "job-list": {
+      "description": "department job rows",
+      "observedSections": 1
+    },
+    "job-detail": {
+      "description": "role identity or description",
+      "observedSections": 2
+    },
+    "cta": {
+      "description": "conversion prompt or form",
+      "observedSections": 2
+    },
+    "feature-intro": {
+      "description": "feature section introduction",
+      "observedSections": 0,
+      "note": "not present on the measured site: no contract may be invented for this kind"
+    },
+    "feature-grid": {
+      "description": "grid of feature cards",
+      "observedSections": 0,
+      "note": "not present on the measured site: no contract may be invented for this kind"
+    },
+    "showcase": {
+      "description": "product / content showcase",
+      "observedSections": 0,
+      "note": "not present on the measured site: no contract may be invented for this kind"
+    },
+    "testimonial": {
+      "description": "customer quote",
+      "observedSections": 0,
+      "note": "not present on the measured site: no contract may be invented for this kind"
+    },
+    "footer": {
+      "description": "site footer",
+      "observedSections": 0,
+      "note": "not present on the measured site: no contract may be invented for this kind"
+    }
+  },
+  "granularityPolicy": {
+    "why": "A section is the retrieval unit: it must carry one responsibility, a bounded amount of copy and imagery, and be small enough to be reused on its own. The 0.1.0 'hero.mask-intersect' (2751px desktop / 3493px mobile, 30 paragraphs, 13 images, five different responsibilities) is the case this policy forbids.",
+    "maxDesktopHeightPx": 1440,
+    "maxMobileHeightPx": 1688,
+    "heightBasis": "1.6 x the 900px measuring viewport (desktop) and 2 x the 844px measuring viewport (mobile)",
+    "maxCopyCapacityWords": 1500,
+    "maxImageCapacity": 8,
+    "maxBodyItemCapacity": 16,
+    "maxContentFields": 6,
+    "genericIdLeaves": [
+      "block",
+      "section",
+      "container",
+      "wrapper",
+      "group",
+      "mask-intersect",
+      "pointer-events-none",
+      "w-full",
+      "content",
+      "div"
+    ]
+  },
+  "retiredSectionIds": {
+    "hero.mask-intersect": "split by page region: hero.canvas-statement, proof.metrics-line, proof.logo-strip, hero.title-intro, careers.job-group, hero.press-headline, editorial.press-meta, editorial.prose, careers.job-header, careers.job-description-block, careers.apply-cta, conversion.contact-dialog",
+    "content.block": "renamed banner.announcement (it is the announcement strip, and it holds two links, not one)",
+    "content.section": "split: hero.memo-masthead, editorial.memo-part, editorial.memo-signoff",
+    "features.section": "was memo Part IV ('The End of Tools'): now an editorial.memo-part"
+  },
+  "retiredTemplateIds": {
+    "template.group": "split by page family: template.home, template.careers-index, template.press-release",
+    "template.careers": "renamed template.careers-detail (template.careers-index is the listing page)"
+  }
 }

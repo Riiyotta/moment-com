@@ -89,6 +89,61 @@ def inj_hero_exception(r):   # the graph claims a template has >1 HERO section t
     if rule is None: return False
     rule["exceptions"] = list(rule.get("exceptions", [])) + ["template.phantom-multi-hero"]; jsave(p, d)
 
+# ---- 0.2.0: decomposition, granularity and asset-protection drift
+def _sec(r, sid): return os.path.join(r, "sections", sid + ".json")
+def inj_oversized(r):   # a section quietly grows back toward the old catch-all
+    p = _sec(r, "editorial.prose"); d = jload(p); d["content"]["fields"]["body"]["maxItems"] = 40; jsave(p, d)
+def inj_oversized_height(r):
+    p = _sec(r, "editorial.prose"); d = jload(p); d["responsive"]["desktop"]["heightPx"] = 2751; jsave(p, d)
+def inj_retired_back(r):   # the retired 0.1.0 catch-all is reintroduced under its old id
+    d = jload(_sec(r, "editorial.prose")); d["id"] = "hero.mask-intersect"; jsave(_sec(r, "hero.mask-intersect"), d)
+def inj_generic_id(r):
+    d = jload(_sec(r, "editorial.prose")); d["id"] = "editorial.wrapper"; d["retrieval"]["semanticLabel"] = "editorial/wrapper"; jsave(_sec(r, "editorial.wrapper"), d)
+def _logo(r):
+    p = os.path.join(r, "assets/asset-roles.json"); return p, jload(p)
+def inj_logo_generic(r):   # a customer logo is filed as a generic illustration again
+    p, d = _logo(r); a = next(x for x in d["assets"] if x.get("entity")); a["role"] = "illustration"; jsave(p, d)
+def inj_logo_audit_only(r):   # same, but the entity tag is dropped so ONLY the evidence audit (what the section range renders) can catch it
+    p, d = _logo(r)
+    for a in d["assets"]:
+        if a.get("entity"): a["role"] = "illustration"; a.pop("entity")
+    for r_, v in d["roles"].items(): v["observed"] = sum(1 for a in d["assets"] if a["role"] == r_) + sum(1 for e in d.get("embeds", []) if e["role"] == r_)
+    jsave(p, d)
+def inj_mixed_roles(r):
+    p = _sec(r, "hero.memo-masthead"); d = jload(p); d["assetRoles"].append("customer-logo"); jsave(p, d)
+def inj_pinned_logo(r):
+    p, d = _logo(r); d["roles"]["customer-logo"]["generationPolicy"] = "may-generate-new"; jsave(p, d)
+def inj_pinned_new(r):   # a role added in 0.2.0 must hold its pin too
+    p, d = _logo(r); d["roles"]["author-photo"]["generationPolicy"] = "must-reuse-exact"; jsave(p, d)
+def inj_observed(r):
+    p, d = _logo(r); d["roles"]["customer-logo"]["observed"] += 1; jsave(p, d)
+def inj_follow(r):
+    p = os.path.join(r, "compatibility/graph.json"); d = jload(p)
+    rule = next(x for x in d["rules"] if x["id"] == "MUST_FOLLOW_OBSERVED_PREDECESSOR"); k = sorted(rule["follows"])[0]; rule["follows"][k] = rule["follows"][k] + ["shell.header"]; jsave(p, d)
+def inj_exception(r):
+    p = os.path.join(r, "compatibility/graph.json"); d = jload(p)
+    next(x for x in d["rules"] if x["id"] == "NO_ADJACENT_SAME_CATEGORY")["exceptions"].append(["hero.canvas-statement", "hero.press-headline"]); jsave(p, d)
+def inj_label_dup(r):
+    p = _sec(r, "editorial.prose"); d = jload(p); d["retrieval"]["semanticLabel"] = "hero/canvas-statement"; jsave(p, d)
+def inj_kind(r):   # a section claims a kind the site does not contain (footer)
+    p = _sec(r, "editorial.prose"); d = jload(p); d["retrieval"]["kind"] = "footer"; jsave(p, d)
+def inj_ledger_label(r):
+    p, d = _ledger(r); d["routes"][0]["sections"][1]["semanticLabel"] = "home/wrong#1"; jsave(p, d)
+def inj_last(r):
+    p = os.path.join(r, "compatibility/graph.json"); d = jload(p)
+    next(x for x in d["rules"] if x["id"] == "SHELL_MUST_BE_LAST")["sections"] = []; jsave(p, d)
+def inj_compat(r):
+    p = os.path.join(r, "compatibility/graph.json"); d = jload(p); d["compatibility"]["proof.logo-strip"]["recommendedAfter"] = ["shell.header"]; jsave(p, d)
+def inj_retired_tpl(r):
+    p = os.path.join(r, "templates/templates.json"); d = jload(p); d["templates"][0]["id"] = "template.group"; jsave(p, d)
+
+
+def inj_impl_missing(r):
+    p = _sec(r, "careers.apply-cta"); d = jload(p); d["implementedByAll"][0] = "src/sections/careers-apply-cta/DoesNotExist.jsx"; d["implementedBy"] = d["implementedByAll"][0]; jsave(p, d)
+def inj_impl_orphan(r):   # a catch-all component comes back without a contract claiming it
+    open(os.path.join(os.path.dirname(r), "src/sections/MaskIntersect.jsx"), "w").write("export default function MaskIntersect() { return null; }\n")
+def inj_impl_wrongdir(r):
+    p = _sec(r, "proof.metrics-line"); d = jload(p); d["implementedByAll"] = ["src/sections/proof-logo-strip/Home.jsx"]; d["implementedBy"] = d["implementedByAll"][0]; jsave(p, d)
 
 INJECTIONS = [
     ("phantom allowlist entry", inj_phantom, "has no contract file"),
@@ -107,8 +162,29 @@ INJECTIONS = [
     ("theme resolution drift", inj_theme, "theme light"),
     ("schema enum drifted from contracts", inj_schema_enum, "schema node type enum"),
     ("graph rule the validator does not implement", inj_rule_kind, "not implemented"),
-    ("snapshotFolder points at a missing evidence folder", inj_snapshot_folder, "declares sourceProject.snapshotFolder"),
+    ("snapshotFolder points at a missing evidence folder", inj_snapshot_folder, "declares sourceProject.snapshotFolder", "src"),
     ("ONE_HERO_PER_PAGE exception for a template that is not one", inj_hero_exception, "ONE_HERO_PER_PAGE exceptions"),
+    ("section grows back toward a catch-all (copy capacity)", inj_oversized, "is oversized: copy capacity"),
+    ("section grows tall again (2751px, the old hero)", inj_oversized_height, "is oversized: desktop height"),
+    ("retired hero.mask-intersect id reintroduced", inj_retired_back, "retired section id 'hero.mask-intersect' is back"),
+    ("generic section id (wrapper)", inj_generic_id, "generic id leaf"),
+    ("customer logo filed as a generic illustration (entity tag kept)", inj_logo_generic, "names a real entity"),
+    ("customer logo filed as a generic illustration (caught by the evidence audit alone)", inj_logo_audit_only, "asset audit", "src"),
+    ("protected and generic asset roles mixed in one section", inj_mixed_roles, "mixes protected"),
+    ("customer-logo pin changed to a different valid policy", inj_pinned_logo, "pinned asset role 'customer-logo'"),
+    ("a role added in 0.2.0 loses its policy", inj_pinned_new, "pinned asset role 'author-photo'"),
+    ("asset role observed count drift", inj_observed, "observed ="),
+    ("mustFollow adjacency drift", inj_follow, "MUST_FOLLOW_OBSERVED_PREDECESSOR.follows differs"),
+    ("named same-category adjacency exception drift", inj_exception, "NO_ADJACENT_SAME_CATEGORY exceptions differ"),
+    ("duplicate semantic label", inj_label_dup, "duplicates"),
+    ("section kind that the site does not contain", inj_kind, "sectionKinds"),
+    ("ledger semantic label drift", inj_ledger_label, "semanticLabel"),
+    ("mustBeLast rule drift", inj_last, "SHELL_MUST_BE_LAST disagrees"),
+    ("compatibility adjacency drift", inj_compat, "graph.compatibility"),
+    ("retired template id reintroduced", inj_retired_tpl, "retired template id 'template.group'"),
+    ("implementedBy points at a missing component", inj_impl_missing, "implementedBy points at a missing file", "src"),
+    ("implementedBy in another section's folder", inj_impl_wrongdir, "is not under src/sections/", "src"),
+    ("catch-all component reintroduced without a contract", inj_impl_orphan, "is not claimed by any section contract", "src"),
 ]
 
 
@@ -130,6 +206,8 @@ def main():
             if os.path.isdir(os.path.join(MIRROR, "src")):
                 dst = os.path.join(pkg, os.path.relpath(MIRROR, PKG), "src")
                 os.makedirs(os.path.dirname(dst), exist_ok=True); os.symlink(os.path.join(MIRROR, "src"), dst)
+            if os.path.isdir(os.path.join(PKG, "src", "sections")):   # the clone's components, copied so implementedBy checks run for real
+                shutil.copytree(os.path.join(PKG, "src", "sections"), os.path.join(pkg, "src", "sections"))
             return os.path.join(pkg, "design-repo")
         ok = fail = skip = 0
         has_src = os.path.isdir(os.path.join(MIRROR, "src"))

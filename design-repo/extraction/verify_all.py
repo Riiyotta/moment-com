@@ -16,7 +16,15 @@
      degrades to a warning instead, same as a design-repo shipped without its evidence tree.
  10  tokens: every {reference} resolves; theme resolves every semantic token to the recomputed value;
      catalog ids exist; policy categories match catalog keys
- 11  assets: closed role vocabulary; PINNED roles hold their exact policy; files exist (warn if no public/)
+ 11  assets: closed role vocabulary; PINNED roles hold their exact policy; files exist (warn if no public/);
+     protected/generic role lists recomputed; no section mixes generic and protected roles; every asset a cited section
+     range actually renders (<img src>, mask-image url()) has a role that section allows (a customer logo can never be
+     filed as an illustration); `observed` counts recomputed
+ 11c implementation: each contract's implementedBy/implementedByAll are real files in the package's src/ (skipped when src/ is
+     absent) and every component file under src/sections/<section-id>/ is claimed by exactly that section's contract
+ 11b granularity: every section is one responsibility (single role, recomputed copy/image/body capacity under the graph's
+     granularityPolicy, measured heights under it, no generic id such as 'block'); retired 0.1.0 ids may not return;
+     retrieval labels unique, kinds observed; graph compatibility/adjacency/exceptions recomputed from templates
  12  motion closed to the contract's fields; section patterns inside the contract
  13  no absolute machine paths in any JSON/MD file
  14  schema is valid draft-07; example validates with zero errors; adversarial suite passes
@@ -45,7 +53,8 @@ def gitignored(rel):
 # role in the registry to a different-but-still-valid policy is caught (membership alone is not enough).
 PINNED = {"logo": "must-reuse-exact", "customer-logo": "must-not-fabricate", "avatar": "must-not-fabricate",
           "font": "must-reuse-exact", "live-embed": "must-not-reuse-live-endpoint",
-          "founder-contact-email": "must-not-reuse-live-endpoint"}
+          "founder-contact-email": "must-not-reuse-live-endpoint", "partner-logo": "must-not-fabricate",
+          "author-photo": "must-not-fabricate", "product-screenshot": "must-not-fabricate", "social-card": "must-reuse-exact"}
 REQUIRED = ["registry.manifest.json", "README.md", "CHANGELOG.md", "tokens/themes/light.json",
             "tokens/llm/token-catalog.json", "tokens/llm/token-policy.json", "tokens/llm/component-allowlist.json",
             "templates/templates.json", "compatibility/graph.json", "assets/asset-roles.json", "motion/motion-contract.json",
@@ -106,7 +115,11 @@ def main():
             # package's own .gitignore excludes it. That is not a misplaced evidence tree, so it is reported, not failed, but ONLY for
             # the standard location: any other declared folder that is missing (a typo, a moved tree) still fails outright.
             global NOT_SHIPPED
-            if os.path.normpath(snap) == os.path.normpath("recon/mirror/src") and gitignored("recon/mirror/src"):
+            standalone = not os.path.isdir(os.path.join(PKG, "recon"))   # design-repo/ delivered alone (zip, subtree): there is no evidence tree to be mistaken about
+            if standalone:
+                NOT_SHIPPED = True
+                warns.append("design-repo/ is standing alone (no recon/ next to it): citations, asset files and implementedBy pointers are not checked here; run verify_all.py in the full package to admit fully")
+            elif os.path.normpath(snap) == os.path.normpath("recon/mirror/src") and gitignored("recon/mirror/src"):
                 NOT_SHIPPED = True
                 warns.append("evidence not shipped with this copy (recon/ is in .gitignore): citations and asset files are not checked here; run verify_all.py where recon/mirror/ exists to admit fully")
             else:
@@ -212,8 +225,8 @@ def main():
         cons = c["constraints"]
         if (cons.get("onePerPage") and mx != 1) or (not cons.get("onePerPage") and cons.get("maxPerPage") != mx):
             errs.append(f"sections/{sid}.json constraints disagree with templates (observed max per page {mx})")
-        first = c["category"] == "SHELL" and tm and all(t["nodes"][0]["section"] == sid for t in tm)
-        last = c["category"] == "SHELL" and tm and all(t["nodes"][-1]["section"] == sid for t in tm)
+        first = bool(tm) and all(t["nodes"][0]["section"] == sid for t in tm)
+        last = bool(tm) and all(t["nodes"][-1]["section"] == sid for t in tm)
         if bool(cons.get("mustBeFirst")) != bool(first): errs.append(f"sections/{sid}.json mustBeFirst disagrees with templates")
         if bool(cons.get("mustBeLast")) != bool(last): errs.append(f"sections/{sid}.json mustBeLast disagrees with templates")
     rules = {r["id"]: r for r in graph["rules"]}
@@ -314,6 +327,138 @@ def main():
     for sid, c in secs.items():
         for r in c.get("assetRoles", []):
             if r not in roles: errs.append(f"sections/{sid}.json uses unknown asset role '{r}'")
+
+    # 11b  granularity, retirement, retrieval labels, graph recompute
+    pol = graph.get("granularityPolicy", {})
+    kinds = graph.get("sectionKinds", {})
+    for need in ("maxDesktopHeightPx", "maxMobileHeightPx", "maxCopyCapacityWords", "maxImageCapacity", "maxBodyItemCapacity", "maxContentFields", "genericIdLeaves"):
+        if need not in pol: errs.append(f"graph.granularityPolicy.{need} is missing")
+    retired_s, retired_t = graph.get("retiredSectionIds", {}), graph.get("retiredTemplateIds", {})
+    for rid in retired_s:
+        if rid in secs: errs.append(f"retired section id '{rid}' is back in sections/ ({retired_s[rid][:60]}...)")
+        if rid in allow.get("sections", []): errs.append(f"retired section id '{rid}' is back in the allowlist")
+        if rid in schema["definitions"]["node"]["properties"]["type"]["enum"]: errs.append(f"retired section id '{rid}' is back in the schema node type enum")
+        if any(n["section"] == rid for t in templates for n in t["nodes"]): errs.append(f"retired section id '{rid}' is used by a template")
+    for tid in retired_t:
+        if tid in {t["id"] for t in templates}: errs.append(f"retired template id '{tid}' is back in templates.json")
+    labels = {}
+    kind_seen = {}
+    for sid, c in secs.items():
+        g, r_ = c.get("granularity"), c.get("retrieval")
+        if not g or not r_: errs.append(f"sections/{sid}.json: granularity and retrieval blocks are required"); continue
+        if sid.split(".")[-1] in pol.get("genericIdLeaves", []): errs.append(f"sections/{sid}.json: '{sid.split('.')[-1]}' is a generic id leaf; name the section for what it is")
+        if not g.get("singleResponsibility") or ";" in g["singleResponsibility"] or " and " in g["singleResponsibility"]:
+            errs.append(f"sections/{sid}.json: granularity.singleResponsibility must name exactly one responsibility")
+        f = c["content"]["fields"]
+        cap = 0
+        for k, v in f.items():
+            if v["type"] == "string": cap += v["maxWords"]
+            elif v["type"] in ("string[]", "cta[]"): cap += v["maxItems"] * v["maxWords"]
+            elif v["type"] == "item[]": cap += v["maxItems"] * (v["titleMaxWords"] + v.get("bodyMaxWords", 0))
+        imgs, bodyi = f.get("images", {}).get("maxItems", 0), f.get("body", {}).get("maxItems", 0)
+        for k, got in (("copyCapacityWords", cap), ("imageCapacity", imgs), ("bodyItemCapacity", bodyi)):
+            if g.get(k) != got: errs.append(f"sections/{sid}.json granularity.{k} = {g.get(k)} but the content fields give {got}")
+        if cap > pol.get("maxCopyCapacityWords", 10**9): errs.append(f"sections/{sid}.json is oversized: copy capacity {cap} words > {pol['maxCopyCapacityWords']} (split it)")
+        if imgs > pol.get("maxImageCapacity", 10**9): errs.append(f"sections/{sid}.json is oversized: image capacity {imgs} > {pol['maxImageCapacity']} (split it)")
+        if bodyi > pol.get("maxBodyItemCapacity", 10**9): errs.append(f"sections/{sid}.json is oversized: {bodyi} body items > {pol['maxBodyItemCapacity']} (split it)")
+        if len(f) > pol.get("maxContentFields", 10**9): errs.append(f"sections/{sid}.json mixes too many responsibilities: {len(f)} content fields > {pol['maxContentFields']}")
+        rs = c.get("responsive", {})
+        for vp, key in (("desktop", "maxDesktopHeightPx"), ("mobile", "maxMobileHeightPx")):
+            h = rs.get(vp, {}).get("heightPx")
+            if h is not None and h > pol.get(key, 10**9): errs.append(f"sections/{sid}.json is oversized: {vp} height {h}px > {pol[key]}px (split it)")
+        if r_.get("semanticLabel") != sid.replace(".", "/"): errs.append(f"sections/{sid}.json retrieval.semanticLabel must be '{sid.replace('.', '/')}'")
+        if r_.get("semanticLabel") in labels: errs.append(f"sections/{sid}.json retrieval.semanticLabel duplicates {labels[r_.get('semanticLabel')]}")
+        labels[r_.get("semanticLabel")] = sid
+        if r_.get("kind") not in kinds: errs.append(f"sections/{sid}.json retrieval.kind '{r_.get('kind')}' is not in graph.sectionKinds")
+        kind_seen[r_.get("kind")] = kind_seen.get(r_.get("kind"), 0) + 1
+        if not r_.get("summary") or not r_.get("keywords"): errs.append(f"sections/{sid}.json retrieval needs a summary and keywords")
+        fam = sorted(t["id"] for t in templates if any(n["section"] == sid for n in t["nodes"]))
+        if sorted(r_.get("pageFamilies", [])) != fam: errs.append(f"sections/{sid}.json retrieval.pageFamilies {r_.get('pageFamilies')} but the templates give {fam}")
+        if sorted(c.get("assetRoles", [])) != sorted(f.get("images", {}).get("assetRoles", [])): errs.append(f"sections/{sid}.json assetRoles differ from its images field")
+    for k, v in kinds.items():
+        if v.get("observedSections") != kind_seen.get(k, 0): errs.append(f"graph.sectionKinds['{k}'].observedSections = {v.get('observedSections')} but the contracts give {kind_seen.get(k, 0)}")
+    # adjacency / compatibility / exceptions recomputed from the templates
+    after, before, same_cat = {}, {}, set()
+    for t in templates:
+        seq = [n["section"] for n in t["nodes"]]
+        for a, b in zip(seq, seq[1:]):
+            after.setdefault(b, set()).add(a); before.setdefault(a, set()).add(b)
+            if a != b and secs[a]["category"] == secs[b]["category"]: same_cat.add((a, b))
+    if {tuple(x) for x in rules.get("NO_ADJACENT_SAME_CATEGORY", {}).get("exceptions", [])} != same_cat:
+        errs.append("graph NO_ADJACENT_SAME_CATEGORY exceptions differ from the same-category pairs observed in templates")
+    if {b: sorted(a) for b, a in after.items()} != {b: sorted(a) for b, a in rules.get("MUST_FOLLOW_OBSERVED_PREDECESSOR", {}).get("follows", {}).items()}:
+        errs.append("graph MUST_FOLLOW_OBSERVED_PREDECESSOR.follows differs from the adjacency observed in templates")
+    comp = graph.get("compatibility", {})
+    if sorted(comp) != sorted(secs): errs.append("graph.compatibility must list exactly the section contracts")
+    for sid in secs:
+        got = comp.get(sid, {})
+        if sorted(got.get("recommendedAfter", [])) != sorted(after.get(sid, [])) or sorted(got.get("recommendedBefore", [])) != sorted(before.get(sid, [])):
+            errs.append(f"graph.compatibility['{sid}'] before/after differ from the templates")
+    # ledger labels
+    for r in ledger["routes"]:
+        seen_l = set()
+        for s_ in r["sections"]:
+            lab = s_.get("semanticLabel")
+            if not lab or not lab.startswith(r["template"].split(".")[1] + "/" + s_["id"] + "#"): errs.append(f"ledger {r['route']} idx {s_['idx']}: semanticLabel {lab!r} is not <family>/<id>#<n>")
+            if lab in seen_l: errs.append(f"ledger {r['route']}: duplicate semanticLabel {lab}")
+            seen_l.add(lab)
+
+    # 11 (cont.) protected vs generic retrieval
+    prot = sorted(r for r, v in roles.items() if not v.get("genericRetrieval") and r not in ("font", "animation", "video"))
+    gen = sorted(r for r, v in roles.items() if v.get("genericRetrieval"))
+    if sorted(assets.get("protectedRoles", [])) != prot: errs.append(f"assets.protectedRoles {assets.get('protectedRoles')} differs from the roles' genericRetrieval flags {prot}")
+    if sorted(assets.get("genericDecorativeRoles", [])) != gen: errs.append(f"assets.genericDecorativeRoles {assets.get('genericDecorativeRoles')} differs from the roles' genericRetrieval flags {gen}")
+    for r in prot:
+        if roles[r]["generationPolicy"] == "may-generate-new": errs.append(f"protected asset role '{r}' may not have policy may-generate-new")
+        if not roles[r].get("pinned"): errs.append(f"protected asset role '{r}' must be pinned")
+    for r in gen:
+        if roles[r].get("pinned") or roles[r]["generationPolicy"] != "may-generate-new": errs.append(f"generic decorative role '{r}' must be unpinned may-generate-new")
+    for sid, c in secs.items():
+        rr = set(c.get("assetRoles", []))
+        if rr & set(prot) and rr & set(gen): errs.append(f"sections/{sid}.json mixes protected {sorted(rr & set(prot))} and generic {sorted(rr & set(gen))} asset roles")
+    for a in assets["assets"]:
+        if a.get("entity") and a["role"] not in prot: errs.append(f"asset {a['path']} names a real entity ({a['entity']}) but has the non-protected role '{a['role']}'")
+    counts_ = {}
+    for a in assets["assets"]: counts_[a["role"]] = counts_.get(a["role"], 0) + 1
+    for e in assets.get("embeds", []): counts_[e["role"]] = counts_.get(e["role"], 0) + 1
+    for r, v in roles.items():
+        if v.get("observed") != counts_.get(r, 0): errs.append(f"asset role '{r}' observed = {v.get('observed')} but the registry gives {counts_.get(r, 0)}")
+    # evidence audit: every asset a cited range renders must carry a role that section allows
+    if os.path.isdir(os.path.join(MIRROR, "src")):
+        base = lambda p: re.sub(r"__[0-9a-f]{8}(?=\.\w+$)", "", p)
+        by_base = {}
+        for a in assets["assets"]: by_base.setdefault(base(a["path"]), []).append(a)
+        cache2 = {}
+        for r in ledger["routes"]:
+            fp = os.path.join(MIRROR, r["file"])
+            if fp not in cache2: cache2[fp] = open(fp, encoding="utf-8", errors="ignore").read().split("\n") if os.path.isfile(fp) else []
+            for s_ in r["sections"]:
+                allowed = set(secs[s_["id"]].get("assetRoles", []))
+                chunk = "\n".join(cache2[fp][s_["lines"][0] - 1:s_["lines"][1]])
+                refs = re.findall(r"<img[^>]*?\bsrc=\"([^\"]+)\"", chunk) + re.findall(r"url\((/[^)\"']+)\)", chunk)
+                for ref in refs:
+                    key = base(re.sub(r"\?.*$", "", ref.replace("&amp;", "&")).lstrip("/"))
+                    for a in by_base.get(key, []):
+                        if a["role"] not in allowed:
+                            errs.append(f"asset audit: {a['path']} is rendered in {r['route']} {s_['id']} (lines {s_['lines'][0]}-{s_['lines'][1]}) but is filed as '{a['role']}', which that section does not allow ({sorted(allowed) or 'no assets'})")
+
+    # 11c  implementation pointers (the runnable clone's src/ is a sibling of design-repo/ in the package)
+    impl_root = os.path.join(PKG, "src", "sections")
+    if os.path.isdir(impl_root):
+        claimed = set()
+        for sid, c in secs.items():
+            files = c.get("implementedByAll", [])
+            if not files or c.get("implementedBy") not in files: errs.append(f"sections/{sid}.json: implementedBy must be one of implementedByAll")
+            for rel in files:
+                claimed.add(rel)
+                if not os.path.isfile(os.path.join(PKG, rel)): errs.append(f"sections/{sid}.json implementedBy points at a missing file: {rel}")
+                elif os.path.dirname(rel) != "src/sections/" + sid.replace(".", "-"): errs.append(f"sections/{sid}.json implementedBy {rel} is not under src/sections/{sid.replace('.', '-')}/")
+        for root_, _, fs_ in os.walk(impl_root):
+            for f_ in fs_:
+                rel = os.path.relpath(os.path.join(root_, f_), PKG)
+                if f_.endswith(".jsx") and rel not in claimed: errs.append(f"component {rel} is not claimed by any section contract (orphan, or a retired catch-all component)")
+    else:
+        warns.append("no src/sections/ next to design-repo/ — implementedBy pointers not checked")
 
     # 12
     mot = schema["definitions"]["motion"]; mc_ = J("motion/motion-contract.json")

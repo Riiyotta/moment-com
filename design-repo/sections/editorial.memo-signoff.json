@@ -1,0 +1,85 @@
+{
+  "id": "editorial.memo-signoff",
+  "category": "EDITORIAL",
+  "label": "Memo sign-off",
+  "tag": "section",
+  "purpose": "Closes the memo with the company name, the memo title and the date between dashed rules.",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "heading": {
+        "type": "string",
+        "required": true,
+        "maxWords": 1
+      },
+      "body": {
+        "type": "string[]",
+        "required": true,
+        "maxItems": 2,
+        "maxWords": 7
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 1,
+    "routes": 1,
+    "measuredFrom": [
+      "src/memo/index.html:439-449"
+    ]
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-animation",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 770
+    },
+    "mobile": {
+      "heightPx": 718
+    },
+    "measuredOnRoute": "/memo",
+    "changes": [
+      "vertical padding py-128 → py-144 from 1200px"
+    ]
+  },
+  "assetRoles": [],
+  "retrieval": {
+    "semanticLabel": "editorial/memo-signoff",
+    "kind": "editorial",
+    "role": "closing",
+    "summary": "Closing sign-off block: company name, memo title, date.",
+    "keywords": [
+      "sign-off",
+      "closing",
+      "memo"
+    ],
+    "pageFamilies": [
+      "template.memo"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/editorial-memo-signoff/Memo.jsx"
+  ],
+  "implementedBy": "src/sections/editorial-memo-signoff/Memo.jsx",
+  "constraints": {
+    "onePerPage": true
+  },
+  "granularity": {
+    "singleResponsibility": "closing",
+    "copyCapacityWords": 15,
+    "imageCapacity": 0,
+    "bodyItemCapacity": 2
+  }
+}

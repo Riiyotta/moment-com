@@ -1,0 +1,93 @@
+{
+  "id": "careers.job-group",
+  "category": "CAREERS",
+  "label": "Job group",
+  "tag": "div",
+  "purpose": "Lists the open roles of one department as numbered rows that link to the role pages.",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "heading": {
+        "type": "string",
+        "required": true,
+        "maxWords": 5
+      },
+      "items": {
+        "type": "item[]",
+        "required": true,
+        "maxItems": 6,
+        "titleMaxWords": 6,
+        "bodyMaxWords": 0
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 5,
+    "routes": 1,
+    "measuredFrom": [
+      "src/careers/index.html:1443-1548",
+      "src/careers/index.html:1549-1592",
+      "src/careers/index.html:1593-1636",
+      "src/careers/index.html:1637-1666",
+      "src/careers/index.html:1667-1696"
+    ]
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-transition",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 335
+    },
+    "mobile": {
+      "heightPx": 335
+    },
+    "measuredOnRoute": "/careers",
+    "changes": []
+  },
+  "assetRoles": [],
+  "retrieval": {
+    "semanticLabel": "careers/job-group",
+    "kind": "job-list",
+    "role": "job listing",
+    "summary": "One department's open roles (code + title rows).",
+    "keywords": [
+      "jobs",
+      "roles",
+      "department",
+      "careers list"
+    ],
+    "pageFamilies": [
+      "template.careers-index"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/careers-job-group/Careers1.jsx",
+    "src/sections/careers-job-group/Careers2.jsx",
+    "src/sections/careers-job-group/Careers3.jsx",
+    "src/sections/careers-job-group/Careers4.jsx",
+    "src/sections/careers-job-group/Careers5.jsx"
+  ],
+  "implementedBy": "src/sections/careers-job-group/Careers1.jsx",
+  "constraints": {
+    "maxPerPage": 5
+  },
+  "granularity": {
+    "singleResponsibility": "job listing",
+    "copyCapacityWords": 41,
+    "imageCapacity": 0,
+    "bodyItemCapacity": 0
+  }
+}

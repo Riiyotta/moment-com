@@ -1,0 +1,90 @@
+{
+  "id": "proof.logo-strip",
+  "category": "PROOF",
+  "label": "Customer logo strip",
+  "tag": "div",
+  "purpose": "Shows the customer firms that build on the platform as a row/grid of third-party logos.",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "images": {
+        "type": "image[]",
+        "required": true,
+        "maxItems": 6,
+        "assetRoles": [
+          "customer-logo"
+        ]
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 1,
+    "routes": 1,
+    "measuredFrom": [
+      "src/index.html:252-283"
+    ]
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-animation",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 32
+    },
+    "mobile": {
+      "heightPx": 144
+    },
+    "measuredOnRoute": "/",
+    "changes": [
+      "logo grid is 2 columns below md and 3 columns from md (grid-cols-[repeat(2,...)] md:grid-cols-[repeat(3,...)]); from lg the logos render as a single justified row (lines 315-339)"
+    ],
+    "note": "desktop 1440 height is that of the lg+ variant (lines 315-339): metrics line 20px, logo row 32px; the stacked variant is 0px (display: none) at that width"
+  },
+  "assetRoles": [
+    "customer-logo"
+  ],
+  "retrieval": {
+    "semanticLabel": "proof/logo-strip",
+    "kind": "logo-strip",
+    "role": "customer proof",
+    "summary": "Grid of six real customer logos (third-party trademarks, never generated).",
+    "keywords": [
+      "logos",
+      "customers",
+      "social proof",
+      "wealth firms"
+    ],
+    "pageFamilies": [
+      "template.home"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/proof-logo-strip/Home.jsx"
+  ],
+  "implementedBy": "src/sections/proof-logo-strip/Home.jsx",
+  "protectedContent": {
+    "must-not-fabricate": true,
+    "rule": "Logos are third-party trademarks. Every image must be an explicit placeholder or a supplied real file (source: placeholder|supplied); a generator may not draw, recolour or invent a company's logo."
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "granularity": {
+    "singleResponsibility": "customer proof",
+    "copyCapacityWords": 0,
+    "imageCapacity": 6,
+    "bodyItemCapacity": 0
+  }
+}

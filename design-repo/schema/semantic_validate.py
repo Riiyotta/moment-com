@@ -8,7 +8,10 @@ Enforces, in order:
   3. every rule in compatibility/graph.json, respecting severity (error fails, warn is reported)
   4. per-field maxWords budgets from sections/<id>.json, on this instance
   5. motion: pattern allowed for that section, reducedMotionFallback present
-  6. images: assetRole allowed for that section
+  6. images: assetRole allowed for that section; protected roles (logos, people, screenshots) must declare
+     source: placeholder|supplied; a section accepts only the roles its contract names,
+     so a generic decorative role can never stand in for a logo or a person
+  7. retired ids: the 0.1.0 oversized sections/templates are rejected by name, with the replacement
 
 Usage:  python3 semantic_validate.py <pagespec.json>
 Import: check(spec) -> (errors, warnings)
@@ -18,7 +21,7 @@ import json, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 RULE_KINDS = {"maxCategoryPerPage", "perPageLimits", "mustBeFirst", "mustBeLast", "noConsecutive",
-              "noAdjacentSameCategory", "maxAnimatedSections"}
+              "noAdjacentSameCategory", "maxAnimatedSections", "mustFollow"}
 
 
 _CACHE = {}
@@ -70,6 +73,12 @@ def check(spec):
         return errors or ["schema: nodes must be a list"], warnings
     nodes = [n for n in spec["nodes"] if isinstance(n, dict)]
     types = [n.get("type") for n in nodes]
+    retired = load("compatibility/graph.json").get("retiredSectionIds", {})
+    for k, ty in enumerate(types):
+        if ty in retired:
+            errors.append(f"retired: node {k + 1} uses '{ty}', which was split in 0.2.0 -- {retired[ty]}")
+    if spec.get("template") in load("compatibility/graph.json").get("retiredTemplateIds", {}):
+        errors.append(f"retired: template '{spec['template']}' -- {load('compatibility/graph.json')['retiredTemplateIds'][spec['template']]}")
     secs = contracts()
     templates = {t["id"]: t for t in load("templates/templates.json")["templates"]}
 
@@ -134,12 +143,18 @@ def check(spec):
             for a, b in zip(types, types[1:]):
                 if a != b and a in cat and cat.get(a) == cat.get(b) and (a, b) not in allowed:
                     sink.append(f"{tag}: '{a}' and '{b}' are both {cat[a]} and adjacent")
+        elif kind == "mustFollow":
+            for a, b in zip([None] + types, types):
+                if b in rule["follows"] and a not in rule["follows"][b]:
+                    sink.append(f"{tag}: '{b}' follows {a!r}, observed only after {', '.join(rule['follows'][b])}")
         elif kind == "maxAnimatedSections":
             n = sum(1 for nd in nodes if isinstance(nd.get("motion"), dict) and nd["motion"].get("pattern") not in (None, "none"))
             if n > rule["max"]:
                 sink.append(f"{tag}: {n} animated sections (max {rule['max']})")
 
     # ---- 4-6. per-node content budgets, motion, asset roles
+    registry = load("assets/asset-roles.json")
+    protected = set(registry.get("protectedRoles", []))
     for k, nd in enumerate(nodes):
         c = secs.get(nd.get("type"))
         if not c:
@@ -176,6 +191,8 @@ def check(spec):
                 errors.append(f"maxWords: {where}.images[{j}].alt has {words(img['alt'])} words (max 16)")
             if isinstance(img, dict) and roles and img.get("assetRole") not in roles:
                 errors.append(f"assetRole: {where}.images[{j}] role '{img.get('assetRole')}' not used by this section (allowed: {', '.join(roles)})")
+            if isinstance(img, dict) and img.get("assetRole") in protected and img.get("source") not in ("placeholder", "supplied"):
+                errors.append(f"assetRole: {where}.images[{j}] role '{img.get('assetRole')}' is protected (must-not-fabricate): it needs source 'placeholder' or 'supplied'")
     return errors, warnings
 
 

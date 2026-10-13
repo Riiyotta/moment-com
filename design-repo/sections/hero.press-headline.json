@@ -1,0 +1,84 @@
+{
+  "id": "hero.press-headline",
+  "category": "HERO",
+  "label": "Press headline",
+  "tag": "header",
+  "purpose": "Opens the Series C press release: the announcement headline and its standfirst.",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "heading": {
+        "type": "string",
+        "required": true,
+        "maxWords": 17
+      },
+      "subheading": {
+        "type": "string",
+        "required": true,
+        "maxWords": 21
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 1,
+    "routes": 1,
+    "measuredFrom": [
+      "src/series-c/index.html:1406-1409"
+    ]
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-animation",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 376
+    },
+    "mobile": {
+      "heightPx": 224
+    },
+    "measuredOnRoute": "/series-c",
+    "changes": [
+      "headline stacks above the standfirst below 1000px; from 1000px it is a row aligned to the bottom with the h1 fixed at 647px"
+    ]
+  },
+  "assetRoles": [],
+  "retrieval": {
+    "semanticLabel": "hero/press-headline",
+    "kind": "hero",
+    "role": "page opener",
+    "summary": "Press-release opener: long h1 headline plus a standfirst line.",
+    "keywords": [
+      "press release",
+      "headline",
+      "series c"
+    ],
+    "pageFamilies": [
+      "template.press-release"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/hero-press-headline/SeriesC.jsx"
+  ],
+  "implementedBy": "src/sections/hero-press-headline/SeriesC.jsx",
+  "constraints": {
+    "onePerPage": true
+  },
+  "granularity": {
+    "singleResponsibility": "page opener",
+    "copyCapacityWords": 38,
+    "imageCapacity": 0,
+    "bodyItemCapacity": 0
+  }
+}

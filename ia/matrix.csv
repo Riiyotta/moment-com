@@ -1,7 +1,19 @@
-section,category,templates,routes,Group,Memo,Careers pages
-shell.header,SHELL,3,16,x,x,x
-hero.mask-intersect,HERO,2,15,x,,x
-content.block,CONTENT,2,4,x,x,
-content.section,CONTENT,1,1,,x,
-features.section,FEATURES,1,1,,x,
-ROUTE COUNT,,,16,3,1,12
+section,category,templates,routes,Home,Memo,Careers index,Press release,Careers detail
+conversion.contact-dialog,CONVERSION,5,16,x,x,x,x,x
+shell.header,SHELL,5,16,x,x,x,x,x
+careers.apply-cta,CAREERS,1,12,,,,,x
+careers.job-description-block,CAREERS,1,12,,,,,x
+careers.job-header,CAREERS,1,12,,,,,x
+banner.announcement,BANNER,4,4,x,x,x,x,
+careers.job-group,CAREERS,1,1,,,x,,
+editorial.memo-part,EDITORIAL,1,1,,x,,,
+editorial.memo-signoff,EDITORIAL,1,1,,x,,,
+editorial.press-meta,EDITORIAL,1,1,,,,x,
+editorial.prose,EDITORIAL,1,1,,,,x,
+hero.canvas-statement,HERO,1,1,x,,,,
+hero.memo-masthead,HERO,1,1,,x,,,
+hero.press-headline,HERO,1,1,,,,x,
+hero.title-intro,HERO,1,1,,,x,,
+proof.logo-strip,PROOF,1,1,x,,,,
+proof.metrics-line,PROOF,1,1,x,,,,
+ROUTE COUNT,,,16,1,1,1,1,12

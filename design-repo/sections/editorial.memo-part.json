@@ -1,0 +1,97 @@
+{
+  "id": "editorial.memo-part",
+  "category": "EDITORIAL",
+  "label": "Memo part",
+  "tag": "section",
+  "purpose": "One numbered part of the memo: a 'Part N' eyebrow, a heading and the argument's paragraphs.",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "heading": {
+        "type": "string",
+        "required": true,
+        "maxWords": 4
+      },
+      "subheading": {
+        "type": "string",
+        "required": true,
+        "maxWords": 3
+      },
+      "body": {
+        "type": "string[]",
+        "required": true,
+        "maxItems": 11,
+        "maxWords": 70
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 4,
+    "routes": 1,
+    "measuredFrom": [
+      "src/memo/index.html:265-295",
+      "src/memo/index.html:296-336",
+      "src/memo/index.html:337-409",
+      "src/memo/index.html:410-438"
+    ]
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-animation",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 1116
+    },
+    "mobile": {
+      "heightPx": 1268
+    },
+    "measuredOnRoute": "/memo",
+    "changes": [
+      "horizontal padding px-16 → px-40 from 800px; vertical padding py-32 → py-40 from 1000px"
+    ]
+  },
+  "assetRoles": [],
+  "retrieval": {
+    "semanticLabel": "editorial/memo-part",
+    "kind": "editorial",
+    "role": "argument",
+    "summary": "Numbered long-form part: eyebrow, heading, paragraphs.",
+    "keywords": [
+      "memo",
+      "essay",
+      "part",
+      "long-form"
+    ],
+    "pageFamilies": [
+      "template.memo"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/editorial-memo-part/Memo1.jsx",
+    "src/sections/editorial-memo-part/Memo2.jsx",
+    "src/sections/editorial-memo-part/Memo3.jsx",
+    "src/sections/editorial-memo-part/Memo4.jsx"
+  ],
+  "implementedBy": "src/sections/editorial-memo-part/Memo1.jsx",
+  "constraints": {
+    "maxPerPage": 4
+  },
+  "granularity": {
+    "singleResponsibility": "argument",
+    "copyCapacityWords": 777,
+    "imageCapacity": 0,
+    "bodyItemCapacity": 11
+  }
+}

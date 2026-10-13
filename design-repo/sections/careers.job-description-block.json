@@ -1,0 +1,165 @@
+{
+  "id": "careers.job-description-block",
+  "category": "CAREERS",
+  "label": "Job description block",
+  "tag": "h2",
+  "purpose": "One headed block of a role description (mission, about, the role, requirements, compensation).",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "heading": {
+        "type": "string",
+        "required": false,
+        "maxWords": 8
+      },
+      "body": {
+        "type": "string[]",
+        "required": true,
+        "maxItems": 8,
+        "maxWords": 77
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 76,
+    "routes": 12,
+    "measuredFrom": [
+      "src/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07/index.html:167-192",
+      "src/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07/index.html:193-202",
+      "src/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07/index.html:203-231",
+      "src/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07/index.html:232-280",
+      "src/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07/index.html:281-315"
+    ],
+    "note": "76 block instances over 12 role pages; blocks start at each top-level heading (a heading that directly follows a heading stays in the same block)"
+  },
+  "motion": {
+    "allowedPatterns": [
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 556
+    },
+    "mobile": {
+      "heightPx": 812
+    },
+    "measuredOnRoute": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+    "changes": [
+      "full width below 1000px; from 1000px the description is the right half-width column"
+    ]
+  },
+  "assetRoles": [],
+  "retrieval": {
+    "semanticLabel": "careers/job-description-block",
+    "kind": "job-detail",
+    "role": "job copy",
+    "summary": "One headed rich-text block of a job description.",
+    "keywords": [
+      "job description",
+      "requirements",
+      "compensation",
+      "rich text"
+    ],
+    "pageFamilies": [
+      "template.careers-detail"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/careers-job-description-block/Job1db991e41.jsx",
+    "src/sections/careers-job-description-block/Job1db991e42.jsx",
+    "src/sections/careers-job-description-block/Job1db991e43.jsx",
+    "src/sections/careers-job-description-block/Job1db991e44.jsx",
+    "src/sections/careers-job-description-block/Job1db991e45.jsx",
+    "src/sections/careers-job-description-block/Job1db991e46.jsx",
+    "src/sections/careers-job-description-block/Job30f726281.jsx",
+    "src/sections/careers-job-description-block/Job30f726282.jsx",
+    "src/sections/careers-job-description-block/Job30f726283.jsx",
+    "src/sections/careers-job-description-block/Job30f726284.jsx",
+    "src/sections/careers-job-description-block/Job30f726285.jsx",
+    "src/sections/careers-job-description-block/Job30f726286.jsx",
+    "src/sections/careers-job-description-block/Job5fb2d42b1.jsx",
+    "src/sections/careers-job-description-block/Job5fb2d42b2.jsx",
+    "src/sections/careers-job-description-block/Job5fb2d42b3.jsx",
+    "src/sections/careers-job-description-block/Job5fb2d42b4.jsx",
+    "src/sections/careers-job-description-block/Job5fb2d42b5.jsx",
+    "src/sections/careers-job-description-block/Job5fb2d42b6.jsx",
+    "src/sections/careers-job-description-block/Job707c91171.jsx",
+    "src/sections/careers-job-description-block/Job707c91172.jsx",
+    "src/sections/careers-job-description-block/Job707c91173.jsx",
+    "src/sections/careers-job-description-block/Job707c91174.jsx",
+    "src/sections/careers-job-description-block/Job707c91175.jsx",
+    "src/sections/careers-job-description-block/Job707c91176.jsx",
+    "src/sections/careers-job-description-block/Job707c91177.jsx",
+    "src/sections/careers-job-description-block/Job752a96ec1.jsx",
+    "src/sections/careers-job-description-block/Job752a96ec2.jsx",
+    "src/sections/careers-job-description-block/Job752a96ec3.jsx",
+    "src/sections/careers-job-description-block/Job752a96ec4.jsx",
+    "src/sections/careers-job-description-block/Job752a96ec5.jsx",
+    "src/sections/careers-job-description-block/Job752a96ec6.jsx",
+    "src/sections/careers-job-description-block/Job752a96ec7.jsx",
+    "src/sections/careers-job-description-block/Job93c2d5e11.jsx",
+    "src/sections/careers-job-description-block/Job93c2d5e12.jsx",
+    "src/sections/careers-job-description-block/Job93c2d5e13.jsx",
+    "src/sections/careers-job-description-block/Job93c2d5e14.jsx",
+    "src/sections/careers-job-description-block/Job93c2d5e15.jsx",
+    "src/sections/careers-job-description-block/Job93c2d5e16.jsx",
+    "src/sections/careers-job-description-block/Job9a3a451a1.jsx",
+    "src/sections/careers-job-description-block/Job9a3a451a2.jsx",
+    "src/sections/careers-job-description-block/Job9a3a451a3.jsx",
+    "src/sections/careers-job-description-block/Job9a3a451a4.jsx",
+    "src/sections/careers-job-description-block/Job9a3a451a5.jsx",
+    "src/sections/careers-job-description-block/Job9a3a451a6.jsx",
+    "src/sections/careers-job-description-block/Job9a3a451a7.jsx",
+    "src/sections/careers-job-description-block/Job9e9306c11.jsx",
+    "src/sections/careers-job-description-block/Job9e9306c12.jsx",
+    "src/sections/careers-job-description-block/Job9e9306c13.jsx",
+    "src/sections/careers-job-description-block/Job9e9306c14.jsx",
+    "src/sections/careers-job-description-block/Job9e9306c15.jsx",
+    "src/sections/careers-job-description-block/Job9e9306c16.jsx",
+    "src/sections/careers-job-description-block/JobB13c29c21.jsx",
+    "src/sections/careers-job-description-block/JobB13c29c22.jsx",
+    "src/sections/careers-job-description-block/JobB13c29c23.jsx",
+    "src/sections/careers-job-description-block/JobB13c29c24.jsx",
+    "src/sections/careers-job-description-block/JobB13c29c25.jsx",
+    "src/sections/careers-job-description-block/JobB13c29c26.jsx",
+    "src/sections/careers-job-description-block/JobEd7b7afd1.jsx",
+    "src/sections/careers-job-description-block/JobEd7b7afd2.jsx",
+    "src/sections/careers-job-description-block/JobEd7b7afd3.jsx",
+    "src/sections/careers-job-description-block/JobEd7b7afd4.jsx",
+    "src/sections/careers-job-description-block/JobEd7b7afd5.jsx",
+    "src/sections/careers-job-description-block/JobEd7b7afd6.jsx",
+    "src/sections/careers-job-description-block/JobF679da841.jsx",
+    "src/sections/careers-job-description-block/JobF679da842.jsx",
+    "src/sections/careers-job-description-block/JobF679da843.jsx",
+    "src/sections/careers-job-description-block/JobF679da844.jsx",
+    "src/sections/careers-job-description-block/JobF679da845.jsx",
+    "src/sections/careers-job-description-block/JobF679da846.jsx",
+    "src/sections/careers-job-description-block/JobF679da847.jsx",
+    "src/sections/careers-job-description-block/JobF679da848.jsx",
+    "src/sections/careers-job-description-block/JobF8e990cd1.jsx",
+    "src/sections/careers-job-description-block/JobF8e990cd2.jsx",
+    "src/sections/careers-job-description-block/JobF8e990cd3.jsx",
+    "src/sections/careers-job-description-block/JobF8e990cd4.jsx",
+    "src/sections/careers-job-description-block/JobF8e990cd5.jsx"
+  ],
+  "implementedBy": "src/sections/careers-job-description-block/Job1db991e41.jsx",
+  "constraints": {
+    "maxPerPage": 8
+  },
+  "granularity": {
+    "singleResponsibility": "job copy",
+    "copyCapacityWords": 624,
+    "imageCapacity": 0,
+    "bodyItemCapacity": 8
+  }
+}

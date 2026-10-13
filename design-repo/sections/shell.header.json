@@ -3,8 +3,8 @@
   "category": "SHELL",
   "label": "Header",
   "tag": "header",
-  "purpose": "Orients the visitor and provides navigation or site-wide links; carried across pages.",
-  "purposeIsInferred": true,
+  "purpose": "Orients the visitor and provides the site-wide navigation (Memo, Careers, Contact) plus the market-status readout; fixed to the top of every page.",
+  "purposeIsInferred": false,
   "nameSource": "landmark",
   "evidence": {
     "level": "measured",
@@ -12,10 +12,10 @@
     "routes": 16,
     "measuredFrom": [
       "src/index.html:47-115",
+      "src/memo/index.html:60-130",
       "src/careers/index.html:60-130",
-      "src/careers/1db991e4-9480-4847-b300-c430cc057d56/index.html:60-130",
-      "src/careers/30f72628-dd96-4fb2-b998-ab310e90ad82/index.html:60-130",
-      "src/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490/index.html:60-130"
+      "src/series-c/index.html:60-130",
+      "src/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07/index.html:60-130"
     ]
   },
   "content": {
@@ -67,16 +67,41 @@
     ]
   },
   "assetRoles": [],
-  "implementedBy": "src/sections/PointerEventsNone10.jsx",
+  "implementedBy": "src/sections/shell-header/Careers.jsx",
   "implementedByAll": [
-    "src/sections/PointerEventsNone10.jsx",
-    "src/sections/PointerEventsNone11.jsx",
-    "src/sections/PointerEventsNone12.jsx",
-    "src/sections/PointerEventsNone13.jsx",
-    "src/sections/PointerEventsNone.jsx",
-    "src/sections/PointerEventsNone3.jsx",
-    "src/sections/PointerEventsNone5.jsx",
-    "src/sections/PointerEventsNone7.jsx",
-    "src/sections/PointerEventsNone9.jsx"
-  ]
+    "src/sections/shell-header/Careers.jsx",
+    "src/sections/shell-header/Home.jsx",
+    "src/sections/shell-header/Job1db991e4.jsx",
+    "src/sections/shell-header/Job5fb2d42b.jsx",
+    "src/sections/shell-header/Job752a96ec.jsx",
+    "src/sections/shell-header/Job9e9306c1.jsx",
+    "src/sections/shell-header/JobF8e990cd.jsx",
+    "src/sections/shell-header/Memo.jsx",
+    "src/sections/shell-header/SeriesC.jsx"
+  ],
+  "retrieval": {
+    "semanticLabel": "shell/header",
+    "kind": "header",
+    "role": "site chrome",
+    "summary": "Fixed site header with market-status readout and primary navigation.",
+    "keywords": [
+      "header",
+      "navigation",
+      "market status",
+      "menu"
+    ],
+    "pageFamilies": [
+      "template.careers-detail",
+      "template.careers-index",
+      "template.home",
+      "template.memo",
+      "template.press-release"
+    ]
+  },
+  "granularity": {
+    "singleResponsibility": "site chrome",
+    "copyCapacityWords": 16,
+    "imageCapacity": 0,
+    "bodyItemCapacity": 2
+  }
 }

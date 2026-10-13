@@ -1,0 +1,88 @@
+{
+  "id": "editorial.prose",
+  "category": "EDITORIAL",
+  "label": "Press prose block",
+  "tag": "div",
+  "purpose": "One unit of press-release copy: an optional framed subheading followed by rich-text paragraphs.",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "heading": {
+        "type": "string",
+        "required": false,
+        "maxWords": 9
+      },
+      "body": {
+        "type": "string[]",
+        "required": true,
+        "maxItems": 9,
+        "maxWords": 101
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 4,
+    "routes": 1,
+    "measuredFrom": [
+      "src/series-c/index.html:1415-1431",
+      "src/series-c/index.html:1432-1489",
+      "src/series-c/index.html:1490-1574",
+      "src/series-c/index.html:1575-1610"
+    ]
+  },
+  "motion": {
+    "allowedPatterns": [
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 1133
+    },
+    "mobile": {
+      "heightPx": 1515
+    },
+    "measuredOnRoute": "/series-c",
+    "changes": []
+  },
+  "assetRoles": [],
+  "retrieval": {
+    "semanticLabel": "editorial/prose",
+    "kind": "editorial",
+    "role": "press copy",
+    "summary": "Press-release copy block: optional framed heading plus paragraphs.",
+    "keywords": [
+      "press release",
+      "prose",
+      "rich text"
+    ],
+    "pageFamilies": [
+      "template.press-release"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/editorial-prose/SeriesC1.jsx",
+    "src/sections/editorial-prose/SeriesC2.jsx",
+    "src/sections/editorial-prose/SeriesC3.jsx",
+    "src/sections/editorial-prose/SeriesC4.jsx"
+  ],
+  "implementedBy": "src/sections/editorial-prose/SeriesC1.jsx",
+  "constraints": {
+    "maxPerPage": 4
+  },
+  "granularity": {
+    "singleResponsibility": "press copy",
+    "copyCapacityWords": 918,
+    "imageCapacity": 0,
+    "bodyItemCapacity": 9
+  }
+}

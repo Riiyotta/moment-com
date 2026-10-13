@@ -1,0 +1,96 @@
+{
+  "id": "hero.memo-masthead",
+  "category": "HERO",
+  "label": "Memo masthead",
+  "tag": "section",
+  "purpose": "Opens the memo: title, author and date over breakpoint-specific animated line-art sweeps.",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "heading": {
+        "type": "string",
+        "required": true,
+        "maxWords": 7
+      },
+      "body": {
+        "type": "string[]",
+        "required": true,
+        "maxItems": 2,
+        "maxWords": 2
+      },
+      "images": {
+        "type": "image[]",
+        "required": false,
+        "maxItems": 2,
+        "assetRoles": [
+          "background"
+        ]
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 1,
+    "routes": 1,
+    "measuredFrom": [
+      "src/memo/index.html:231-263"
+    ]
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-animation",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 911
+    },
+    "mobile": {
+      "heightPx": 706
+    },
+    "measuredOnRoute": "/memo",
+    "changes": [
+      "three breakpoint-specific pairs of mask graphics: hero-mobile-* below 800px, hero-tablet-* from 800px, hero-desktop-* from 1000px (min-[800px]/min-[1000px] hidden/block classes)"
+    ]
+  },
+  "assetRoles": [
+    "background"
+  ],
+  "retrieval": {
+    "semanticLabel": "hero/memo-masthead",
+    "kind": "hero",
+    "role": "page opener",
+    "summary": "Editorial masthead: uppercase title, byline and date with decorative sweep graphics.",
+    "keywords": [
+      "masthead",
+      "memo",
+      "byline",
+      "title"
+    ],
+    "pageFamilies": [
+      "template.memo"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/hero-memo-masthead/Memo.jsx"
+  ],
+  "implementedBy": "src/sections/hero-memo-masthead/Memo.jsx",
+  "constraints": {
+    "onePerPage": true
+  },
+  "granularity": {
+    "singleResponsibility": "page opener",
+    "copyCapacityWords": 11,
+    "imageCapacity": 2,
+    "bodyItemCapacity": 2
+  }
+}

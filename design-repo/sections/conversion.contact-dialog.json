@@ -1,0 +1,107 @@
+{
+  "id": "conversion.contact-dialog",
+  "category": "CONVERSION",
+  "label": "Contact dialog",
+  "tag": "div",
+  "purpose": "The site-wide 'Request a demo' modal opened from the header's Contact action: a six-field lead form.",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "heading": {
+        "type": "string",
+        "required": true,
+        "maxWords": 3
+      },
+      "ctas": {
+        "type": "cta[]",
+        "required": true,
+        "maxItems": 1,
+        "maxWords": 1
+      },
+      "items": {
+        "type": "item[]",
+        "required": true,
+        "maxItems": 6,
+        "titleMaxWords": 6,
+        "bodyMaxWords": 0
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 16,
+    "routes": 16,
+    "measuredFrom": [
+      "src/index.html:357-461",
+      "src/memo/index.html:467-571",
+      "src/careers/index.html:1716-1820",
+      "src/series-c/index.html:1629-1733",
+      "src/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07/index.html:340-444"
+    ]
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-transition",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 0
+    },
+    "mobile": {
+      "heightPx": 0
+    },
+    "measuredOnRoute": "/",
+    "changes": [],
+    "note": "closed modal overlay: takes no space in the page flow (position: fixed)"
+  },
+  "assetRoles": [],
+  "retrieval": {
+    "semanticLabel": "conversion/contact-dialog",
+    "kind": "cta",
+    "role": "lead capture",
+    "summary": "Modal lead form (name, email, job title, need, source). Posts to a live third-party endpoint in the original.",
+    "keywords": [
+      "contact",
+      "demo",
+      "lead form",
+      "modal",
+      "cta"
+    ],
+    "pageFamilies": [
+      "template.careers-detail",
+      "template.careers-index",
+      "template.home",
+      "template.memo",
+      "template.press-release"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/conversion-contact-dialog/ConversionContactDialog.jsx"
+  ],
+  "implementedBy": "src/sections/conversion-contact-dialog/ConversionContactDialog.jsx",
+  "liveEndpointPolicy": {
+    "role": "live-embed",
+    "rule": "The original form posts to a live HubSpot endpoint (form action under /_ext/forms.hsforms…, plus an iframe). A generated page must render the fields as a static or placeholder form and must never submit to, embed or link that endpoint.",
+    "evidence": "recon/mirror/src/index.html:374-454"
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeLast": true
+  },
+  "granularity": {
+    "singleResponsibility": "lead capture",
+    "copyCapacityWords": 40,
+    "imageCapacity": 0,
+    "bodyItemCapacity": 0
+  }
+}

@@ -5,101 +5,101 @@
     {
       "route": "/",
       "page": "src/pages/HomePage.jsx",
-      "sections": 3
+      "sections": 6
     },
     {
       "route": "/memo",
       "page": "src/pages/Memo.jsx",
-      "sections": 8
+      "sections": 9
     },
     {
       "route": "/careers",
       "page": "src/pages/Careers.jsx",
-      "sections": 3
+      "sections": 9
     },
     {
       "route": "/series-c",
       "page": "src/pages/SeriesC.jsx",
-      "sections": 3
+      "sections": 9
     },
     {
       "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
       "page": "src/pages/CareersF8e990cd451747bb.jsx",
-      "sections": 2
+      "sections": 9
     },
     {
       "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
       "page": "src/pages/CareersB13c29c2Fe724055.jsx",
-      "sections": 2
+      "sections": 10
     },
     {
       "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
       "page": "src/pages/Careers9e9306c1987b4609.jsx",
-      "sections": 2
+      "sections": 10
     },
     {
       "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
       "page": "src/pages/CareersF679da84Db6f4a08.jsx",
-      "sections": 2
+      "sections": 12
     },
     {
       "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
       "page": "src/pages/Careers93c2d5e10a4042bc.jsx",
-      "sections": 2
+      "sections": 10
     },
     {
       "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
       "page": "src/pages/Careers30f72628Dd964fb2.jsx",
-      "sections": 2
+      "sections": 10
     },
     {
       "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
       "page": "src/pages/Careers1db991e494804847.jsx",
-      "sections": 2
+      "sections": 10
     },
     {
       "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
       "page": "src/pages/Careers5fb2d42b95424d54.jsx",
-      "sections": 2
+      "sections": 10
     },
     {
       "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
       "page": "src/pages/Careers9a3a451a43bf42cd.jsx",
-      "sections": 2
+      "sections": 11
     },
     {
       "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
       "page": "src/pages/Careers707c91171b1e4260.jsx",
-      "sections": 2
+      "sections": 11
     },
     {
       "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
       "page": "src/pages/Careers752a96ec5ad1456e.jsx",
-      "sections": 2
+      "sections": 11
     },
     {
       "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
       "page": "src/pages/CareersEd7b7afdC6c14de5.jsx",
-      "sections": 2
+      "sections": 10
     }
   ],
   "components": [
     {
-      "component": "PointerEventsNone",
-      "file": "src/sections/PointerEventsNone.jsx",
+      "component": "BannerAnnouncementCareers",
+      "file": "src/sections/banner-announcement/Careers.jsx",
       "usedBy": [
         {
-          "route": "/",
-          "idx": 0
+          "route": "/careers",
+          "idx": 1
         }
       ],
       "sections": [
-        "shell.header"
+        "banner.announcement"
       ]
     },
     {
-      "component": "PointerEventsNone2",
-      "file": "src/sections/PointerEventsNone2.jsx",
+      "component": "BannerAnnouncementHome",
+      "file": "src/sections/banner-announcement/Home.jsx",
       "usedBy": [
         {
           "route": "/",
@@ -107,38 +107,12 @@
         }
       ],
       "sections": [
-        "content.block"
+        "banner.announcement"
       ]
     },
     {
-      "component": "MaskIntersect",
-      "file": "src/sections/MaskIntersect.jsx",
-      "usedBy": [
-        {
-          "route": "/",
-          "idx": 2
-        }
-      ],
-      "sections": [
-        "hero.mask-intersect"
-      ]
-    },
-    {
-      "component": "PointerEventsNone3",
-      "file": "src/sections/PointerEventsNone3.jsx",
-      "usedBy": [
-        {
-          "route": "/memo",
-          "idx": 0
-        }
-      ],
-      "sections": [
-        "shell.header"
-      ]
-    },
-    {
-      "component": "PointerEventsNone4",
-      "file": "src/sections/PointerEventsNone4.jsx",
+      "component": "BannerAnnouncementMemo",
+      "file": "src/sections/banner-announcement/Memo.jsx",
       "usedBy": [
         {
           "route": "/memo",
@@ -146,25 +120,1463 @@
         }
       ],
       "sections": [
-        "content.block"
+        "banner.announcement"
       ]
     },
     {
-      "component": "Section",
-      "file": "src/sections/Section.jsx",
+      "component": "BannerAnnouncementSeriesC",
+      "file": "src/sections/banner-announcement/SeriesC.jsx",
       "usedBy": [
         {
-          "route": "/memo",
+          "route": "/series-c",
+          "idx": 1
+        }
+      ],
+      "sections": [
+        "banner.announcement"
+      ]
+    },
+    {
+      "component": "CareersApplyCtaJob1db991e4",
+      "file": "src/sections/careers-apply-cta/Job1db991e4.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
+          "idx": 8
+        }
+      ],
+      "sections": [
+        "careers.apply-cta"
+      ]
+    },
+    {
+      "component": "CareersApplyCtaJob30f72628",
+      "file": "src/sections/careers-apply-cta/Job30f72628.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+          "idx": 8
+        }
+      ],
+      "sections": [
+        "careers.apply-cta"
+      ]
+    },
+    {
+      "component": "CareersApplyCtaJob5fb2d42b",
+      "file": "src/sections/careers-apply-cta/Job5fb2d42b.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+          "idx": 8
+        }
+      ],
+      "sections": [
+        "careers.apply-cta"
+      ]
+    },
+    {
+      "component": "CareersApplyCtaJob707c9117",
+      "file": "src/sections/careers-apply-cta/Job707c9117.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+          "idx": 9
+        }
+      ],
+      "sections": [
+        "careers.apply-cta"
+      ]
+    },
+    {
+      "component": "CareersApplyCtaJob752a96ec",
+      "file": "src/sections/careers-apply-cta/Job752a96ec.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+          "idx": 9
+        }
+      ],
+      "sections": [
+        "careers.apply-cta"
+      ]
+    },
+    {
+      "component": "CareersApplyCtaJob93c2d5e1",
+      "file": "src/sections/careers-apply-cta/Job93c2d5e1.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+          "idx": 8
+        }
+      ],
+      "sections": [
+        "careers.apply-cta"
+      ]
+    },
+    {
+      "component": "CareersApplyCtaJob9a3a451a",
+      "file": "src/sections/careers-apply-cta/Job9a3a451a.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+          "idx": 9
+        }
+      ],
+      "sections": [
+        "careers.apply-cta"
+      ]
+    },
+    {
+      "component": "CareersApplyCtaJob9e9306c1",
+      "file": "src/sections/careers-apply-cta/Job9e9306c1.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+          "idx": 8
+        }
+      ],
+      "sections": [
+        "careers.apply-cta"
+      ]
+    },
+    {
+      "component": "CareersApplyCtaJobB13c29c2",
+      "file": "src/sections/careers-apply-cta/JobB13c29c2.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+          "idx": 8
+        }
+      ],
+      "sections": [
+        "careers.apply-cta"
+      ]
+    },
+    {
+      "component": "CareersApplyCtaJobEd7b7afd",
+      "file": "src/sections/careers-apply-cta/JobEd7b7afd.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
+          "idx": 8
+        }
+      ],
+      "sections": [
+        "careers.apply-cta"
+      ]
+    },
+    {
+      "component": "CareersApplyCtaJobF679da84",
+      "file": "src/sections/careers-apply-cta/JobF679da84.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 10
+        }
+      ],
+      "sections": [
+        "careers.apply-cta"
+      ]
+    },
+    {
+      "component": "CareersApplyCtaJobF8e990cd",
+      "file": "src/sections/careers-apply-cta/JobF8e990cd.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+          "idx": 7
+        }
+      ],
+      "sections": [
+        "careers.apply-cta"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob1db991e41",
+      "file": "src/sections/careers-job-description-block/Job1db991e41.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
           "idx": 2
         }
       ],
       "sections": [
-        "content.section"
+        "careers.job-description-block"
       ]
     },
     {
-      "component": "WFull",
-      "file": "src/sections/WFull.jsx",
+      "component": "CareersJobDescriptionBlockJob1db991e42",
+      "file": "src/sections/careers-job-description-block/Job1db991e42.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
+          "idx": 3
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob1db991e43",
+      "file": "src/sections/careers-job-description-block/Job1db991e43.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
+          "idx": 4
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob1db991e44",
+      "file": "src/sections/careers-job-description-block/Job1db991e44.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
+          "idx": 5
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob1db991e45",
+      "file": "src/sections/careers-job-description-block/Job1db991e45.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
+          "idx": 6
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob1db991e46",
+      "file": "src/sections/careers-job-description-block/Job1db991e46.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
+          "idx": 7
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob30f726281",
+      "file": "src/sections/careers-job-description-block/Job30f726281.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+          "idx": 2
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob30f726282",
+      "file": "src/sections/careers-job-description-block/Job30f726282.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+          "idx": 3
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob30f726283",
+      "file": "src/sections/careers-job-description-block/Job30f726283.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+          "idx": 4
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob30f726284",
+      "file": "src/sections/careers-job-description-block/Job30f726284.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+          "idx": 5
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob30f726285",
+      "file": "src/sections/careers-job-description-block/Job30f726285.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+          "idx": 6
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob30f726286",
+      "file": "src/sections/careers-job-description-block/Job30f726286.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+          "idx": 7
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob5fb2d42b1",
+      "file": "src/sections/careers-job-description-block/Job5fb2d42b1.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+          "idx": 2
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob5fb2d42b2",
+      "file": "src/sections/careers-job-description-block/Job5fb2d42b2.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+          "idx": 3
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob5fb2d42b3",
+      "file": "src/sections/careers-job-description-block/Job5fb2d42b3.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+          "idx": 4
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob5fb2d42b4",
+      "file": "src/sections/careers-job-description-block/Job5fb2d42b4.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+          "idx": 5
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob5fb2d42b5",
+      "file": "src/sections/careers-job-description-block/Job5fb2d42b5.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+          "idx": 6
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob5fb2d42b6",
+      "file": "src/sections/careers-job-description-block/Job5fb2d42b6.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+          "idx": 7
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob707c91171",
+      "file": "src/sections/careers-job-description-block/Job707c91171.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+          "idx": 2
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob707c91172",
+      "file": "src/sections/careers-job-description-block/Job707c91172.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+          "idx": 3
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob707c91173",
+      "file": "src/sections/careers-job-description-block/Job707c91173.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+          "idx": 4
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob707c91174",
+      "file": "src/sections/careers-job-description-block/Job707c91174.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+          "idx": 5
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob707c91175",
+      "file": "src/sections/careers-job-description-block/Job707c91175.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+          "idx": 6
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob707c91176",
+      "file": "src/sections/careers-job-description-block/Job707c91176.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+          "idx": 7
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob707c91177",
+      "file": "src/sections/careers-job-description-block/Job707c91177.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+          "idx": 8
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob752a96ec1",
+      "file": "src/sections/careers-job-description-block/Job752a96ec1.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+          "idx": 2
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob752a96ec2",
+      "file": "src/sections/careers-job-description-block/Job752a96ec2.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+          "idx": 3
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob752a96ec3",
+      "file": "src/sections/careers-job-description-block/Job752a96ec3.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+          "idx": 4
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob752a96ec4",
+      "file": "src/sections/careers-job-description-block/Job752a96ec4.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+          "idx": 5
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob752a96ec5",
+      "file": "src/sections/careers-job-description-block/Job752a96ec5.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+          "idx": 6
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob752a96ec6",
+      "file": "src/sections/careers-job-description-block/Job752a96ec6.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+          "idx": 7
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob752a96ec7",
+      "file": "src/sections/careers-job-description-block/Job752a96ec7.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+          "idx": 8
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob93c2d5e11",
+      "file": "src/sections/careers-job-description-block/Job93c2d5e11.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+          "idx": 2
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob93c2d5e12",
+      "file": "src/sections/careers-job-description-block/Job93c2d5e12.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+          "idx": 3
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob93c2d5e13",
+      "file": "src/sections/careers-job-description-block/Job93c2d5e13.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+          "idx": 4
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob93c2d5e14",
+      "file": "src/sections/careers-job-description-block/Job93c2d5e14.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+          "idx": 5
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob93c2d5e15",
+      "file": "src/sections/careers-job-description-block/Job93c2d5e15.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+          "idx": 6
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob93c2d5e16",
+      "file": "src/sections/careers-job-description-block/Job93c2d5e16.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+          "idx": 7
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob9a3a451a1",
+      "file": "src/sections/careers-job-description-block/Job9a3a451a1.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+          "idx": 2
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob9a3a451a2",
+      "file": "src/sections/careers-job-description-block/Job9a3a451a2.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+          "idx": 3
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob9a3a451a3",
+      "file": "src/sections/careers-job-description-block/Job9a3a451a3.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+          "idx": 4
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob9a3a451a4",
+      "file": "src/sections/careers-job-description-block/Job9a3a451a4.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+          "idx": 5
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob9a3a451a5",
+      "file": "src/sections/careers-job-description-block/Job9a3a451a5.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+          "idx": 6
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob9a3a451a6",
+      "file": "src/sections/careers-job-description-block/Job9a3a451a6.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+          "idx": 7
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob9a3a451a7",
+      "file": "src/sections/careers-job-description-block/Job9a3a451a7.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+          "idx": 8
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob9e9306c11",
+      "file": "src/sections/careers-job-description-block/Job9e9306c11.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+          "idx": 2
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob9e9306c12",
+      "file": "src/sections/careers-job-description-block/Job9e9306c12.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+          "idx": 3
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob9e9306c13",
+      "file": "src/sections/careers-job-description-block/Job9e9306c13.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+          "idx": 4
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob9e9306c14",
+      "file": "src/sections/careers-job-description-block/Job9e9306c14.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+          "idx": 5
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob9e9306c15",
+      "file": "src/sections/careers-job-description-block/Job9e9306c15.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+          "idx": 6
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJob9e9306c16",
+      "file": "src/sections/careers-job-description-block/Job9e9306c16.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+          "idx": 7
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobB13c29c21",
+      "file": "src/sections/careers-job-description-block/JobB13c29c21.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+          "idx": 2
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobB13c29c22",
+      "file": "src/sections/careers-job-description-block/JobB13c29c22.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+          "idx": 3
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobB13c29c23",
+      "file": "src/sections/careers-job-description-block/JobB13c29c23.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+          "idx": 4
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobB13c29c24",
+      "file": "src/sections/careers-job-description-block/JobB13c29c24.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+          "idx": 5
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobB13c29c25",
+      "file": "src/sections/careers-job-description-block/JobB13c29c25.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+          "idx": 6
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobB13c29c26",
+      "file": "src/sections/careers-job-description-block/JobB13c29c26.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+          "idx": 7
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobEd7b7afd1",
+      "file": "src/sections/careers-job-description-block/JobEd7b7afd1.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
+          "idx": 2
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobEd7b7afd2",
+      "file": "src/sections/careers-job-description-block/JobEd7b7afd2.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
+          "idx": 3
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobEd7b7afd3",
+      "file": "src/sections/careers-job-description-block/JobEd7b7afd3.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
+          "idx": 4
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobEd7b7afd4",
+      "file": "src/sections/careers-job-description-block/JobEd7b7afd4.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
+          "idx": 5
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobEd7b7afd5",
+      "file": "src/sections/careers-job-description-block/JobEd7b7afd5.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
+          "idx": 6
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobEd7b7afd6",
+      "file": "src/sections/careers-job-description-block/JobEd7b7afd6.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
+          "idx": 7
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobF679da841",
+      "file": "src/sections/careers-job-description-block/JobF679da841.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 2
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobF679da842",
+      "file": "src/sections/careers-job-description-block/JobF679da842.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 3
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobF679da843",
+      "file": "src/sections/careers-job-description-block/JobF679da843.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 4
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobF679da844",
+      "file": "src/sections/careers-job-description-block/JobF679da844.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 5
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobF679da845",
+      "file": "src/sections/careers-job-description-block/JobF679da845.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 6
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobF679da846",
+      "file": "src/sections/careers-job-description-block/JobF679da846.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 7
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobF679da847",
+      "file": "src/sections/careers-job-description-block/JobF679da847.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 8
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobF679da848",
+      "file": "src/sections/careers-job-description-block/JobF679da848.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 9
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobF8e990cd1",
+      "file": "src/sections/careers-job-description-block/JobF8e990cd1.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+          "idx": 2
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobF8e990cd2",
+      "file": "src/sections/careers-job-description-block/JobF8e990cd2.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+          "idx": 3
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobF8e990cd3",
+      "file": "src/sections/careers-job-description-block/JobF8e990cd3.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+          "idx": 4
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobF8e990cd4",
+      "file": "src/sections/careers-job-description-block/JobF8e990cd4.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+          "idx": 5
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobDescriptionBlockJobF8e990cd5",
+      "file": "src/sections/careers-job-description-block/JobF8e990cd5.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+          "idx": 6
+        }
+      ],
+      "sections": [
+        "careers.job-description-block"
+      ]
+    },
+    {
+      "component": "CareersJobGroupCareers1",
+      "file": "src/sections/careers-job-group/Careers1.jsx",
+      "usedBy": [
+        {
+          "route": "/careers",
+          "idx": 3
+        }
+      ],
+      "sections": [
+        "careers.job-group"
+      ]
+    },
+    {
+      "component": "CareersJobGroupCareers2",
+      "file": "src/sections/careers-job-group/Careers2.jsx",
+      "usedBy": [
+        {
+          "route": "/careers",
+          "idx": 4
+        }
+      ],
+      "sections": [
+        "careers.job-group"
+      ]
+    },
+    {
+      "component": "CareersJobGroupCareers3",
+      "file": "src/sections/careers-job-group/Careers3.jsx",
+      "usedBy": [
+        {
+          "route": "/careers",
+          "idx": 5
+        }
+      ],
+      "sections": [
+        "careers.job-group"
+      ]
+    },
+    {
+      "component": "CareersJobGroupCareers4",
+      "file": "src/sections/careers-job-group/Careers4.jsx",
+      "usedBy": [
+        {
+          "route": "/careers",
+          "idx": 6
+        }
+      ],
+      "sections": [
+        "careers.job-group"
+      ]
+    },
+    {
+      "component": "CareersJobGroupCareers5",
+      "file": "src/sections/careers-job-group/Careers5.jsx",
+      "usedBy": [
+        {
+          "route": "/careers",
+          "idx": 7
+        }
+      ],
+      "sections": [
+        "careers.job-group"
+      ]
+    },
+    {
+      "component": "CareersJobHeaderJob1db991e4",
+      "file": "src/sections/careers-job-header/Job1db991e4.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
+          "idx": 1
+        }
+      ],
+      "sections": [
+        "careers.job-header"
+      ]
+    },
+    {
+      "component": "CareersJobHeaderJob30f72628",
+      "file": "src/sections/careers-job-header/Job30f72628.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+          "idx": 1
+        }
+      ],
+      "sections": [
+        "careers.job-header"
+      ]
+    },
+    {
+      "component": "CareersJobHeaderJob5fb2d42b",
+      "file": "src/sections/careers-job-header/Job5fb2d42b.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+          "idx": 1
+        }
+      ],
+      "sections": [
+        "careers.job-header"
+      ]
+    },
+    {
+      "component": "CareersJobHeaderJob707c9117",
+      "file": "src/sections/careers-job-header/Job707c9117.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+          "idx": 1
+        }
+      ],
+      "sections": [
+        "careers.job-header"
+      ]
+    },
+    {
+      "component": "CareersJobHeaderJob752a96ec",
+      "file": "src/sections/careers-job-header/Job752a96ec.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+          "idx": 1
+        }
+      ],
+      "sections": [
+        "careers.job-header"
+      ]
+    },
+    {
+      "component": "CareersJobHeaderJob93c2d5e1",
+      "file": "src/sections/careers-job-header/Job93c2d5e1.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+          "idx": 1
+        }
+      ],
+      "sections": [
+        "careers.job-header"
+      ]
+    },
+    {
+      "component": "CareersJobHeaderJob9a3a451a",
+      "file": "src/sections/careers-job-header/Job9a3a451a.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+          "idx": 1
+        }
+      ],
+      "sections": [
+        "careers.job-header"
+      ]
+    },
+    {
+      "component": "CareersJobHeaderJob9e9306c1",
+      "file": "src/sections/careers-job-header/Job9e9306c1.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+          "idx": 1
+        }
+      ],
+      "sections": [
+        "careers.job-header"
+      ]
+    },
+    {
+      "component": "CareersJobHeaderJobB13c29c2",
+      "file": "src/sections/careers-job-header/JobB13c29c2.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+          "idx": 1
+        }
+      ],
+      "sections": [
+        "careers.job-header"
+      ]
+    },
+    {
+      "component": "CareersJobHeaderJobEd7b7afd",
+      "file": "src/sections/careers-job-header/JobEd7b7afd.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
+          "idx": 1
+        }
+      ],
+      "sections": [
+        "careers.job-header"
+      ]
+    },
+    {
+      "component": "CareersJobHeaderJobF679da84",
+      "file": "src/sections/careers-job-header/JobF679da84.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 1
+        }
+      ],
+      "sections": [
+        "careers.job-header"
+      ]
+    },
+    {
+      "component": "CareersJobHeaderJobF8e990cd",
+      "file": "src/sections/careers-job-header/JobF8e990cd.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+          "idx": 1
+        }
+      ],
+      "sections": [
+        "careers.job-header"
+      ]
+    },
+    {
+      "component": "ConversionContactDialog",
+      "file": "src/sections/conversion-contact-dialog/ConversionContactDialog.jsx",
+      "usedBy": [
+        {
+          "route": "/",
+          "idx": 5
+        },
+        {
+          "route": "/memo",
+          "idx": 8
+        },
+        {
+          "route": "/careers",
+          "idx": 8
+        },
+        {
+          "route": "/series-c",
+          "idx": 8
+        },
+        {
+          "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+          "idx": 8
+        },
+        {
+          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+          "idx": 9
+        },
+        {
+          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+          "idx": 9
+        },
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 11
+        },
+        {
+          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
+          "idx": 9
+        },
+        {
+          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
+          "idx": 9
+        },
+        {
+          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
+          "idx": 9
+        },
+        {
+          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
+          "idx": 9
+        },
+        {
+          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
+          "idx": 10
+        },
+        {
+          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
+          "idx": 10
+        },
+        {
+          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
+          "idx": 10
+        },
+        {
+          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
+          "idx": 9
+        }
+      ],
+      "sections": [
+        "conversion.contact-dialog"
+      ]
+    },
+    {
+      "component": "EditorialMemoPartMemo1",
+      "file": "src/sections/editorial-memo-part/Memo1.jsx",
       "usedBy": [
         {
           "route": "/memo",
@@ -172,12 +1584,12 @@
         }
       ],
       "sections": [
-        "content.section"
+        "editorial.memo-part"
       ]
     },
     {
-      "component": "WFull2",
-      "file": "src/sections/WFull2.jsx",
+      "component": "EditorialMemoPartMemo2",
+      "file": "src/sections/editorial-memo-part/Memo2.jsx",
       "usedBy": [
         {
           "route": "/memo",
@@ -185,12 +1597,12 @@
         }
       ],
       "sections": [
-        "content.section"
+        "editorial.memo-part"
       ]
     },
     {
-      "component": "WFull3",
-      "file": "src/sections/WFull3.jsx",
+      "component": "EditorialMemoPartMemo3",
+      "file": "src/sections/editorial-memo-part/Memo3.jsx",
       "usedBy": [
         {
           "route": "/memo",
@@ -198,12 +1610,12 @@
         }
       ],
       "sections": [
-        "content.section"
+        "editorial.memo-part"
       ]
     },
     {
-      "component": "WFull4",
-      "file": "src/sections/WFull4.jsx",
+      "component": "EditorialMemoPartMemo4",
+      "file": "src/sections/editorial-memo-part/Memo4.jsx",
       "usedBy": [
         {
           "route": "/memo",
@@ -211,12 +1623,12 @@
         }
       ],
       "sections": [
-        "features.section"
+        "editorial.memo-part"
       ]
     },
     {
-      "component": "WFull5",
-      "file": "src/sections/WFull5.jsx",
+      "component": "EditorialMemoSignoffMemo",
+      "file": "src/sections/editorial-memo-signoff/Memo.jsx",
       "usedBy": [
         {
           "route": "/memo",
@@ -224,38 +1636,116 @@
         }
       ],
       "sections": [
-        "content.section"
+        "editorial.memo-signoff"
       ]
     },
     {
-      "component": "PointerEventsNone5",
-      "file": "src/sections/PointerEventsNone5.jsx",
+      "component": "EditorialPressMetaSeriesC",
+      "file": "src/sections/editorial-press-meta/SeriesC.jsx",
       "usedBy": [
         {
-          "route": "/careers",
-          "idx": 0
+          "route": "/series-c",
+          "idx": 3
         }
       ],
       "sections": [
-        "shell.header"
+        "editorial.press-meta"
       ]
     },
     {
-      "component": "PointerEventsNone6",
-      "file": "src/sections/PointerEventsNone6.jsx",
+      "component": "EditorialProseSeriesC1",
+      "file": "src/sections/editorial-prose/SeriesC1.jsx",
       "usedBy": [
         {
-          "route": "/careers",
-          "idx": 1
+          "route": "/series-c",
+          "idx": 4
         }
       ],
       "sections": [
-        "content.block"
+        "editorial.prose"
       ]
     },
     {
-      "component": "MaskIntersect2",
-      "file": "src/sections/MaskIntersect2.jsx",
+      "component": "EditorialProseSeriesC2",
+      "file": "src/sections/editorial-prose/SeriesC2.jsx",
+      "usedBy": [
+        {
+          "route": "/series-c",
+          "idx": 5
+        }
+      ],
+      "sections": [
+        "editorial.prose"
+      ]
+    },
+    {
+      "component": "EditorialProseSeriesC3",
+      "file": "src/sections/editorial-prose/SeriesC3.jsx",
+      "usedBy": [
+        {
+          "route": "/series-c",
+          "idx": 6
+        }
+      ],
+      "sections": [
+        "editorial.prose"
+      ]
+    },
+    {
+      "component": "EditorialProseSeriesC4",
+      "file": "src/sections/editorial-prose/SeriesC4.jsx",
+      "usedBy": [
+        {
+          "route": "/series-c",
+          "idx": 7
+        }
+      ],
+      "sections": [
+        "editorial.prose"
+      ]
+    },
+    {
+      "component": "HeroCanvasStatementHome",
+      "file": "src/sections/hero-canvas-statement/Home.jsx",
+      "usedBy": [
+        {
+          "route": "/",
+          "idx": 2
+        }
+      ],
+      "sections": [
+        "hero.canvas-statement"
+      ]
+    },
+    {
+      "component": "HeroMemoMastheadMemo",
+      "file": "src/sections/hero-memo-masthead/Memo.jsx",
+      "usedBy": [
+        {
+          "route": "/memo",
+          "idx": 2
+        }
+      ],
+      "sections": [
+        "hero.memo-masthead"
+      ]
+    },
+    {
+      "component": "HeroPressHeadlineSeriesC",
+      "file": "src/sections/hero-press-headline/SeriesC.jsx",
+      "usedBy": [
+        {
+          "route": "/series-c",
+          "idx": 2
+        }
+      ],
+      "sections": [
+        "hero.press-headline"
+      ]
+    },
+    {
+      "component": "HeroTitleIntroCareers",
+      "file": "src/sections/hero-title-intro/Careers.jsx",
       "usedBy": [
         {
           "route": "/careers",
@@ -263,15 +1753,41 @@
         }
       ],
       "sections": [
-        "hero.mask-intersect"
+        "hero.title-intro"
       ]
     },
     {
-      "component": "PointerEventsNone7",
-      "file": "src/sections/PointerEventsNone7.jsx",
+      "component": "ProofLogoStripHome",
+      "file": "src/sections/proof-logo-strip/Home.jsx",
       "usedBy": [
         {
-          "route": "/series-c",
+          "route": "/",
+          "idx": 4
+        }
+      ],
+      "sections": [
+        "proof.logo-strip"
+      ]
+    },
+    {
+      "component": "ProofMetricsLineHome",
+      "file": "src/sections/proof-metrics-line/Home.jsx",
+      "usedBy": [
+        {
+          "route": "/",
+          "idx": 3
+        }
+      ],
+      "sections": [
+        "proof.metrics-line"
+      ]
+    },
+    {
+      "component": "ShellHeaderCareers",
+      "file": "src/sections/shell-header/Careers.jsx",
+      "usedBy": [
+        {
+          "route": "/careers",
           "idx": 0
         }
       ],
@@ -280,37 +1796,11 @@
       ]
     },
     {
-      "component": "PointerEventsNone8",
-      "file": "src/sections/PointerEventsNone8.jsx",
+      "component": "ShellHeaderHome",
+      "file": "src/sections/shell-header/Home.jsx",
       "usedBy": [
         {
-          "route": "/series-c",
-          "idx": 1
-        }
-      ],
-      "sections": [
-        "content.block"
-      ]
-    },
-    {
-      "component": "MaskIntersect3",
-      "file": "src/sections/MaskIntersect3.jsx",
-      "usedBy": [
-        {
-          "route": "/series-c",
-          "idx": 2
-        }
-      ],
-      "sections": [
-        "hero.mask-intersect"
-      ]
-    },
-    {
-      "component": "PointerEventsNone9",
-      "file": "src/sections/PointerEventsNone9.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+          "route": "/",
           "idx": 0
         }
       ],
@@ -319,81 +1809,8 @@
       ]
     },
     {
-      "component": "MaskIntersect4",
-      "file": "src/sections/MaskIntersect4.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
-          "idx": 1
-        }
-      ],
-      "sections": [
-        "hero.mask-intersect"
-      ]
-    },
-    {
-      "component": "PointerEventsNone10",
-      "file": "src/sections/PointerEventsNone10.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
-          "idx": 0
-        },
-        {
-          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
-          "idx": 0
-        },
-        {
-          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
-          "idx": 0
-        }
-      ],
-      "sections": [
-        "shell.header"
-      ]
-    },
-    {
-      "component": "MaskIntersect5",
-      "file": "src/sections/MaskIntersect5.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
-          "idx": 1
-        }
-      ],
-      "sections": [
-        "hero.mask-intersect"
-      ]
-    },
-    {
-      "component": "MaskIntersect6",
-      "file": "src/sections/MaskIntersect6.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
-          "idx": 1
-        }
-      ],
-      "sections": [
-        "hero.mask-intersect"
-      ]
-    },
-    {
-      "component": "MaskIntersect7",
-      "file": "src/sections/MaskIntersect7.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
-          "idx": 1
-        }
-      ],
-      "sections": [
-        "hero.mask-intersect"
-      ]
-    },
-    {
-      "component": "PointerEventsNone11",
-      "file": "src/sections/PointerEventsNone11.jsx",
+      "component": "ShellHeaderJob1db991e4",
+      "file": "src/sections/shell-header/Job1db991e4.jsx",
       "usedBy": [
         {
           "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
@@ -413,47 +1830,8 @@
       ]
     },
     {
-      "component": "MaskIntersect8",
-      "file": "src/sections/MaskIntersect8.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
-          "idx": 1
-        }
-      ],
-      "sections": [
-        "hero.mask-intersect"
-      ]
-    },
-    {
-      "component": "MaskIntersect9",
-      "file": "src/sections/MaskIntersect9.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
-          "idx": 1
-        }
-      ],
-      "sections": [
-        "hero.mask-intersect"
-      ]
-    },
-    {
-      "component": "MaskIntersect10",
-      "file": "src/sections/MaskIntersect10.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
-          "idx": 1
-        }
-      ],
-      "sections": [
-        "hero.mask-intersect"
-      ]
-    },
-    {
-      "component": "PointerEventsNone12",
-      "file": "src/sections/PointerEventsNone12.jsx",
+      "component": "ShellHeaderJob5fb2d42b",
+      "file": "src/sections/shell-header/Job5fb2d42b.jsx",
       "usedBy": [
         {
           "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
@@ -473,47 +1851,8 @@
       ]
     },
     {
-      "component": "MaskIntersect11",
-      "file": "src/sections/MaskIntersect11.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
-          "idx": 1
-        }
-      ],
-      "sections": [
-        "hero.mask-intersect"
-      ]
-    },
-    {
-      "component": "MaskIntersect12",
-      "file": "src/sections/MaskIntersect12.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
-          "idx": 1
-        }
-      ],
-      "sections": [
-        "hero.mask-intersect"
-      ]
-    },
-    {
-      "component": "MaskIntersect13",
-      "file": "src/sections/MaskIntersect13.jsx",
-      "usedBy": [
-        {
-          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
-          "idx": 1
-        }
-      ],
-      "sections": [
-        "hero.mask-intersect"
-      ]
-    },
-    {
-      "component": "PointerEventsNone13",
-      "file": "src/sections/PointerEventsNone13.jsx",
+      "component": "ShellHeaderJob752a96ec",
+      "file": "src/sections/shell-header/Job752a96ec.jsx",
       "usedBy": [
         {
           "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
@@ -529,30 +1868,229 @@
       ]
     },
     {
-      "component": "MaskIntersect14",
-      "file": "src/sections/MaskIntersect14.jsx",
+      "component": "ShellHeaderJob9e9306c1",
+      "file": "src/sections/shell-header/Job9e9306c1.jsx",
       "usedBy": [
         {
-          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
-          "idx": 1
+          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
+          "idx": 0
+        },
+        {
+          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
+          "idx": 0
+        },
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
+          "idx": 0
         }
       ],
       "sections": [
-        "hero.mask-intersect"
+        "shell.header"
       ]
     },
     {
-      "component": "MaskIntersect15",
-      "file": "src/sections/MaskIntersect15.jsx",
+      "component": "ShellHeaderJobF8e990cd",
+      "file": "src/sections/shell-header/JobF8e990cd.jsx",
       "usedBy": [
         {
-          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
-          "idx": 1
+          "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
+          "idx": 0
         }
       ],
       "sections": [
-        "hero.mask-intersect"
+        "shell.header"
       ]
+    },
+    {
+      "component": "ShellHeaderMemo",
+      "file": "src/sections/shell-header/Memo.jsx",
+      "usedBy": [
+        {
+          "route": "/memo",
+          "idx": 0
+        }
+      ],
+      "sections": [
+        "shell.header"
+      ]
+    },
+    {
+      "component": "ShellHeaderSeriesC",
+      "file": "src/sections/shell-header/SeriesC.jsx",
+      "usedBy": [
+        {
+          "route": "/series-c",
+          "idx": 0
+        }
+      ],
+      "sections": [
+        "shell.header"
+      ]
+    },
+    {
+      "component": "CareersDetailJob1db991e4Body",
+      "file": "src/layouts/CareersDetailJob1db991e4Body.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
+    },
+    {
+      "component": "CareersDetailJob30f72628Body",
+      "file": "src/layouts/CareersDetailJob30f72628Body.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
+    },
+    {
+      "component": "CareersDetailJob5fb2d42bBody",
+      "file": "src/layouts/CareersDetailJob5fb2d42bBody.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
+    },
+    {
+      "component": "CareersDetailJob707c9117Body",
+      "file": "src/layouts/CareersDetailJob707c9117Body.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
+    },
+    {
+      "component": "CareersDetailJob752a96ecBody",
+      "file": "src/layouts/CareersDetailJob752a96ecBody.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
+    },
+    {
+      "component": "CareersDetailJob93c2d5e1Body",
+      "file": "src/layouts/CareersDetailJob93c2d5e1Body.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
+    },
+    {
+      "component": "CareersDetailJob9a3a451aBody",
+      "file": "src/layouts/CareersDetailJob9a3a451aBody.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
+    },
+    {
+      "component": "CareersDetailJob9e9306c1Body",
+      "file": "src/layouts/CareersDetailJob9e9306c1Body.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
+    },
+    {
+      "component": "CareersDetailJobB13c29c2Body",
+      "file": "src/layouts/CareersDetailJobB13c29c2Body.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
+    },
+    {
+      "component": "CareersDetailJobEd7b7afdBody",
+      "file": "src/layouts/CareersDetailJobEd7b7afdBody.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
+    },
+    {
+      "component": "CareersDetailJobF679da84Body",
+      "file": "src/layouts/CareersDetailJobF679da84Body.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
+    },
+    {
+      "component": "CareersDetailJobF8e990cdBody",
+      "file": "src/layouts/CareersDetailJobF8e990cdBody.jsx",
+      "usedBy": [
+        {
+          "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
+    },
+    {
+      "component": "CareersIndexBody",
+      "file": "src/layouts/CareersIndexBody.jsx",
+      "usedBy": [
+        {
+          "route": "/careers"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
+    },
+    {
+      "component": "HomeBody",
+      "file": "src/layouts/HomeBody.jsx",
+      "usedBy": [
+        {
+          "route": "/"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
+    },
+    {
+      "component": "PressReleaseBody",
+      "file": "src/layouts/PressReleaseBody.jsx",
+      "usedBy": [
+        {
+          "route": "/series-c"
+        }
+      ],
+      "sections": [],
+      "kind": "layout"
     }
   ],
   "stills": [

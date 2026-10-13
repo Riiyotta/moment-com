@@ -1,16 +1,16 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "templates": [
     {
-      "id": "template.group",
-      "name": "Group",
-      "routeCount": 3,
+      "id": "template.home",
+      "name": "Home",
+      "routeCount": 1,
       "chrome": "partial",
       "routes": [
-        "/",
-        "/careers",
-        "/series-c"
+        "/"
       ],
+      "flow": "hero → proof; no body copy",
+      "familyNote": "Single-screen landing: one h1 statement, one scale line, one customer-logo row; the only CTA is the header Contact dialog. Lowest information density of all templates.",
       "nodes": [
         {
           "section": "shell.header",
@@ -18,12 +18,27 @@
           "repeatable": false
         },
         {
-          "section": "content.block",
+          "section": "banner.announcement",
           "required": true,
           "repeatable": false
         },
         {
-          "section": "hero.mask-intersect",
+          "section": "hero.canvas-statement",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "proof.metrics-line",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "proof.logo-strip",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.contact-dialog",
           "required": true,
           "repeatable": false
         }
@@ -41,6 +56,8 @@
       "routes": [
         "/memo"
       ],
+      "flow": "masthead → numbered parts → sign-off",
+      "familyNote": "Long-form serif essay: masthead, four numbered parts, sign-off. Highest prose density; no logos, no CTAs besides the header.",
       "nodes": [
         {
           "section": "shell.header",
@@ -48,23 +65,28 @@
           "repeatable": false
         },
         {
-          "section": "content.block",
+          "section": "banner.announcement",
           "required": true,
           "repeatable": false
         },
         {
-          "section": "content.section",
+          "section": "hero.memo-masthead",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "editorial.memo-part",
           "required": true,
           "repeatable": true,
           "maxCount": 4
         },
         {
-          "section": "features.section",
+          "section": "editorial.memo-signoff",
           "required": true,
           "repeatable": false
         },
         {
-          "section": "content.section",
+          "section": "conversion.contact-dialog",
           "required": true,
           "repeatable": false
         }
@@ -75,8 +97,99 @@
       }
     },
     {
-      "id": "template.careers",
-      "name": "Careers pages",
+      "id": "template.careers-index",
+      "name": "Careers index",
+      "routeCount": 1,
+      "chrome": "partial",
+      "routes": [
+        "/careers"
+      ],
+      "flow": "pitch hero → job groups",
+      "familyNote": "Recruiting pitch followed by a department-grouped job board; every row links to a role page.",
+      "nodes": [
+        {
+          "section": "shell.header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "banner.announcement",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.title-intro",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "careers.job-group",
+          "required": true,
+          "repeatable": true,
+          "maxCount": 5
+        },
+        {
+          "section": "conversion.contact-dialog",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "evidence": {
+        "level": "measured",
+        "note": "every route of this template was visited and had an identical section sequence"
+      }
+    },
+    {
+      "id": "template.press-release",
+      "name": "Press release",
+      "routeCount": 1,
+      "chrome": "partial",
+      "routes": [
+        "/series-c"
+      ],
+      "flow": "headline → dateline → prose blocks",
+      "familyNote": "News-article layout: headline, dateline with external coverage link, framed subheadings over rich text.",
+      "nodes": [
+        {
+          "section": "shell.header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "banner.announcement",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.press-headline",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "editorial.press-meta",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "editorial.prose",
+          "required": true,
+          "repeatable": true,
+          "maxCount": 4
+        },
+        {
+          "section": "conversion.contact-dialog",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "evidence": {
+        "level": "measured",
+        "note": "every route of this template was visited and had an identical section sequence"
+      }
+    },
+    {
+      "id": "template.careers-detail",
+      "name": "Careers detail",
       "routeCount": 12,
       "chrome": "partial",
       "routes": [
@@ -93,6 +206,8 @@
         "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
         "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5"
       ],
+      "flow": "identity → description blocks → apply",
+      "familyNote": "Two-column role page: sticky identity card beside a headed description, closing with an Apply prompt. No hero and no banner.",
       "nodes": [
         {
           "section": "shell.header",
@@ -100,7 +215,23 @@
           "repeatable": false
         },
         {
-          "section": "hero.mask-intersect",
+          "section": "careers.job-header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "careers.job-description-block",
+          "required": true,
+          "repeatable": true,
+          "maxCount": 8
+        },
+        {
+          "section": "careers.apply-cta",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.contact-dialog",
           "required": true,
           "repeatable": false
         }

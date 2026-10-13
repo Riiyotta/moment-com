@@ -7,11 +7,11 @@
     },
     "css-transition": {
       "description": "A CSS transition on hover/focus/state change.",
-      "observedSections": 41
+      "observedSections": 66
     },
     "css-animation": {
       "description": "A CSS @keyframes animation.",
-      "observedSections": 37
+      "observedSections": 39
     },
     "appear-on-enter": {
       "description": "Element appears (fade/slide) when it enters the viewport.",
@@ -41,5 +41,6 @@
   "tokens": {
     "durations": "tokens/00-foundation/motion.json",
     "semantic": "tokens/10-semantic/motion.json"
-  }
+  },
+  "observedBasis": "section instances in extraction/measured-values.json whose subtree shows the pattern (shell.header uses its 0.1.0 measurement)"
 }

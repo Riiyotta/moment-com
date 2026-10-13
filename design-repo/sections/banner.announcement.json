@@ -1,0 +1,94 @@
+{
+  "id": "banner.announcement",
+  "category": "BANNER",
+  "label": "Announcement banner",
+  "tag": "div",
+  "purpose": "Announces the $78M Series C and routes the visitor to the memo and the press release.",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "body": {
+        "type": "string[]",
+        "required": true,
+        "maxItems": 1,
+        "maxWords": 7
+      },
+      "ctas": {
+        "type": "cta[]",
+        "required": true,
+        "maxItems": 2,
+        "maxWords": 5
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 4,
+    "routes": 4,
+    "measuredFrom": [
+      "src/index.html:116-208",
+      "src/memo/index.html:131-230",
+      "src/careers/index.html:131-227",
+      "src/series-c/index.html:131-227"
+    ]
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-transition",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 68
+    },
+    "mobile": {
+      "heightPx": 105
+    },
+    "measuredOnRoute": "/",
+    "changes": []
+  },
+  "assetRoles": [],
+  "retrieval": {
+    "semanticLabel": "banner/announcement",
+    "kind": "banner",
+    "role": "announcement",
+    "summary": "Slim announcement strip with one line of copy and two links (memo, press release).",
+    "keywords": [
+      "announcement",
+      "banner",
+      "series c",
+      "news"
+    ],
+    "pageFamilies": [
+      "template.careers-index",
+      "template.home",
+      "template.memo",
+      "template.press-release"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/banner-announcement/Careers.jsx",
+    "src/sections/banner-announcement/Home.jsx",
+    "src/sections/banner-announcement/Memo.jsx",
+    "src/sections/banner-announcement/SeriesC.jsx"
+  ],
+  "implementedBy": "src/sections/banner-announcement/Careers.jsx",
+  "constraints": {
+    "onePerPage": true
+  },
+  "granularity": {
+    "singleResponsibility": "announcement",
+    "copyCapacityWords": 17,
+    "imageCapacity": 0,
+    "bodyItemCapacity": 1
+  }
+}

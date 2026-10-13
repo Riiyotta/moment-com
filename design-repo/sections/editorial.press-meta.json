@@ -1,0 +1,84 @@
+{
+  "id": "editorial.press-meta",
+  "category": "EDITORIAL",
+  "label": "Press dateline",
+  "tag": "div",
+  "purpose": "Gives the press release its dateline and a link to the external news coverage.",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "body": {
+        "type": "string[]",
+        "required": true,
+        "maxItems": 1,
+        "maxWords": 7
+      },
+      "ctas": {
+        "type": "cta[]",
+        "required": true,
+        "maxItems": 1,
+        "maxWords": 2
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 1,
+    "routes": 1,
+    "measuredFrom": [
+      "src/series-c/index.html:1411-1414"
+    ]
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-transition",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 16
+    },
+    "mobile": {
+      "heightPx": 40
+    },
+    "measuredOnRoute": "/series-c",
+    "changes": []
+  },
+  "assetRoles": [],
+  "retrieval": {
+    "semanticLabel": "editorial/press-meta",
+    "kind": "editorial",
+    "role": "press metadata",
+    "summary": "Dateline (place, date) with a coverage link.",
+    "keywords": [
+      "dateline",
+      "press",
+      "coverage"
+    ],
+    "pageFamilies": [
+      "template.press-release"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/editorial-press-meta/SeriesC.jsx"
+  ],
+  "implementedBy": "src/sections/editorial-press-meta/SeriesC.jsx",
+  "constraints": {
+    "onePerPage": true
+  },
+  "granularity": {
+    "singleResponsibility": "press metadata",
+    "copyCapacityWords": 9,
+    "imageCapacity": 0,
+    "bodyItemCapacity": 1
+  }
+}

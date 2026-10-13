@@ -6,106 +6,307 @@
     "mirror": "website-builder crawl, 2026-10-06T08:16:10Z",
     "productionApproved": false,
     "totalRoutes": 16,
-    "totalTemplates": 3,
-    "generatedBy": "website-builder: section names come from the page's own markup (data attributes, React component names, ids, classes, landmarks); categories are keyword heuristics"
+    "totalTemplates": 5,
+    "generatedBy": "website-builder crawl, decomposed in design-repo 0.2.0: one section per responsibility; section ids, categories and templates are mirrored from design-repo/sections and templates"
   },
   "categories": {
-    "SHELL": "Site chrome: navigation, header, footer, announcement bars and other elements carried across pages.",
-    "CONTENT": "The substantive body of a page: articles, listings, resources and general sections.",
-    "HERO": "Page-opening block: the main headline (h1) and first call to action.",
-    "FEATURES": "Product explanation: capabilities, benefits, workflows and integrations."
+    "SHELL": "Site chrome: navigation, header and other elements carried across pages.",
+    "BANNER": "Announcement strips that route the visitor to news or other pages.",
+    "HERO": "Page-opening block: the main headline (h1) that names the page.",
+    "PROOF": "Evidence of scale or credibility: metrics lines and customer logos.",
+    "EDITORIAL": "Long-form or press copy: memo parts, press-release prose.",
+    "CAREERS": "Recruiting: job listings and role pages.",
+    "CONVERSION": "Lead capture: the site-wide Request-a-demo dialog."
   },
   "sections": {
-    "content.block": {
-      "category": "CONTENT",
-      "description": "Untitled <div> block classified as content by its content. Typically 68px tall at 1440px wide.",
+    "banner.announcement": {
+      "category": "BANNER",
+      "description": "Announces the $78M Series C and routes the visitor to the memo and the press release. One responsibility: announcement. Typically 68px tall at 1440px wide.",
       "scope": "Appears on 4 routes.",
-      "implementedBy": "src/sections/PointerEventsNone2.jsx",
+      "implementedBy": "src/sections/banner-announcement/Careers.jsx",
       "implementedByAll": [
-        "src/sections/PointerEventsNone2.jsx",
-        "src/sections/PointerEventsNone4.jsx",
-        "src/sections/PointerEventsNone6.jsx",
-        "src/sections/PointerEventsNone8.jsx"
+        "src/sections/banner-announcement/Careers.jsx",
+        "src/sections/banner-announcement/Home.jsx",
+        "src/sections/banner-announcement/Memo.jsx",
+        "src/sections/banner-announcement/SeriesC.jsx"
       ]
     },
-    "content.section": {
-      "category": "CONTENT",
-      "description": "Untitled <section> block classified as content by its content. Typically 770px tall at 1440px wide.",
-      "scope": "Appears on 1 route.",
-      "implementedBy": "src/sections/Section.jsx",
+    "careers.apply-cta": {
+      "category": "CAREERS",
+      "description": "Closes a role page with the 'Interested in this role?' prompt and the Apply link. One responsibility: job conversion. Typically 97px tall at 1440px wide.",
+      "scope": "Appears on 12 routes.",
+      "implementedBy": "src/sections/careers-apply-cta/Job1db991e4.jsx",
       "implementedByAll": [
-        "src/sections/Section.jsx",
-        "src/sections/WFull.jsx",
-        "src/sections/WFull2.jsx",
-        "src/sections/WFull3.jsx",
-        "src/sections/WFull5.jsx"
+        "src/sections/careers-apply-cta/Job1db991e4.jsx",
+        "src/sections/careers-apply-cta/Job30f72628.jsx",
+        "src/sections/careers-apply-cta/Job5fb2d42b.jsx",
+        "src/sections/careers-apply-cta/Job707c9117.jsx",
+        "src/sections/careers-apply-cta/Job752a96ec.jsx",
+        "src/sections/careers-apply-cta/Job93c2d5e1.jsx",
+        "src/sections/careers-apply-cta/Job9a3a451a.jsx",
+        "src/sections/careers-apply-cta/Job9e9306c1.jsx",
+        "src/sections/careers-apply-cta/JobB13c29c2.jsx",
+        "src/sections/careers-apply-cta/JobEd7b7afd.jsx",
+        "src/sections/careers-apply-cta/JobF679da84.jsx",
+        "src/sections/careers-apply-cta/JobF8e990cd.jsx"
       ]
     },
-    "features.section": {
-      "category": "FEATURES",
-      "description": "Untitled <section> block classified as features by its content; the first one reads \"THE END OF TOOLS\". Typically 460px tall at 1440px wide.",
-      "scope": "Appears on 1 route.",
-      "implementedBy": "src/sections/WFull4.jsx",
+    "careers.job-description-block": {
+      "category": "CAREERS",
+      "description": "One headed block of a role description (mission, about, the role, requirements, compensation). One responsibility: job copy. Typically 556px tall at 1440px wide.",
+      "scope": "Appears on 12 routes.",
+      "implementedBy": "src/sections/careers-job-description-block/Job1db991e41.jsx",
       "implementedByAll": [
-        "src/sections/WFull4.jsx"
+        "src/sections/careers-job-description-block/Job1db991e41.jsx",
+        "src/sections/careers-job-description-block/Job1db991e42.jsx",
+        "src/sections/careers-job-description-block/Job1db991e43.jsx",
+        "src/sections/careers-job-description-block/Job1db991e44.jsx",
+        "src/sections/careers-job-description-block/Job1db991e45.jsx",
+        "src/sections/careers-job-description-block/Job1db991e46.jsx",
+        "src/sections/careers-job-description-block/Job30f726281.jsx",
+        "src/sections/careers-job-description-block/Job30f726282.jsx",
+        "src/sections/careers-job-description-block/Job30f726283.jsx",
+        "src/sections/careers-job-description-block/Job30f726284.jsx",
+        "src/sections/careers-job-description-block/Job30f726285.jsx",
+        "src/sections/careers-job-description-block/Job30f726286.jsx",
+        "src/sections/careers-job-description-block/Job5fb2d42b1.jsx",
+        "src/sections/careers-job-description-block/Job5fb2d42b2.jsx",
+        "src/sections/careers-job-description-block/Job5fb2d42b3.jsx",
+        "src/sections/careers-job-description-block/Job5fb2d42b4.jsx",
+        "src/sections/careers-job-description-block/Job5fb2d42b5.jsx",
+        "src/sections/careers-job-description-block/Job5fb2d42b6.jsx",
+        "src/sections/careers-job-description-block/Job707c91171.jsx",
+        "src/sections/careers-job-description-block/Job707c91172.jsx",
+        "src/sections/careers-job-description-block/Job707c91173.jsx",
+        "src/sections/careers-job-description-block/Job707c91174.jsx",
+        "src/sections/careers-job-description-block/Job707c91175.jsx",
+        "src/sections/careers-job-description-block/Job707c91176.jsx",
+        "src/sections/careers-job-description-block/Job707c91177.jsx",
+        "src/sections/careers-job-description-block/Job752a96ec1.jsx",
+        "src/sections/careers-job-description-block/Job752a96ec2.jsx",
+        "src/sections/careers-job-description-block/Job752a96ec3.jsx",
+        "src/sections/careers-job-description-block/Job752a96ec4.jsx",
+        "src/sections/careers-job-description-block/Job752a96ec5.jsx",
+        "src/sections/careers-job-description-block/Job752a96ec6.jsx",
+        "src/sections/careers-job-description-block/Job752a96ec7.jsx",
+        "src/sections/careers-job-description-block/Job93c2d5e11.jsx",
+        "src/sections/careers-job-description-block/Job93c2d5e12.jsx",
+        "src/sections/careers-job-description-block/Job93c2d5e13.jsx",
+        "src/sections/careers-job-description-block/Job93c2d5e14.jsx",
+        "src/sections/careers-job-description-block/Job93c2d5e15.jsx",
+        "src/sections/careers-job-description-block/Job93c2d5e16.jsx",
+        "src/sections/careers-job-description-block/Job9a3a451a1.jsx",
+        "src/sections/careers-job-description-block/Job9a3a451a2.jsx",
+        "src/sections/careers-job-description-block/Job9a3a451a3.jsx",
+        "src/sections/careers-job-description-block/Job9a3a451a4.jsx",
+        "src/sections/careers-job-description-block/Job9a3a451a5.jsx",
+        "src/sections/careers-job-description-block/Job9a3a451a6.jsx",
+        "src/sections/careers-job-description-block/Job9a3a451a7.jsx",
+        "src/sections/careers-job-description-block/Job9e9306c11.jsx",
+        "src/sections/careers-job-description-block/Job9e9306c12.jsx",
+        "src/sections/careers-job-description-block/Job9e9306c13.jsx",
+        "src/sections/careers-job-description-block/Job9e9306c14.jsx",
+        "src/sections/careers-job-description-block/Job9e9306c15.jsx",
+        "src/sections/careers-job-description-block/Job9e9306c16.jsx",
+        "src/sections/careers-job-description-block/JobB13c29c21.jsx",
+        "src/sections/careers-job-description-block/JobB13c29c22.jsx",
+        "src/sections/careers-job-description-block/JobB13c29c23.jsx",
+        "src/sections/careers-job-description-block/JobB13c29c24.jsx",
+        "src/sections/careers-job-description-block/JobB13c29c25.jsx",
+        "src/sections/careers-job-description-block/JobB13c29c26.jsx",
+        "src/sections/careers-job-description-block/JobEd7b7afd1.jsx",
+        "src/sections/careers-job-description-block/JobEd7b7afd2.jsx",
+        "src/sections/careers-job-description-block/JobEd7b7afd3.jsx",
+        "src/sections/careers-job-description-block/JobEd7b7afd4.jsx",
+        "src/sections/careers-job-description-block/JobEd7b7afd5.jsx",
+        "src/sections/careers-job-description-block/JobEd7b7afd6.jsx",
+        "src/sections/careers-job-description-block/JobF679da841.jsx",
+        "src/sections/careers-job-description-block/JobF679da842.jsx",
+        "src/sections/careers-job-description-block/JobF679da843.jsx",
+        "src/sections/careers-job-description-block/JobF679da844.jsx",
+        "src/sections/careers-job-description-block/JobF679da845.jsx",
+        "src/sections/careers-job-description-block/JobF679da846.jsx",
+        "src/sections/careers-job-description-block/JobF679da847.jsx",
+        "src/sections/careers-job-description-block/JobF679da848.jsx",
+        "src/sections/careers-job-description-block/JobF8e990cd1.jsx",
+        "src/sections/careers-job-description-block/JobF8e990cd2.jsx",
+        "src/sections/careers-job-description-block/JobF8e990cd3.jsx",
+        "src/sections/careers-job-description-block/JobF8e990cd4.jsx",
+        "src/sections/careers-job-description-block/JobF8e990cd5.jsx"
       ]
     },
-    "hero.mask-intersect": {
+    "careers.job-group": {
+      "category": "CAREERS",
+      "description": "Lists the open roles of one department as numbered rows that link to the role pages. One responsibility: job listing. Typically 335px tall at 1440px wide.",
+      "scope": "Appears on 1 routes.",
+      "implementedBy": "src/sections/careers-job-group/Careers1.jsx",
+      "implementedByAll": [
+        "src/sections/careers-job-group/Careers1.jsx",
+        "src/sections/careers-job-group/Careers2.jsx",
+        "src/sections/careers-job-group/Careers3.jsx",
+        "src/sections/careers-job-group/Careers4.jsx",
+        "src/sections/careers-job-group/Careers5.jsx"
+      ]
+    },
+    "careers.job-header": {
+      "category": "CAREERS",
+      "description": "Identifies a role: breadcrumb, title, the team/location/work-mode/salary facts and the first Apply link. One responsibility: job identity. Typically 284px tall at 1440px wide.",
+      "scope": "Appears on 12 routes.",
+      "implementedBy": "src/sections/careers-job-header/Job1db991e4.jsx",
+      "implementedByAll": [
+        "src/sections/careers-job-header/Job1db991e4.jsx",
+        "src/sections/careers-job-header/Job30f72628.jsx",
+        "src/sections/careers-job-header/Job5fb2d42b.jsx",
+        "src/sections/careers-job-header/Job707c9117.jsx",
+        "src/sections/careers-job-header/Job752a96ec.jsx",
+        "src/sections/careers-job-header/Job93c2d5e1.jsx",
+        "src/sections/careers-job-header/Job9a3a451a.jsx",
+        "src/sections/careers-job-header/Job9e9306c1.jsx",
+        "src/sections/careers-job-header/JobB13c29c2.jsx",
+        "src/sections/careers-job-header/JobEd7b7afd.jsx",
+        "src/sections/careers-job-header/JobF679da84.jsx",
+        "src/sections/careers-job-header/JobF8e990cd.jsx"
+      ]
+    },
+    "conversion.contact-dialog": {
+      "category": "CONVERSION",
+      "description": "The site-wide 'Request a demo' modal opened from the header's Contact action: a six-field lead form. One responsibility: lead capture.",
+      "scope": "Appears on all 16 routes.",
+      "implementedBy": "src/sections/conversion-contact-dialog/ConversionContactDialog.jsx",
+      "implementedByAll": [
+        "src/sections/conversion-contact-dialog/ConversionContactDialog.jsx"
+      ]
+    },
+    "editorial.memo-part": {
+      "category": "EDITORIAL",
+      "description": "One numbered part of the memo: a 'Part N' eyebrow, a heading and the argument's paragraphs. One responsibility: argument. Typically 1116px tall at 1440px wide.",
+      "scope": "Appears on 1 routes.",
+      "implementedBy": "src/sections/editorial-memo-part/Memo1.jsx",
+      "implementedByAll": [
+        "src/sections/editorial-memo-part/Memo1.jsx",
+        "src/sections/editorial-memo-part/Memo2.jsx",
+        "src/sections/editorial-memo-part/Memo3.jsx",
+        "src/sections/editorial-memo-part/Memo4.jsx"
+      ]
+    },
+    "editorial.memo-signoff": {
+      "category": "EDITORIAL",
+      "description": "Closes the memo with the company name, the memo title and the date between dashed rules. One responsibility: closing. Typically 770px tall at 1440px wide.",
+      "scope": "Appears on 1 routes.",
+      "implementedBy": "src/sections/editorial-memo-signoff/Memo.jsx",
+      "implementedByAll": [
+        "src/sections/editorial-memo-signoff/Memo.jsx"
+      ]
+    },
+    "editorial.press-meta": {
+      "category": "EDITORIAL",
+      "description": "Gives the press release its dateline and a link to the external news coverage. One responsibility: press metadata. Typically 16px tall at 1440px wide.",
+      "scope": "Appears on 1 routes.",
+      "implementedBy": "src/sections/editorial-press-meta/SeriesC.jsx",
+      "implementedByAll": [
+        "src/sections/editorial-press-meta/SeriesC.jsx"
+      ]
+    },
+    "editorial.prose": {
+      "category": "EDITORIAL",
+      "description": "One unit of press-release copy: an optional framed subheading followed by rich-text paragraphs. One responsibility: press copy. Typically 1133px tall at 1440px wide.",
+      "scope": "Appears on 1 routes.",
+      "implementedBy": "src/sections/editorial-prose/SeriesC1.jsx",
+      "implementedByAll": [
+        "src/sections/editorial-prose/SeriesC1.jsx",
+        "src/sections/editorial-prose/SeriesC2.jsx",
+        "src/sections/editorial-prose/SeriesC3.jsx",
+        "src/sections/editorial-prose/SeriesC4.jsx"
+      ]
+    },
+    "hero.canvas-statement": {
       "category": "HERO",
-      "description": "\"mask-intersect\" — a <div> block named by its CSS class; first heading: \"The AI Partner forInvestment Management\". Typically 2751px tall at 1440px wide.",
-      "scope": "Appears on 15 routes.",
-      "implementedBy": "src/sections/MaskIntersect.jsx",
+      "description": "Opens the home page: a canvas-animated backdrop with the h1 value statement and one supporting line. One responsibility: page opener. Typically 900px tall at 1440px wide.",
+      "scope": "Appears on 1 routes.",
+      "implementedBy": "src/sections/hero-canvas-statement/Home.jsx",
       "implementedByAll": [
-        "src/sections/MaskIntersect.jsx",
-        "src/sections/MaskIntersect10.jsx",
-        "src/sections/MaskIntersect11.jsx",
-        "src/sections/MaskIntersect12.jsx",
-        "src/sections/MaskIntersect13.jsx",
-        "src/sections/MaskIntersect14.jsx",
-        "src/sections/MaskIntersect15.jsx",
-        "src/sections/MaskIntersect2.jsx",
-        "src/sections/MaskIntersect3.jsx",
-        "src/sections/MaskIntersect4.jsx",
-        "src/sections/MaskIntersect5.jsx",
-        "src/sections/MaskIntersect6.jsx",
-        "src/sections/MaskIntersect7.jsx",
-        "src/sections/MaskIntersect8.jsx",
-        "src/sections/MaskIntersect9.jsx"
+        "src/sections/hero-canvas-statement/Home.jsx"
+      ]
+    },
+    "hero.memo-masthead": {
+      "category": "HERO",
+      "description": "Opens the memo: title, author and date over breakpoint-specific animated line-art sweeps. One responsibility: page opener. Typically 911px tall at 1440px wide.",
+      "scope": "Appears on 1 routes.",
+      "implementedBy": "src/sections/hero-memo-masthead/Memo.jsx",
+      "implementedByAll": [
+        "src/sections/hero-memo-masthead/Memo.jsx"
+      ]
+    },
+    "hero.press-headline": {
+      "category": "HERO",
+      "description": "Opens the Series C press release: the announcement headline and its standfirst. One responsibility: page opener. Typically 376px tall at 1440px wide.",
+      "scope": "Appears on 1 routes.",
+      "implementedBy": "src/sections/hero-press-headline/SeriesC.jsx",
+      "implementedByAll": [
+        "src/sections/hero-press-headline/SeriesC.jsx"
+      ]
+    },
+    "hero.title-intro": {
+      "category": "HERO",
+      "description": "Opens the careers index: the recruiting h1 and the company pitch paragraphs, over the graph-paper backdrop. One responsibility: page opener. Typically 900px tall at 1440px wide.",
+      "scope": "Appears on 1 routes.",
+      "implementedBy": "src/sections/hero-title-intro/Careers.jsx",
+      "implementedByAll": [
+        "src/sections/hero-title-intro/Careers.jsx"
+      ]
+    },
+    "proof.logo-strip": {
+      "category": "PROOF",
+      "description": "Shows the customer firms that build on the platform as a row/grid of third-party logos. One responsibility: customer proof. Typically 32px tall at 1440px wide.",
+      "scope": "Appears on 1 routes.",
+      "implementedBy": "src/sections/proof-logo-strip/Home.jsx",
+      "implementedByAll": [
+        "src/sections/proof-logo-strip/Home.jsx"
+      ]
+    },
+    "proof.metrics-line": {
+      "category": "PROOF",
+      "description": "States the scale of the platform in one line (assets and advisors) directly above the customer logos. One responsibility: scale proof. Typically 20px tall at 1440px wide.",
+      "scope": "Appears on 1 routes.",
+      "implementedBy": "src/sections/proof-metrics-line/Home.jsx",
+      "implementedByAll": [
+        "src/sections/proof-metrics-line/Home.jsx"
       ]
     },
     "shell.header": {
       "category": "SHELL",
-      "description": "\"Header\" — a <header> block named by its HTML landmark tag. Typically 80px tall at 1440px wide.",
+      "description": "Orients the visitor and provides the site-wide navigation (Memo, Careers, Contact) plus the market-status readout; fixed to the top of every page. One responsibility: site chrome. Typically 80px tall at 1440px wide.",
       "scope": "Appears on all 16 routes.",
-      "implementedBy": "src/sections/PointerEventsNone10.jsx",
+      "implementedBy": "src/sections/shell-header/Careers.jsx",
       "implementedByAll": [
-        "src/sections/PointerEventsNone10.jsx",
-        "src/sections/PointerEventsNone11.jsx",
-        "src/sections/PointerEventsNone12.jsx",
-        "src/sections/PointerEventsNone13.jsx",
-        "src/sections/PointerEventsNone.jsx",
-        "src/sections/PointerEventsNone3.jsx",
-        "src/sections/PointerEventsNone5.jsx",
-        "src/sections/PointerEventsNone7.jsx",
-        "src/sections/PointerEventsNone9.jsx"
+        "src/sections/shell-header/Careers.jsx",
+        "src/sections/shell-header/Home.jsx",
+        "src/sections/shell-header/Job1db991e4.jsx",
+        "src/sections/shell-header/Job5fb2d42b.jsx",
+        "src/sections/shell-header/Job752a96ec.jsx",
+        "src/sections/shell-header/Job9e9306c1.jsx",
+        "src/sections/shell-header/JobF8e990cd.jsx",
+        "src/sections/shell-header/Memo.jsx",
+        "src/sections/shell-header/SeriesC.jsx"
       ]
     }
   },
   "templates": [
     {
-      "id": "template.group",
-      "name": "Group",
-      "routeCount": 3,
+      "id": "template.home",
+      "name": "Home",
+      "routeCount": 1,
       "routes": [
-        "/",
-        "/careers",
-        "/series-c"
+        "/"
       ],
       "chrome": "partial",
       "sections": [
         "shell.header",
-        "content.block",
-        "hero.mask-intersect"
+        "banner.announcement",
+        "hero.canvas-statement",
+        "proof.metrics-line",
+        "proof.logo-strip",
+        "conversion.contact-dialog"
       ],
       "generationEligible": true,
       "evidenceOnly": false
@@ -120,20 +321,65 @@
       "chrome": "partial",
       "sections": [
         "shell.header",
-        "content.block",
-        "content.section",
-        "content.section",
-        "content.section",
-        "content.section",
-        "features.section",
-        "content.section"
+        "banner.announcement",
+        "hero.memo-masthead",
+        "editorial.memo-part",
+        "editorial.memo-part",
+        "editorial.memo-part",
+        "editorial.memo-part",
+        "editorial.memo-signoff",
+        "conversion.contact-dialog"
       ],
       "generationEligible": true,
       "evidenceOnly": false
     },
     {
-      "id": "template.careers",
-      "name": "Careers pages",
+      "id": "template.careers-index",
+      "name": "Careers index",
+      "routeCount": 1,
+      "routes": [
+        "/careers"
+      ],
+      "chrome": "partial",
+      "sections": [
+        "shell.header",
+        "banner.announcement",
+        "hero.title-intro",
+        "careers.job-group",
+        "careers.job-group",
+        "careers.job-group",
+        "careers.job-group",
+        "careers.job-group",
+        "conversion.contact-dialog"
+      ],
+      "generationEligible": true,
+      "evidenceOnly": false
+    },
+    {
+      "id": "template.press-release",
+      "name": "Press release",
+      "routeCount": 1,
+      "routes": [
+        "/series-c"
+      ],
+      "chrome": "partial",
+      "sections": [
+        "shell.header",
+        "banner.announcement",
+        "hero.press-headline",
+        "editorial.press-meta",
+        "editorial.prose",
+        "editorial.prose",
+        "editorial.prose",
+        "editorial.prose",
+        "conversion.contact-dialog"
+      ],
+      "generationEligible": true,
+      "evidenceOnly": false
+    },
+    {
+      "id": "template.careers-detail",
+      "name": "Careers detail",
       "routeCount": 12,
       "routes": [
         "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
@@ -152,7 +398,14 @@
       "chrome": "partial",
       "sections": [
         "shell.header",
-        "hero.mask-intersect"
+        "careers.job-header",
+        "careers.job-description-block",
+        "careers.job-description-block",
+        "careers.job-description-block",
+        "careers.job-description-block",
+        "careers.job-description-block",
+        "careers.apply-cta",
+        "conversion.contact-dialog"
       ],
       "generationEligible": true,
       "evidenceOnly": false

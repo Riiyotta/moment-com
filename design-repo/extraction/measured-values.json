@@ -1,12 +1,12 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "sourceProject": {
     "url": "https://moment.com/",
     "framework": "React+Next.js",
     "scrapedAt": "2026-10-06T08:16:10Z",
     "snapshotFolder": "recon/mirror/src/"
   },
-  "note": "Citation ledger. `lines` are line ranges in the rendered-HTML snapshots under recon/mirror/src/; verify_all.py resolves them and degrades to a warning when src/ is absent.",
+  "note": "Citation ledger. `lines` are line ranges in the rendered-HTML snapshots under recon/mirror/src/; verify_all.py resolves them and degrades to a warning when src/ is absent. Sections are decomposed (one responsibility each); ranges start at the element named by tag+anchor and end at that element's closing line, except shell.header/banner.announcement whose ranges run to the next sibling (unchanged from 0.1.0). `semanticLabel` is `<page-family>/<section-id>#<nth on that page>`.",
   "viewport": {
     "desktop": "1440x900",
     "mobile": "390x844"
@@ -638,8 +638,8 @@
       "route": "/",
       "title": "Moment · The AI Partner for Investment Management",
       "h1": "The AI Partner forInvestment Management",
-      "template": "template.group",
       "file": "src/index.html",
+      "template": "template.home",
       "sections": [
         {
           "idx": 0,
@@ -649,27 +649,63 @@
           "lines": [
             47,
             115
-          ]
+          ],
+          "semanticLabel": "home/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "content.block",
+          "id": "banner.announcement",
           "tag": "div",
           "anchor": "pointer-events-none",
           "lines": [
             116,
             208
-          ]
+          ],
+          "semanticLabel": "home/banner.announcement#1"
         },
         {
           "idx": 2,
-          "id": "hero.mask-intersect",
+          "id": "hero.canvas-statement",
           "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "anchor": "pointer-events-none",
           "lines": [
-            209,
+            214,
+            249
+          ],
+          "semanticLabel": "home/hero.canvas-statement#1"
+        },
+        {
+          "idx": 3,
+          "id": "proof.metrics-line",
+          "tag": "p",
+          "anchor": "text-balance",
+          "lines": [
+            251,
+            251
+          ],
+          "semanticLabel": "home/proof.metrics-line#1"
+        },
+        {
+          "idx": 4,
+          "id": "proof.logo-strip",
+          "tag": "div",
+          "anchor": "grid",
+          "lines": [
+            252,
+            283
+          ],
+          "semanticLabel": "home/proof.logo-strip#1"
+        },
+        {
+          "idx": 5,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            357,
             461
-          ]
+          ],
+          "semanticLabel": "home/conversion.contact-dialog#1"
         }
       ]
     },
@@ -677,8 +713,8 @@
       "route": "/memo",
       "title": "Memo · Moment",
       "h1": "",
-      "template": "template.memo",
       "file": "src/memo/index.html",
+      "template": "template.memo",
       "sections": [
         {
           "idx": 0,
@@ -688,77 +724,96 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "memo/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "content.block",
+          "id": "banner.announcement",
           "tag": "div",
           "anchor": "pointer-events-none",
           "lines": [
             131,
             230
-          ]
+          ],
+          "semanticLabel": "memo/banner.announcement#1"
         },
         {
           "idx": 2,
-          "id": "content.section",
+          "id": "hero.memo-masthead",
           "tag": "section",
           "anchor": "relative",
           "lines": [
             231,
-            264
-          ]
+            263
+          ],
+          "semanticLabel": "memo/hero.memo-masthead#1"
         },
         {
           "idx": 3,
-          "id": "content.section",
+          "id": "editorial.memo-part",
           "tag": "section",
           "anchor": "w-full",
           "lines": [
             265,
             295
-          ]
+          ],
+          "semanticLabel": "memo/editorial.memo-part#1"
         },
         {
           "idx": 4,
-          "id": "content.section",
+          "id": "editorial.memo-part",
           "tag": "section",
           "anchor": "w-full",
           "lines": [
             296,
             336
-          ]
+          ],
+          "semanticLabel": "memo/editorial.memo-part#2"
         },
         {
           "idx": 5,
-          "id": "content.section",
+          "id": "editorial.memo-part",
           "tag": "section",
           "anchor": "w-full",
           "lines": [
             337,
             409
-          ]
+          ],
+          "semanticLabel": "memo/editorial.memo-part#3"
         },
         {
           "idx": 6,
-          "id": "features.section",
+          "id": "editorial.memo-part",
           "tag": "section",
           "anchor": "w-full",
           "lines": [
             410,
             438
-          ]
+          ],
+          "semanticLabel": "memo/editorial.memo-part#4"
         },
         {
           "idx": 7,
-          "id": "content.section",
+          "id": "editorial.memo-signoff",
           "tag": "section",
           "anchor": "w-full",
           "lines": [
             439,
+            449
+          ],
+          "semanticLabel": "memo/editorial.memo-signoff#1"
+        },
+        {
+          "idx": 8,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            467,
             571
-          ]
+          ],
+          "semanticLabel": "memo/conversion.contact-dialog#1"
         }
       ]
     },
@@ -766,8 +821,8 @@
       "route": "/careers",
       "title": "Careers · Moment",
       "h1": "Build the future of investment management with us",
-      "template": "template.group",
       "file": "src/careers/index.html",
+      "template": "template.careers-index",
       "sections": [
         {
           "idx": 0,
@@ -777,27 +832,96 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "careers-index/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "content.block",
+          "id": "banner.announcement",
           "tag": "div",
           "anchor": "pointer-events-none",
           "lines": [
             131,
             227
-          ]
+          ],
+          "semanticLabel": "careers-index/banner.announcement#1"
         },
         {
           "idx": 2,
-          "id": "hero.mask-intersect",
+          "id": "hero.title-intro",
           "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "anchor": "flex",
           "lines": [
-            228,
+            1406,
+            1438
+          ],
+          "semanticLabel": "careers-index/hero.title-intro#1"
+        },
+        {
+          "idx": 3,
+          "id": "careers.job-group",
+          "tag": "div",
+          "anchor": "<div>",
+          "lines": [
+            1443,
+            1548
+          ],
+          "semanticLabel": "careers-index/careers.job-group#1"
+        },
+        {
+          "idx": 4,
+          "id": "careers.job-group",
+          "tag": "div",
+          "anchor": "<div>",
+          "lines": [
+            1549,
+            1592
+          ],
+          "semanticLabel": "careers-index/careers.job-group#2"
+        },
+        {
+          "idx": 5,
+          "id": "careers.job-group",
+          "tag": "div",
+          "anchor": "<div>",
+          "lines": [
+            1593,
+            1636
+          ],
+          "semanticLabel": "careers-index/careers.job-group#3"
+        },
+        {
+          "idx": 6,
+          "id": "careers.job-group",
+          "tag": "div",
+          "anchor": "<div>",
+          "lines": [
+            1637,
+            1666
+          ],
+          "semanticLabel": "careers-index/careers.job-group#4"
+        },
+        {
+          "idx": 7,
+          "id": "careers.job-group",
+          "tag": "div",
+          "anchor": "<div>",
+          "lines": [
+            1667,
+            1696
+          ],
+          "semanticLabel": "careers-index/careers.job-group#5"
+        },
+        {
+          "idx": 8,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            1716,
             1820
-          ]
+          ],
+          "semanticLabel": "careers-index/conversion.contact-dialog#1"
         }
       ]
     },
@@ -805,8 +929,8 @@
       "route": "/series-c",
       "title": "Series C · Moment",
       "h1": "Moment Raises $78 Million as Largest Wealth Firms Standardize on its AI Operating System for Investment Management",
-      "template": "template.group",
       "file": "src/series-c/index.html",
+      "template": "template.press-release",
       "sections": [
         {
           "idx": 0,
@@ -816,27 +940,96 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "press-release/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "content.block",
+          "id": "banner.announcement",
           "tag": "div",
           "anchor": "pointer-events-none",
           "lines": [
             131,
             227
-          ]
+          ],
+          "semanticLabel": "press-release/banner.announcement#1"
         },
         {
           "idx": 2,
-          "id": "hero.mask-intersect",
-          "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "id": "hero.press-headline",
+          "tag": "header",
+          "anchor": "mx-auto",
           "lines": [
-            228,
+            1406,
+            1409
+          ],
+          "semanticLabel": "press-release/hero.press-headline#1"
+        },
+        {
+          "idx": 3,
+          "id": "editorial.press-meta",
+          "tag": "div",
+          "anchor": "flex",
+          "lines": [
+            1411,
+            1414
+          ],
+          "semanticLabel": "press-release/editorial.press-meta#1"
+        },
+        {
+          "idx": 4,
+          "id": "editorial.prose",
+          "tag": "div",
+          "anchor": "text-pretty",
+          "lines": [
+            1415,
+            1431
+          ],
+          "semanticLabel": "press-release/editorial.prose#1"
+        },
+        {
+          "idx": 5,
+          "id": "editorial.prose",
+          "tag": "div",
+          "anchor": "frosted-frame",
+          "lines": [
+            1432,
+            1489
+          ],
+          "semanticLabel": "press-release/editorial.prose#2"
+        },
+        {
+          "idx": 6,
+          "id": "editorial.prose",
+          "tag": "div",
+          "anchor": "frosted-frame",
+          "lines": [
+            1490,
+            1574
+          ],
+          "semanticLabel": "press-release/editorial.prose#3"
+        },
+        {
+          "idx": 7,
+          "id": "editorial.prose",
+          "tag": "div",
+          "anchor": "frosted-frame",
+          "lines": [
+            1575,
+            1610
+          ],
+          "semanticLabel": "press-release/editorial.prose#4"
+        },
+        {
+          "idx": 8,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            1629,
             1733
-          ]
+          ],
+          "semanticLabel": "press-release/conversion.contact-dialog#1"
         }
       ]
     },
@@ -844,8 +1037,8 @@
       "route": "/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07",
       "title": "Agent Engineer · Moment",
       "h1": "Agent Engineer",
-      "template": "template.careers",
       "file": "src/careers/f8e990cd-4517-47bb-93b0-3c5f1fddeb07/index.html",
+      "template": "template.careers-detail",
       "sections": [
         {
           "idx": 0,
@@ -855,17 +1048,96 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "careers-detail/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "hero.mask-intersect",
+          "id": "careers.job-header",
           "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "anchor": "flex",
           "lines": [
-            131,
+            136,
+            164
+          ],
+          "semanticLabel": "careers-detail/careers.job-header#1"
+        },
+        {
+          "idx": 2,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            167,
+            192
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#1"
+        },
+        {
+          "idx": 3,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            193,
+            202
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#2"
+        },
+        {
+          "idx": 4,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            203,
+            231
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#3"
+        },
+        {
+          "idx": 5,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            232,
+            280
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#4"
+        },
+        {
+          "idx": 6,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            281,
+            315
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#5"
+        },
+        {
+          "idx": 7,
+          "id": "careers.apply-cta",
+          "tag": "div",
+          "anchor": "mt-40",
+          "lines": [
+            317,
+            320
+          ],
+          "semanticLabel": "careers-detail/careers.apply-cta#1"
+        },
+        {
+          "idx": 8,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            340,
             444
-          ]
+          ],
+          "semanticLabel": "careers-detail/conversion.contact-dialog#1"
         }
       ]
     },
@@ -873,8 +1145,8 @@
       "route": "/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f",
       "title": "Distributed Systems Engineer · Moment",
       "h1": "Distributed Systems Engineer",
-      "template": "template.careers",
       "file": "src/careers/b13c29c2-fe72-4055-86c8-fa8efbae416f/index.html",
+      "template": "template.careers-detail",
       "sections": [
         {
           "idx": 0,
@@ -884,17 +1156,107 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "careers-detail/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "hero.mask-intersect",
+          "id": "careers.job-header",
           "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "anchor": "flex",
           "lines": [
-            131,
+            136,
+            164
+          ],
+          "semanticLabel": "careers-detail/careers.job-header#1"
+        },
+        {
+          "idx": 2,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            167,
+            193
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#1"
+        },
+        {
+          "idx": 3,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            194,
+            203
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#2"
+        },
+        {
+          "idx": 4,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            204,
+            233
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#3"
+        },
+        {
+          "idx": 5,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            234,
+            255
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#4"
+        },
+        {
+          "idx": 6,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            256,
+            274
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#5"
+        },
+        {
+          "idx": 7,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            275,
+            309
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#6"
+        },
+        {
+          "idx": 8,
+          "id": "careers.apply-cta",
+          "tag": "div",
+          "anchor": "mt-40",
+          "lines": [
+            311,
+            314
+          ],
+          "semanticLabel": "careers-detail/careers.apply-cta#1"
+        },
+        {
+          "idx": 9,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            334,
             438
-          ]
+          ],
+          "semanticLabel": "careers-detail/conversion.contact-dialog#1"
         }
       ]
     },
@@ -902,8 +1264,8 @@
       "route": "/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44",
       "title": "Front End / Full Stack Engineer · Moment",
       "h1": "Front End / Full Stack Engineer",
-      "template": "template.careers",
       "file": "src/careers/9e9306c1-987b-4609-ad5e-8eaa92f16d44/index.html",
+      "template": "template.careers-detail",
       "sections": [
         {
           "idx": 0,
@@ -913,17 +1275,107 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "careers-detail/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "hero.mask-intersect",
+          "id": "careers.job-header",
           "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "anchor": "flex",
           "lines": [
-            131,
+            136,
+            164
+          ],
+          "semanticLabel": "careers-detail/careers.job-header#1"
+        },
+        {
+          "idx": 2,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            167,
+            193
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#1"
+        },
+        {
+          "idx": 3,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            194,
+            203
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#2"
+        },
+        {
+          "idx": 4,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            204,
+            234
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#3"
+        },
+        {
+          "idx": 5,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            235,
+            264
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#4"
+        },
+        {
+          "idx": 6,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            265,
+            286
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#5"
+        },
+        {
+          "idx": 7,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            287,
+            321
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#6"
+        },
+        {
+          "idx": 8,
+          "id": "careers.apply-cta",
+          "tag": "div",
+          "anchor": "mt-40",
+          "lines": [
+            323,
+            326
+          ],
+          "semanticLabel": "careers-detail/careers.apply-cta#1"
+        },
+        {
+          "idx": 9,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            346,
             450
-          ]
+          ],
+          "semanticLabel": "careers-detail/conversion.contact-dialog#1"
         }
       ]
     },
@@ -931,8 +1383,8 @@
       "route": "/careers/f679da84-db6f-4a08-801b-dd63508d6310",
       "title": "Head of Security · Moment",
       "h1": "Head of Security",
-      "template": "template.careers",
       "file": "src/careers/f679da84-db6f-4a08-801b-dd63508d6310/index.html",
+      "template": "template.careers-detail",
       "sections": [
         {
           "idx": 0,
@@ -942,17 +1394,129 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "careers-detail/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "hero.mask-intersect",
+          "id": "careers.job-header",
           "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "anchor": "flex",
           "lines": [
-            131,
+            136,
+            164
+          ],
+          "semanticLabel": "careers-detail/careers.job-header#1"
+        },
+        {
+          "idx": 2,
+          "id": "careers.job-description-block",
+          "tag": "ul",
+          "anchor": "<ul>",
+          "lines": [
+            167,
+            192
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#1"
+        },
+        {
+          "idx": 3,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            193,
+            219
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#2"
+        },
+        {
+          "idx": 4,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            220,
+            229
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#3"
+        },
+        {
+          "idx": 5,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            230,
+            239
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#4"
+        },
+        {
+          "idx": 6,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            240,
+            287
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#5"
+        },
+        {
+          "idx": 7,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            288,
+            323
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#6"
+        },
+        {
+          "idx": 8,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            324,
+            346
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#7"
+        },
+        {
+          "idx": 9,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            347,
+            381
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#8"
+        },
+        {
+          "idx": 10,
+          "id": "careers.apply-cta",
+          "tag": "div",
+          "anchor": "mt-40",
+          "lines": [
+            383,
+            386
+          ],
+          "semanticLabel": "careers-detail/careers.apply-cta#1"
+        },
+        {
+          "idx": 11,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            406,
             510
-          ]
+          ],
+          "semanticLabel": "careers-detail/conversion.contact-dialog#1"
         }
       ]
     },
@@ -960,8 +1524,8 @@
       "route": "/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2",
       "title": "Platform Engineer · Moment",
       "h1": "Platform Engineer",
-      "template": "template.careers",
       "file": "src/careers/93c2d5e1-0a40-42bc-a4c9-a71449f3a6e2/index.html",
+      "template": "template.careers-detail",
       "sections": [
         {
           "idx": 0,
@@ -971,17 +1535,107 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "careers-detail/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "hero.mask-intersect",
+          "id": "careers.job-header",
           "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "anchor": "flex",
           "lines": [
-            131,
+            136,
+            164
+          ],
+          "semanticLabel": "careers-detail/careers.job-header#1"
+        },
+        {
+          "idx": 2,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            167,
+            193
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#1"
+        },
+        {
+          "idx": 3,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            194,
+            203
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#2"
+        },
+        {
+          "idx": 4,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            204,
+            218
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#3"
+        },
+        {
+          "idx": 5,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            219,
+            266
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#4"
+        },
+        {
+          "idx": 6,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            267,
+            297
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#5"
+        },
+        {
+          "idx": 7,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            298,
+            334
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#6"
+        },
+        {
+          "idx": 8,
+          "id": "careers.apply-cta",
+          "tag": "div",
+          "anchor": "mt-40",
+          "lines": [
+            336,
+            339
+          ],
+          "semanticLabel": "careers-detail/careers.apply-cta#1"
+        },
+        {
+          "idx": 9,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            359,
             463
-          ]
+          ],
+          "semanticLabel": "careers-detail/conversion.contact-dialog#1"
         }
       ]
     },
@@ -989,8 +1643,8 @@
       "route": "/careers/30f72628-dd96-4fb2-b998-ab310e90ad82",
       "title": "Security Engineer · Moment",
       "h1": "Security Engineer",
-      "template": "template.careers",
       "file": "src/careers/30f72628-dd96-4fb2-b998-ab310e90ad82/index.html",
+      "template": "template.careers-detail",
       "sections": [
         {
           "idx": 0,
@@ -1000,17 +1654,107 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "careers-detail/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "hero.mask-intersect",
+          "id": "careers.job-header",
           "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "anchor": "flex",
           "lines": [
-            131,
+            136,
+            164
+          ],
+          "semanticLabel": "careers-detail/careers.job-header#1"
+        },
+        {
+          "idx": 2,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            167,
+            193
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#1"
+        },
+        {
+          "idx": 3,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            194,
+            203
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#2"
+        },
+        {
+          "idx": 4,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            204,
+            236
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#3"
+        },
+        {
+          "idx": 5,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            237,
+            263
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#4"
+        },
+        {
+          "idx": 6,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            264,
+            285
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#5"
+        },
+        {
+          "idx": 7,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            286,
+            320
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#6"
+        },
+        {
+          "idx": 8,
+          "id": "careers.apply-cta",
+          "tag": "div",
+          "anchor": "mt-40",
+          "lines": [
+            322,
+            325
+          ],
+          "semanticLabel": "careers-detail/careers.apply-cta#1"
+        },
+        {
+          "idx": 9,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            345,
             449
-          ]
+          ],
+          "semanticLabel": "careers-detail/conversion.contact-dialog#1"
         }
       ]
     },
@@ -1018,8 +1762,8 @@
       "route": "/careers/1db991e4-9480-4847-b300-c430cc057d56",
       "title": "Design Engineer · Moment",
       "h1": "Design Engineer",
-      "template": "template.careers",
       "file": "src/careers/1db991e4-9480-4847-b300-c430cc057d56/index.html",
+      "template": "template.careers-detail",
       "sections": [
         {
           "idx": 0,
@@ -1029,17 +1773,107 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "careers-detail/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "hero.mask-intersect",
+          "id": "careers.job-header",
           "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "anchor": "flex",
           "lines": [
-            131,
+            136,
+            164
+          ],
+          "semanticLabel": "careers-detail/careers.job-header#1"
+        },
+        {
+          "idx": 2,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            167,
+            193
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#1"
+        },
+        {
+          "idx": 3,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            194,
+            203
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#2"
+        },
+        {
+          "idx": 4,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            204,
+            234
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#3"
+        },
+        {
+          "idx": 5,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            235,
+            250
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#4"
+        },
+        {
+          "idx": 6,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            251,
+            262
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#5"
+        },
+        {
+          "idx": 7,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            263,
+            297
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#6"
+        },
+        {
+          "idx": 8,
+          "id": "careers.apply-cta",
+          "tag": "div",
+          "anchor": "mt-40",
+          "lines": [
+            299,
+            302
+          ],
+          "semanticLabel": "careers-detail/careers.apply-cta#1"
+        },
+        {
+          "idx": 9,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            322,
             426
-          ]
+          ],
+          "semanticLabel": "careers-detail/conversion.contact-dialog#1"
         }
       ]
     },
@@ -1047,8 +1881,8 @@
       "route": "/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490",
       "title": "Product Designer · Moment",
       "h1": "Product Designer",
-      "template": "template.careers",
       "file": "src/careers/5fb2d42b-9542-4d54-999d-b8f4e0ee9490/index.html",
+      "template": "template.careers-detail",
       "sections": [
         {
           "idx": 0,
@@ -1058,17 +1892,107 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "careers-detail/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "hero.mask-intersect",
+          "id": "careers.job-header",
           "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "anchor": "flex",
           "lines": [
-            131,
+            136,
+            164
+          ],
+          "semanticLabel": "careers-detail/careers.job-header#1"
+        },
+        {
+          "idx": 2,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            167,
+            193
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#1"
+        },
+        {
+          "idx": 3,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            194,
+            203
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#2"
+        },
+        {
+          "idx": 4,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            204,
+            233
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#3"
+        },
+        {
+          "idx": 5,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            234,
+            271
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#4"
+        },
+        {
+          "idx": 6,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            272,
+            293
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#5"
+        },
+        {
+          "idx": 7,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            294,
+            328
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#6"
+        },
+        {
+          "idx": 8,
+          "id": "careers.apply-cta",
+          "tag": "div",
+          "anchor": "mt-40",
+          "lines": [
+            330,
+            333
+          ],
+          "semanticLabel": "careers-detail/careers.apply-cta#1"
+        },
+        {
+          "idx": 9,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            353,
             457
-          ]
+          ],
+          "semanticLabel": "careers-detail/conversion.contact-dialog#1"
         }
       ]
     },
@@ -1076,8 +2000,8 @@
       "route": "/careers/9a3a451a-43bf-42cd-9c24-78e309c07104",
       "title": "Marketing Leader · Moment",
       "h1": "Marketing Leader",
-      "template": "template.careers",
       "file": "src/careers/9a3a451a-43bf-42cd-9c24-78e309c07104/index.html",
+      "template": "template.careers-detail",
       "sections": [
         {
           "idx": 0,
@@ -1087,17 +2011,118 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "careers-detail/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "hero.mask-intersect",
+          "id": "careers.job-header",
           "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "anchor": "flex",
           "lines": [
-            131,
+            136,
+            164
+          ],
+          "semanticLabel": "careers-detail/careers.job-header#1"
+        },
+        {
+          "idx": 2,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            167,
+            193
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#1"
+        },
+        {
+          "idx": 3,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            194,
+            203
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#2"
+        },
+        {
+          "idx": 4,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            204,
+            222
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#3"
+        },
+        {
+          "idx": 5,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            223,
+            275
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#4"
+        },
+        {
+          "idx": 6,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            276,
+            311
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#5"
+        },
+        {
+          "idx": 7,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            312,
+            336
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#6"
+        },
+        {
+          "idx": 8,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            337,
+            371
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#7"
+        },
+        {
+          "idx": 9,
+          "id": "careers.apply-cta",
+          "tag": "div",
+          "anchor": "mt-40",
+          "lines": [
+            373,
+            376
+          ],
+          "semanticLabel": "careers-detail/careers.apply-cta#1"
+        },
+        {
+          "idx": 10,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            396,
             500
-          ]
+          ],
+          "semanticLabel": "careers-detail/conversion.contact-dialog#1"
         }
       ]
     },
@@ -1105,8 +2130,8 @@
       "route": "/careers/707c9117-1b1e-4260-96b3-28f735f7d840",
       "title": "Strategy & Ops Leader · Moment",
       "h1": "Strategy & Ops Leader",
-      "template": "template.careers",
       "file": "src/careers/707c9117-1b1e-4260-96b3-28f735f7d840/index.html",
+      "template": "template.careers-detail",
       "sections": [
         {
           "idx": 0,
@@ -1116,17 +2141,118 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "careers-detail/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "hero.mask-intersect",
+          "id": "careers.job-header",
           "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "anchor": "flex",
           "lines": [
-            131,
+            136,
+            164
+          ],
+          "semanticLabel": "careers-detail/careers.job-header#1"
+        },
+        {
+          "idx": 2,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            167,
+            194
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#1"
+        },
+        {
+          "idx": 3,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            195,
+            204
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#2"
+        },
+        {
+          "idx": 4,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            205,
+            221
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#3"
+        },
+        {
+          "idx": 5,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            222,
+            249
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#4"
+        },
+        {
+          "idx": 6,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            250,
+            278
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#5"
+        },
+        {
+          "idx": 7,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            279,
+            297
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#6"
+        },
+        {
+          "idx": 8,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            298,
+            332
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#7"
+        },
+        {
+          "idx": 9,
+          "id": "careers.apply-cta",
+          "tag": "div",
+          "anchor": "mt-40",
+          "lines": [
+            334,
+            337
+          ],
+          "semanticLabel": "careers-detail/careers.apply-cta#1"
+        },
+        {
+          "idx": 10,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            357,
             461
-          ]
+          ],
+          "semanticLabel": "careers-detail/conversion.contact-dialog#1"
         }
       ]
     },
@@ -1134,8 +2260,8 @@
       "route": "/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256",
       "title": "Deployment Strategist · Moment",
       "h1": "Deployment Strategist",
-      "template": "template.careers",
       "file": "src/careers/752a96ec-5ad1-456e-a98d-6c64c6dfa256/index.html",
+      "template": "template.careers-detail",
       "sections": [
         {
           "idx": 0,
@@ -1145,17 +2271,118 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "careers-detail/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "hero.mask-intersect",
+          "id": "careers.job-header",
           "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "anchor": "flex",
           "lines": [
-            131,
+            136,
+            164
+          ],
+          "semanticLabel": "careers-detail/careers.job-header#1"
+        },
+        {
+          "idx": 2,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            167,
+            192
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#1"
+        },
+        {
+          "idx": 3,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            193,
+            202
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#2"
+        },
+        {
+          "idx": 4,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            203,
+            218
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#3"
+        },
+        {
+          "idx": 5,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            219,
+            271
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#4"
+        },
+        {
+          "idx": 6,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            272,
+            297
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#5"
+        },
+        {
+          "idx": 7,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            298,
+            326
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#6"
+        },
+        {
+          "idx": 8,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            327,
+            361
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#7"
+        },
+        {
+          "idx": 9,
+          "id": "careers.apply-cta",
+          "tag": "div",
+          "anchor": "mt-40",
+          "lines": [
+            363,
+            366
+          ],
+          "semanticLabel": "careers-detail/careers.apply-cta#1"
+        },
+        {
+          "idx": 10,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            386,
             490
-          ]
+          ],
+          "semanticLabel": "careers-detail/conversion.contact-dialog#1"
         }
       ]
     },
@@ -1163,8 +2390,8 @@
       "route": "/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5",
       "title": "Technical Recruiter · Moment",
       "h1": "Technical Recruiter",
-      "template": "template.careers",
       "file": "src/careers/ed7b7afd-c6c1-4de5-a7b2-b504941c3da5/index.html",
+      "template": "template.careers-detail",
       "sections": [
         {
           "idx": 0,
@@ -1174,17 +2401,107 @@
           "lines": [
             60,
             130
-          ]
+          ],
+          "semanticLabel": "careers-detail/shell.header#1"
         },
         {
           "idx": 1,
-          "id": "hero.mask-intersect",
+          "id": "careers.job-header",
           "tag": "div",
-          "anchor": "[--edge-feather:24px]",
+          "anchor": "flex",
           "lines": [
-            131,
+            136,
+            164
+          ],
+          "semanticLabel": "careers-detail/careers.job-header#1"
+        },
+        {
+          "idx": 2,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            167,
+            193
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#1"
+        },
+        {
+          "idx": 3,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            194,
+            203
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#2"
+        },
+        {
+          "idx": 4,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            204,
+            222
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#3"
+        },
+        {
+          "idx": 5,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            223,
+            282
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#4"
+        },
+        {
+          "idx": 6,
+          "id": "careers.job-description-block",
+          "tag": "h3",
+          "anchor": "<h3>",
+          "lines": [
+            283,
+            316
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#5"
+        },
+        {
+          "idx": 7,
+          "id": "careers.job-description-block",
+          "tag": "h2",
+          "anchor": "<h2>",
+          "lines": [
+            317,
+            353
+          ],
+          "semanticLabel": "careers-detail/careers.job-description-block#6"
+        },
+        {
+          "idx": 8,
+          "id": "careers.apply-cta",
+          "tag": "div",
+          "anchor": "mt-40",
+          "lines": [
+            355,
+            358
+          ],
+          "semanticLabel": "careers-detail/careers.apply-cta#1"
+        },
+        {
+          "idx": 9,
+          "id": "conversion.contact-dialog",
+          "tag": "div",
+          "anchor": "data-base-ui-portal",
+          "lines": [
+            378,
             482
-          ]
+          ],
+          "semanticLabel": "careers-detail/conversion.contact-dialog#1"
         }
       ]
     }

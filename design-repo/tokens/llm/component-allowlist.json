@@ -1,10 +1,22 @@
 {
   "version": "1",
   "sections": [
-    "content.block",
-    "content.section",
-    "features.section",
-    "hero.mask-intersect",
+    "banner.announcement",
+    "careers.apply-cta",
+    "careers.job-description-block",
+    "careers.job-group",
+    "careers.job-header",
+    "conversion.contact-dialog",
+    "editorial.memo-part",
+    "editorial.memo-signoff",
+    "editorial.press-meta",
+    "editorial.prose",
+    "hero.canvas-statement",
+    "hero.memo-masthead",
+    "hero.press-headline",
+    "hero.title-intro",
+    "proof.logo-strip",
+    "proof.metrics-line",
     "shell.header"
   ],
   "components": [
@@ -60,25 +72,72 @@
     "motion"
   ],
   "contentFields": {
-    "content.block": [
+    "banner.announcement": [
       "body",
       "ctas"
     ],
-    "content.section": [
+    "careers.apply-cta": [
+      "body",
+      "ctas"
+    ],
+    "careers.job-description-block": [
       "heading",
       "body"
     ],
-    "features.section": [
+    "careers.job-group": [
       "heading",
-      "body"
+      "items"
     ],
-    "hero.mask-intersect": [
+    "careers.job-header": [
       "heading",
       "subheading",
-      "body",
       "ctas",
-      "items",
+      "items"
+    ],
+    "conversion.contact-dialog": [
+      "heading",
+      "ctas",
+      "items"
+    ],
+    "editorial.memo-part": [
+      "heading",
+      "subheading",
+      "body"
+    ],
+    "editorial.memo-signoff": [
+      "heading",
+      "body"
+    ],
+    "editorial.press-meta": [
+      "body",
+      "ctas"
+    ],
+    "editorial.prose": [
+      "heading",
+      "body"
+    ],
+    "hero.canvas-statement": [
+      "heading",
+      "subheading"
+    ],
+    "hero.memo-masthead": [
+      "heading",
+      "body",
       "images"
+    ],
+    "hero.press-headline": [
+      "heading",
+      "subheading"
+    ],
+    "hero.title-intro": [
+      "heading",
+      "body"
+    ],
+    "proof.logo-strip": [
+      "images"
+    ],
+    "proof.metrics-line": [
+      "body"
     ],
     "shell.header": [
       "body",

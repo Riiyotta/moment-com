@@ -1,0 +1,83 @@
+{
+  "id": "proof.metrics-line",
+  "category": "PROOF",
+  "label": "Metrics line",
+  "tag": "p",
+  "purpose": "States the scale of the platform in one line (assets and advisors) directly above the customer logos.",
+  "purposeIsInferred": false,
+  "nameSource": "decomposition",
+  "content": {
+    "additionalProperties": false,
+    "fields": {
+      "body": {
+        "type": "string[]",
+        "required": true,
+        "maxItems": 1,
+        "maxWords": 6
+      }
+    }
+  },
+  "evidence": {
+    "level": "measured",
+    "instances": 1,
+    "routes": 1,
+    "measuredFrom": [
+      "src/index.html:251-251"
+    ]
+  },
+  "motion": {
+    "allowedPatterns": [
+      "css-animation",
+      "none"
+    ],
+    "reducedMotionFallback": "disable-animation"
+  },
+  "responsive": {
+    "measuredAt": {
+      "desktop": "1440px",
+      "mobile": "390px"
+    },
+    "breakpoints": "tokens/00-foundation/breakpoint.json",
+    "desktop": {
+      "heightPx": 20
+    },
+    "mobile": {
+      "heightPx": 20
+    },
+    "measuredOnRoute": "/",
+    "changes": [
+      "below lg the line is centred above the logo grid; from lg it sits in a row beside the logos (lines 315-339)"
+    ],
+    "note": "desktop 1440 height is that of the lg+ variant (lines 315-339): metrics line 20px, logo row 32px; the stacked variant is 0px (display: none) at that width"
+  },
+  "assetRoles": [],
+  "retrieval": {
+    "semanticLabel": "proof/metrics-line",
+    "kind": "metrics",
+    "role": "scale proof",
+    "summary": "One-line scale statement (assets under management, advisor count).",
+    "keywords": [
+      "metrics",
+      "scale",
+      "assets",
+      "advisors",
+      "proof"
+    ],
+    "pageFamilies": [
+      "template.home"
+    ]
+  },
+  "implementedByAll": [
+    "src/sections/proof-metrics-line/Home.jsx"
+  ],
+  "implementedBy": "src/sections/proof-metrics-line/Home.jsx",
+  "constraints": {
+    "onePerPage": true
+  },
+  "granularity": {
+    "singleResponsibility": "scale proof",
+    "copyCapacityWords": 6,
+    "imageCapacity": 0,
+    "bodyItemCapacity": 1
+  }
+}
